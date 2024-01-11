@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Cyrge";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("Cygre-Light.woff2") format("woff2"),
+    url("Cygre-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cyrge";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("Cygre-Regular.woff2") format("woff2"),
+    url("Cygre-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cyrge";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("Cygre-Medium.woff2") format("woff2"),
+    url("Cygre-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cyrge";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("Cygre-MediumIt.woff2") format("woff2"),
+    url("Cygre-MediumIt.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cyrge";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("Cygre-Black.woff2") format("woff2"),
+    url("Cygre-Black.woff") format("woff");
+}

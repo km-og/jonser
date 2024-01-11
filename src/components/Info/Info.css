@@ -1,0 +1,33 @@
+.info {
+  margin: 0 auto;
+  padding: 150px 0 0;
+  max-width: 1140px;
+  width: 89%;
+}
+
+.info__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: 390px 330px 330px;
+  column-gap: 45px;
+}
+
+/* .info__column {
+} */
+
+.info__title {
+  margin: 0 0 20px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.info__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.4;
+}

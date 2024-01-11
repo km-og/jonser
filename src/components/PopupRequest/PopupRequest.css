@@ -1,0 +1,10 @@
+.popup__container_type_request {
+  width: 60%;
+  margin: 30vh auto 0;
+  display: block;
+}
+
+.popup__title_type_request {
+  margin: 0 auto;
+  text-align: center;
+}

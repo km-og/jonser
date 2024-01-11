@@ -1,0 +1,34 @@
+.promo {
+  width: 100%;
+  height: 840px;
+}
+
+.promo__background {
+  background: url("../../images/promo__background_x2.png") center no-repeat;
+  background-size: auto 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.promo__title {
+  margin: 0 auto 0;
+  padding: 260px 0 0;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 1.11;
+  max-width: 1140px;
+  width: 89%;
+  text-align: end;
+  color: #d9d9d9;
+  text-transform: uppercase;
+}
+
+.promo__title_style_italic {
+  font-style: italic;
+}
+
+@media screen and (min-width: 1300px) {
+  .promo__background {
+    background-size: 100% auto;
+  }
+}

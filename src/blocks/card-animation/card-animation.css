@@ -1,0 +1,5 @@
+.card-animation:hover {
+  cursor: pointer;
+  background-color: #2964a0;
+  transition: background-color 0.5s ease;
+}
