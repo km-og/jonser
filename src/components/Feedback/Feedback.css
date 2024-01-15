@@ -3,7 +3,6 @@
   background-position: 0% 0%;
   background-size: 100% auto;
   width: 100%;
-  /* max-width: 1480px; */
   height: 1060px;
   margin: 150px auto 0;
   padding: 0 0;
@@ -15,12 +14,12 @@
   max-width: 1140px;
   width: 89%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .feedback__wrapper {
   max-width: 750px;
-  width: 100%;
+  width: 65%;
 }
 
 .feedback__title {
@@ -49,12 +48,18 @@
   gap: 20px;
 }
 
+.feedback__label {
+  width: 100%;
+}
+
 .feedback__input {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   border-bottom: 1px solid #d9d9d9;
   padding: 10px 5px;
   color: #d9d9d9;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .feedback__input:focus {
@@ -79,7 +84,7 @@
   max-width: 300px;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
   gap: 10px;
   margin: 30px 0 0 auto;
 }
@@ -103,11 +108,12 @@
   transform: translateY(-100%); */
 }
 
-.feedback__label {
+.feedback__label_type_bottom {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   gap: 8px;
+  width: 100%;
 }
 
 .feedback__checkbox {
@@ -131,5 +137,112 @@
   .feedback {
     background-position: 0% 30%;
     height: 1260px;
+  }
+}
+
+@media screen and (max-width: 1310px) {
+  .feedback {
+    background-position: 0% 0%;
+    height: 900px;
+  }
+
+  .feedback__container {
+    padding-top: 80px;
+  }
+
+  .feedback__wrapper {
+    width: 70%;
+  }
+
+  .feedback__title {
+    margin-bottom: 20px;
+  }
+
+  .feedback__text {
+    font-size: 18px;
+  }
+
+  .feedback__form {
+    margin: 20px 0;
+  }
+
+  .feedback__wrapper-bottom {
+    margin-top: 0%;
+  }
+
+  .feedback__btn {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .feedback {
+    margin-top: 100px;
+    height: 800px;
+    background-position: 100% 0%;
+    background-size: 112% auto;
+  }
+
+  .feedback__container {
+    padding-top: 50px;
+  }
+
+  .feedback__wrapper {
+    width: 80%;
+  }
+
+  .feedback__title {
+    margin-bottom: 20px;
+  }
+
+  .feedback__text {
+    font-size: 18px;
+  }
+
+  .feedback__form {
+    margin: 20px 0;
+  }
+
+  .feedback__wrapper-bottom {
+    margin-top: 0%;
+  }
+
+  .feedback__btn {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .feedback {
+    background: url("../../images/feedback-bg-mobile.png") no-repeat center;
+    height: 680px;
+    background-position: 10% 0%;
+    background-size: 102% 102%;
+  }
+
+  .feedback__container {
+    padding-top: 80px;
+  }
+
+  .feedback__wrapper {
+    width: 100%;
+  }
+
+  .feedback__title {
+  }
+
+  .feedback__text {
+    font-size: 15px;
+  }
+
+  .feedback__form {
+    margin-bottom: 0;
+  }
+
+  .feedback__btn {
+    font-size: 20px;
+    margin-top: 70px;
   }
 }

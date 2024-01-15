@@ -10,19 +10,17 @@
   padding: 0;
   list-style: none;
   display: grid;
-  /* grid-template-columns: repeat(3, 1fr); */
-  grid-template-columns: 390px 330px 330px;
-  column-gap: 45px;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 45px;
 }
-
-/* .info__column {
-} */
 
 .info__title {
   margin: 0 0 20px;
   font-weight: 500;
   font-size: 28px;
   line-height: 1.2;
+  width: 100%;
 }
 
 .info__text {
@@ -30,4 +28,25 @@
   font-weight: 300;
   font-size: 20px;
   line-height: 1.4;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .info {
+    padding-top: 100px;
+  }
+
+  .info__text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info__list {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
+  .info__text {
+    font-size: 15px;
+  }
 }

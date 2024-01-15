@@ -8,10 +8,12 @@ import vk from "../../icons/vk.svg";
 // import mail from "../../icons/mail.svg";
 import youtube from "../../icons/youtube.svg";
 import rutube from "../../icons/rutube.svg";
+import ScrollToTopOnMount from "../ScrollToTopOnMount/ScrollToTopOnMount";
 
 function Footer() {
   return (
     <footer className="footer">
+      <ScrollToTopOnMount />
       <div className="footer__wrapper">
         <NavLink to="/" className="footer__link link">
           <img src={logo} alt="логотип" className="footer__logo logo" />

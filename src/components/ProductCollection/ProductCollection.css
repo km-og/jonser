@@ -24,16 +24,16 @@
 }
 
 .collection__list {
+  list-style: none;
   max-width: 1140px;
   width: 89%;
   display: grid;
-  width: 100%;
-  grid-template-columns: repeat(4, 1fr);
+  width: 89%;
+  grid-template-columns: repeat(4, 180px);
   grid-template-rows: repeat(1, 380px);
   grid-auto-flow: row;
   grid-auto-rows: 380px;
-  list-style: none;
-  column-gap: 125px;
+  justify-content: space-between;
   row-gap: 50px;
   padding: 0;
   margin: 40px auto 0;
@@ -48,4 +48,18 @@
   grid-template-rows: repeat(1, 260px);
   grid-auto-rows: 260px;
   column-gap: 84px;
+}
+
+@media screen and (max-width: 1024px) {
+  .collection__list {
+    grid-template-columns: repeat(3, 180px);
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .collection__list {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 220px));
+    column-gap: 30px;
+  }
 }

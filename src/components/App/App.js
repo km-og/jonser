@@ -37,11 +37,11 @@ function App() {
     window.addEventListener("scroll", handleScroll);
   }, []);
 
-  function SwitchToDarkLinks() {
+  function switchToDarkLinks() {
     setIsDarkLinks(true);
   }
 
-  function SwitchToLightLinks() {
+  function switchToLightLinks() {
     setIsDarkLinks(false);
   }
 
@@ -53,14 +53,14 @@ function App() {
           <Route
             exact
             path="/"
-            element={<Main installingColorLinks={SwitchToDarkLinks} />}
+            element={<Main installingColorLinks={switchToDarkLinks} />}
           />
           <Route
             path="/semiAutomaticWeldingMachines"
             element={
               <ProductPage
                 infoPage={semiAutomaticWeldingMachinesInfo}
-                installingColorLinks={SwitchToLightLinks}
+                installingColorLinks={switchToLightLinks}
               />
             }
           />
@@ -69,7 +69,7 @@ function App() {
             element={
               <ProductPage
                 infoPage={сhainsawsInfo}
-                installingColorLinks={SwitchToLightLinks}
+                installingColorLinks={switchToLightLinks}
               />
             }
           />
@@ -78,7 +78,7 @@ function App() {
             element={
               <ProductPage
                 infoPage={drillsAndScrewdriversInfo}
-                installingColorLinks={SwitchToLightLinks}
+                installingColorLinks={switchToLightLinks}
               />
             }
           />
@@ -87,7 +87,7 @@ function App() {
             element={
               <ProductPage
                 infoPage={gasolineGeneratorsInfo}
-                installingColorLinks={SwitchToLightLinks}
+                installingColorLinks={switchToLightLinks}
               />
             }
           />
@@ -96,7 +96,7 @@ function App() {
             element={
               <ProductPage
                 infoPage={angleGrindersInfo}
-                installingColorLinks={SwitchToLightLinks}
+                installingColorLinks={switchToLightLinks}
               />
             }
           />
@@ -105,7 +105,7 @@ function App() {
             element={
               <ProductPage
                 infoPage={oilsInfo}
-                installingColorLinks={SwitchToLightLinks}
+                installingColorLinks={switchToLightLinks}
               />
             }
           />
@@ -114,7 +114,7 @@ function App() {
             element={
               <ProductPage
                 infoPage={compressorsInfo}
-                installingColorLinks={SwitchToLightLinks}
+                installingColorLinks={switchToLightLinks}
               />
             }
           />
@@ -123,7 +123,7 @@ function App() {
             element={
               <ProductPage
                 infoPage={trimmersInfo}
-                installingColorLinks={SwitchToLightLinks}
+                installingColorLinks={switchToLightLinks}
               />
             }
           />
@@ -132,7 +132,7 @@ function App() {
             element={
               <ProductPage
                 infoPage={toolKitsInfo}
-                installingColorLinks={SwitchToLightLinks}
+                installingColorLinks={switchToLightLinks}
               />
             }
           />
@@ -141,7 +141,7 @@ function App() {
             element={
               <ProductPage
                 infoPage={additionallyInfo}
-                installingColorLinks={SwitchToLightLinks}
+                installingColorLinks={switchToLightLinks}
               />
             }
           />

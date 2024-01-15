@@ -45,8 +45,7 @@
   top: 55%;
   right: 0;
   transform: translateY(-48%);
-  /* max-width: 280px;
-  width: 110%; */
+  max-width: 235px;
 }
 
 .collection__model-img_type_horizontal {
@@ -63,8 +62,6 @@
 .collection__model-img_type_align-top {
   transform: translate(5%, -54%);
   width: 135%;
-  /* max-width: 340px; */
-  /* max-height: 310px; */
 }
 
 .collection__btn {
@@ -82,4 +79,11 @@
 .collection__btn_type_premium {
   background-color: #1e1e1e;
   color: #d9d9d9;
+}
+
+@media screen and (max-width: 1024px) {
+  .collection__model-img_type_align-right {
+    max-width: 250px;
+    transform: translate(10%, -50%);
+  }
 }

@@ -48,3 +48,30 @@
   margin: 0 0 20px;
   padding: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    gap: 60px;
+    height: 100%;
+  }
+
+  .about__container:first-of-type {
+    padding: 30px 20px;
+  }
+
+  .about__container:last-of-type {
+    margin: 0;
+    padding: 0 20px;
+    max-width: 630px;
+    max-height: 460px;
+  }
+
+  .about__text {
+    font-size: 15px;
+  }
+
+  .about__title {
+    max-width: 190px;
+  }
+}

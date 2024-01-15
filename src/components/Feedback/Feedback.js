@@ -123,37 +123,45 @@ function Feedback() {
             noValidate
             onSubmit={handleSubmit}
           >
-            <input
-              id="userName"
-              type="text"
-              className="feedback__input feedback__input_type_name"
-              name="userName"
-              required
-              minLength="2"
-              maxLength="200"
-              placeholder="ФИО *"
-              onChange={handleChangeInputName}
-            />
-            <span className="feedback__input-error">{isErrorTextForName}</span>
-            <input
-              id="userTel"
-              type="tel"
-              className="feedback__input feedback__input_type_tel"
-              name="userTel"
-              required
-              placeholder="Номер телефона *"
-              onChange={handleChangeInputTel}
-            />
-            <span className="feedback__input-error">{isErrorTextForTel}</span>
-            <input
-              id="comment"
-              type="text"
-              className="feedback__input feedback__input_type_tel"
-              name="comment"
-              required
-              placeholder="Комментарии"
-              onChange={handleChangeInputs}
-            />
+            <label className="feedback__label" htmlFor="userName">
+              <input
+                id="userName"
+                type="text"
+                className="feedback__input feedback__input_type_name"
+                name="userName"
+                required
+                minLength="2"
+                maxLength="200"
+                placeholder="ФИО *"
+                onChange={handleChangeInputName}
+              />
+              <span className="feedback__input-error">
+                {isErrorTextForName}
+              </span>
+            </label>
+            <label className="feedback__label" htmlFor="userTel">
+              <input
+                id="userTel"
+                type="tel"
+                className="feedback__input feedback__input_type_tel"
+                name="userTel"
+                required
+                placeholder="Номер телефона *"
+                onChange={handleChangeInputTel}
+              />
+              <span className="feedback__input-error">{isErrorTextForTel}</span>
+            </label>
+            <label className="feedback__label" htmlFor="comment">
+              <input
+                id="comment"
+                type="text"
+                className="feedback__input feedback__input_type_tel"
+                name="comment"
+                required
+                placeholder="Комментарии"
+                onChange={handleChangeInputs}
+              />
+            </label>
             <div className="feedback__wrapper-bottom">
               <button
                 type="submit"
@@ -163,7 +171,10 @@ function Feedback() {
               >
                 отправить
               </button>
-              <label htmlFor="agree" className="feedback__label ">
+              <label
+                htmlFor="agree"
+                className="feedback__label feedback__label_type_bottom"
+              >
                 <input
                   type="checkbox"
                   name="agree"

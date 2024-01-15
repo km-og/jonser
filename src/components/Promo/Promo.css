@@ -11,7 +11,7 @@
 }
 
 .promo__title {
-  margin: 0 auto 0;
+  margin: 0 auto;
   padding: 260px 0 0;
   font-weight: 500;
   font-size: 45px;
@@ -30,5 +30,23 @@
 @media screen and (min-width: 1300px) {
   .promo__background {
     background-size: 100% auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .promo {
+    height: 700px;
+    /* height: 340px; */
+  }
+
+  .promo__background {
+    background-size: auto 100%;
+    /* background-position: 60% 0%; */
+    /* width: 60%;
+    height: 60%; */
+  }
+
+  .promo__title {
+    font-size: 30px;
   }
 }
