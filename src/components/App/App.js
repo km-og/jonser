@@ -5,28 +5,33 @@ import Footer from "../Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Main from "../Main/Main";
-import {
-  additionallyInfo,
-  angleGrindersInfo,
-  compressorsInfo,
-  drillsAndScrewdriversInfo,
-  gasolineGeneratorsInfo,
-  oilsInfo,
-  semiAutomaticWeldingMachinesInfo,
-  toolKitsInfo,
-  trimmersInfo,
-  сhainsawsInfo,
-} from "../../utils/constants";
+import { semiAutomaticWeldingMachinesInfo } from "../../utils/semiAutomaticWeldingMachinesInfo";
+import { additionallyInfo } from "../../utils/additionallyInfo";
+import { angleGrindersInfo } from "../../utils/angleGrindersInfo";
+import { compressorsInfo } from "../../utils/compressorsInfo";
+import { drillsAndScrewdriversInfo } from "../../utils/drillsAndScrewdriversInfo";
+import { gasolineGeneratorsInfo } from "../../utils/gasolineGeneratorsInfo";
+import { toolKitsInfo } from "../../utils/toolKitsInfo";
+import { trimmersInfo } from "../../utils/trimmersInfo";
+import { сhainsawsInfo } from "../../utils/сhainsawsInfo";
 import ProductPage from "../ProductPage/ProductPage";
 import Privacy from "../Privacy/Privacy";
+import Delivery from "../Delivery/Delivery";
 
 function App() {
   const [isDarkLinks, setIsDarkLinks] = useState(false);
   const [isFixedMenu, setIsFixedMenu] = useState(false);
+  const [heightForScroll, setHeightForScroll] = useState(0);
 
   useEffect(() => {
     function handleScroll() {
-      if (window.scrollY > 840) {
+      if (window.screen.width < 768) {
+        setHeightForScroll(700);
+      } else {
+        setHeightForScroll(840);
+      }
+      if (window.scrollY > heightForScroll) {
+        // if (window.scrollY > 840) {
         setIsFixedMenu(true);
         setIsDarkLinks(false);
         return;
@@ -45,9 +50,22 @@ function App() {
     setIsDarkLinks(false);
   }
 
+  function scrollToTop() {
+    window.scrollTo(0, 0);
+  }
+
+  function switchFixedMenu() {
+    setIsFixedMenu(true);
+    setIsDarkLinks(false);
+  }
+
   return (
     <div className="page">
-      <Header isDarkLinks={isDarkLinks} isFixedMenu={isFixedMenu} />
+      <Header
+        isDarkLinks={isDarkLinks}
+        isFixedMenu={isFixedMenu}
+        scrollToTop={scrollToTop}
+      />
       <main className="content">
         <Routes>
           <Route
@@ -101,15 +119,6 @@ function App() {
             }
           />
           <Route
-            path="/oils"
-            element={
-              <ProductPage
-                infoPage={oilsInfo}
-                installingColorLinks={switchToLightLinks}
-              />
-            }
-          />
-          <Route
             path="/compressors"
             element={
               <ProductPage
@@ -145,10 +154,17 @@ function App() {
               />
             }
           />
-          <Route path="/privacy" element={<Privacy />} />
+          <Route
+            path="/delivery"
+            element={<Delivery switchFixedMenu={switchFixedMenu} />}
+          />
+          <Route
+            path="/privacy"
+            element={<Privacy switchFixedMenu={switchFixedMenu} />}
+          />
         </Routes>
       </main>
-      <Footer />
+      <Footer scrollToTop={scrollToTop} />
     </div>
   );
 }

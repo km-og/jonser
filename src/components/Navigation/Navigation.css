@@ -19,7 +19,6 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  /* height: 75.6vh; */
   padding: 0;
   margin: 161px 0 90px;
   text-transform: uppercase;
@@ -43,6 +42,7 @@
     display: block;
     width: 67.7%;
     background-color: #202020;
+    opacity: 0.95;
     z-index: 99;
     height: 100vh;
     position: fixed;

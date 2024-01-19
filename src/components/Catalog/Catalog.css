@@ -54,3 +54,29 @@
     justify-content: space-evenly;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .catalog__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    grid-auto-rows: 250px;
+    gap: 10px;
+  }
+
+  .catalog__item {
+    width: 100%;
+  }
+
+  .catalog__name {
+    word-wrap: break-word;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+    width: 130px;
+  }
+
+  .catalog__preview {
+    max-width: 105%;
+    max-height: 200px;
+    transform: translate(-50%, -48%);
+  }
+}

@@ -35,6 +35,7 @@ function ItemFromProductCollection({
         <img
           src={img}
           alt={nameModel}
+          loading="lazy"
           className={`collection__model-img ${
             isHorizontal ? "collection__model-img_type_horizontal" : ""
           } ${alignImageRight ? "collection__model-img_type_align-right" : ""}
@@ -57,6 +58,8 @@ function ItemFromProductCollection({
           fullNameModel={detailed.fullNameModel}
           description={detailed.description}
           specifications={detailed.specifications}
+          equipment={detailed.equipment}
+          advantages={detailed.advantages}
           sale={detailed.sale}
           newPrice={detailed.newPrice}
           oldPrice={detailed.oldPrice}

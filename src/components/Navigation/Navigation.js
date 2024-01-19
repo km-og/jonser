@@ -47,7 +47,7 @@ function Navigation({ handleClick }) {
           <li className="navigation__item">
             <Link
               to={{
-                pathname: "/#delivery",
+                pathname: "/delivery",
               }}
               className="navigation__link link"
               onClick={onClick}
@@ -58,7 +58,8 @@ function Navigation({ handleClick }) {
           <li className="navigation__item">
             <Link
               to={{
-                pathname: "/#feedback",
+                pathname: "#contacts",
+                // pathname: "/#feedback",
               }}
               className="navigation__link link"
               onClick={onClick}

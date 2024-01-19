@@ -28,7 +28,6 @@ function Feedback() {
   }
 
   function sendForm({ formValue }) {
-    console.log(formValue);
     const { userName, userTel, comment } = formValue;
     sendData(userName, userTel, comment)
       .then((res) => {
@@ -132,7 +131,7 @@ function Feedback() {
                 required
                 minLength="2"
                 maxLength="200"
-                placeholder="ФИО *"
+                placeholder="Ваше имя *"
                 onChange={handleChangeInputName}
               />
               <span className="feedback__input-error">

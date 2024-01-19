@@ -44,10 +44,11 @@
 }
 
 .collection__list_type_horizontal {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
   grid-template-rows: repeat(1, 260px);
   grid-auto-rows: 260px;
   column-gap: 84px;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 1024px) {
@@ -55,11 +56,22 @@
     grid-template-columns: repeat(3, 180px);
     justify-content: space-around;
   }
+
+  .collection__list_type_horizontal {
+    grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
+    column-gap: 30px;
+  }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .collection__list {
-    grid-template-columns: repeat(auto-fill, minmax(180px, 220px));
+    /* grid-template-columns: repeat(auto-fill, minmax(135px, 220px)); */
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
+  }
+  .collection__list_type_horizontal {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(1, 360px);
+    grid-auto-rows: 360px;
   }
 }

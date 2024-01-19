@@ -9,9 +9,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  display: flex;
   gap: 45px;
 }
 
@@ -43,7 +42,7 @@
 
 @media screen and (max-width: 768px) {
   .info__list {
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    flex-direction: column;
   }
 
   .info__text {

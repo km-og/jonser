@@ -69,6 +69,7 @@
   border: none;
   padding: 10px 0;
   background-color: #a1a1a1;
+  color: #1e1e1e;
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
@@ -85,5 +86,17 @@
   .collection__model-img_type_align-right {
     max-width: 250px;
     transform: translate(10%, -50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .collection__model-img {
+    max-height: 280px;
+    width: 105%;
+  }
+
+  .collection__model-img_type_horizontal {
+    max-width: 500px;
+    width: 100%;
   }
 }

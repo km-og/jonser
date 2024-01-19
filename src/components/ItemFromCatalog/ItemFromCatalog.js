@@ -5,7 +5,12 @@ function ItemFromCatalog({ name, alt, preview, route }) {
     <li className="catalog__item">
       <NavLink to={`${route}`} className="catalog__link card-animation">
         <p className="catalog__name">{name}</p>
-        <img src={preview} alt={alt} className="catalog__preview" />
+        <img
+          src={preview}
+          alt={alt}
+          className="catalog__preview"
+          loading="lazy"
+        />
       </NavLink>
     </li>
   );

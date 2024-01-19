@@ -39,14 +39,15 @@
   max-width: 545px;
   height: auto;
   max-height: calc(80vh - 150px);
-  align-self: center;
+  /* align-self: center; */
+  align-self: start;
   object-fit: contain;
 }
 
 .popup__description {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
   height: 100%;
 }
 
@@ -69,18 +70,84 @@
   font-weight: 500;
 }
 
-.popup__specifications {
+.popup__list {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .popup__item {
+}
+
+.popup__subtitle {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  border-bottom: 1px solid #1e1e1e;
+  position: relative;
+  padding: 0 0 3px;
+}
+
+.popup__icon {
   display: flex;
+  align-content: center;
+  /* background-size: 20px 20px; */
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.popup__icon_type_hide {
+  background: url("../../icons/arrow-up.svg") no-repeat center;
+  background-size: 20px 20px;
+}
+.popup__icon_type_show {
+  background: url("../../icons/arrow-down.svg") no-repeat center;
+  background-size: 20px 20px;
+}
+
+.popup__sublist {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 20px auto 0;
   gap: 10px;
 }
 
+.popup__sublist_type_advantages {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.popup__subitem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup__subitem:not(:last-of-type) {
+  border-bottom: 1px solid #c3c3c3;
+}
+
 .popup__text_type_parameter {
-  font-weight: 500;
+  /* font-weight: 500; */
+  word-break: keep-all;
+  text-overflow: ellipsis;
+  width: calc(50% - 10px);
+}
+
+.popup__text_type_value {
+  width: calc(50% - 10px);
+}
+
+.popup__text_type_advantages {
+  width: 100%;
 }
 
 .popup__purchase {
@@ -150,20 +217,38 @@
     margin: 0 auto;
   }
 
+  .popup__text,
+  .popup__subtitle {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .popup__title {
+    font-size: 24px;
+  }
+
+  .popup__container {
+    padding: 50px 20px;
+  }
+
   .popup__purchase {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
   }
 
-  .popup__text {
-    font-size: 15px;
+  .popup__sale {
+    font-size: 13px;
+    margin-bottom: 5px;
   }
-}
 
-@media screen and (max-width: 768px) {
-  .popup__container {
-    padding: 50px 20px;
+  .popup__new-price {
+    font-size: 24px;
+  }
+
+  .popup__old-price {
+    font-size: 15px;
   }
 
   .popup__btn {
@@ -173,5 +258,8 @@
 
   .popup__btn-buy {
     font-size: 20px;
+    padding: 20px;
+    min-width: 100%;
+    box-sizing: border-box;
   }
 }

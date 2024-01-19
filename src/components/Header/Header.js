@@ -5,7 +5,7 @@ import logo from "../../images/logo.svg";
 import Navigation from "../Navigation/Navigation";
 import ScrollToTopOnMount from "../ScrollToTopOnMount/ScrollToTopOnMount";
 
-function Header({ isDarkLinks, isFixedMenu }) {
+function Header({ isDarkLinks, isFixedMenu, scrollToTop }) {
   const [isClickOnBurger, setIsClickOnBurger] = useState(false);
 
   function handleNavigationMenuShow() {
@@ -20,7 +20,7 @@ function Header({ isDarkLinks, isFixedMenu }) {
     <header className={`header ${isFixedMenu ? "header__fixed" : ""}`}>
       <ScrollToTopOnMount />
       <div className="header__container">
-        <NavLink to="/" className="header__link link">
+        <NavLink to="/" className="header__link link" onClick={scrollToTop}>
           <img src={logo} alt="логотип" className="header__logo logo" />
         </NavLink>
         <nav className="header__menu">
@@ -45,7 +45,7 @@ function Header({ isDarkLinks, isFixedMenu }) {
             Каталог
           </Link>
           <Link
-            to="/#delivery"
+            to="/delivery"
             className={`header__link link ${
               isDarkLinks ? "header__link_color_dark" : ""
             }`}
@@ -53,7 +53,8 @@ function Header({ isDarkLinks, isFixedMenu }) {
             Доставка
           </Link>
           <Link
-            to="/#feedback"
+            to="#contacts"
+            // to="/#feedback"
             className={`header__link link ${
               isDarkLinks ? "header__link_color_dark" : ""
             }`}

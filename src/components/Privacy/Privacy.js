@@ -1,6 +1,11 @@
 import "./Privacy.css";
+import { useEffect } from "react";
 
-function Privacy() {
+function Privacy({ switchFixedMenu }) {
+  useEffect(() => {
+    switchFixedMenu();
+  }, []);
+
   return (
     <section className="privacy">
       <h2 className="privacy__title">
@@ -336,7 +341,7 @@ function Privacy() {
             <tr>
               <td>Персональные данные</td>
               <td>
-                фамилия, имя, отчество <br />
+                Имя <br />
                 номера телефонов
               </td>
             </tr>

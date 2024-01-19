@@ -10,12 +10,12 @@ import youtube from "../../icons/youtube.svg";
 import rutube from "../../icons/rutube.svg";
 import ScrollToTopOnMount from "../ScrollToTopOnMount/ScrollToTopOnMount";
 
-function Footer() {
+function Footer({ scrollToTop }) {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contacts">
       <ScrollToTopOnMount />
       <div className="footer__wrapper">
-        <NavLink to="/" className="footer__link link">
+        <NavLink to="/" className="footer__link link" onClick={scrollToTop}>
           <img src={logo} alt="логотип" className="footer__logo logo" />
         </NavLink>
         <div className="footer__container">
