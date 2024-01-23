@@ -3,15 +3,26 @@ import trimGas_es4200 from "../images/trimmers/ES-4200.png";
 import trimGas_es4200Big from "../images/trimmers/ES-4200@2x.png";
 import trimGas_es4200el from "../images/trimmers/ES-4200.png";
 import trimGas_es4200elBig from "../images/trimmers/ES-4200@2x.png";
-// import es5500 from "../images/trimmers";
-// import es5500Big from "../images/trimmers";
+import es5500 from "../images/trimmers/es5500.png";
+import es5500Big from "../images/trimmers/es5500@2x.png";
 import trimBatt_gt12jn from "../images/trimmers/gt-12jn.png";
 import trimBatt_gt12jnBig from "../images/trimmers/gt-12jn.png";
-// import trimBatt_gt18jn from "../images/trimmers";
-// import trimBatt_gt18jnBig from "../images/trimmers";
+import trimBatt_gt18jn from "../images/trimmers/trimBatt_gt18jn.png";
+import trimBatt_gt18jnBig from "../images/trimmers/trimBatt_gt18jn@2x.png";
 
 const trimmersInfo = {
   title: "Триммеры",
+  videoReview: "https://www.youtube.com/watch?v=nCcuIbZfEgM",
+  description: [
+    {
+      _id: "1",
+      text: "Садовый триммер предназначен для ухода за травой, порослью и мелкими кустарниками. Этот инструмент идеально подходит для стрижки газона на даче, в саду или огороде. Легкий и подвижный, садовый триммер обеспечивает аккуратную и ровную обработку даже в труднодоступных местах.",
+    },
+    {
+      _id: "11",
+      text: "Электрический садовый триммер обладает возможностью индивидуальной настройки под различные параметры благодаря телескопической штанге. Это обеспечивает удобство использования для пользователей разного роста и обеспечивает компактное хранение. Аккумуляторный садовый триммер экологичен, так как не выделяет вредных выхлопных газов. По сравнению с бензиновым аналогом, он работает бесшумно и имеет компактные размеры. Подходит для регулярного ухода за газоном и садом. Электрическая коса удобна в использовании, не требует сложного обслуживания и эффективно справляется с различными задачами.",
+    },
+  ],
   collections: [
     {
       _id: "trimGas",
@@ -355,9 +366,9 @@ const trimmersInfo = {
         {
           _id: "trimGas_es5500",
           nameModel: "ES-5500 (4Т)",
-          // img: es5500,
+          img: es5500,
           detailed: {
-            // imgBig: es5500Big,
+            imgBig: es5500Big,
             fullNameModel: "Триммер бензиновый Jonser ES-5500 (4Т)",
             description: "",
             specifications: [
@@ -662,9 +673,9 @@ const trimmersInfo = {
         {
           _id: "trimBatt_gt18jn",
           nameModel: "gt-18jn",
-          // img: trimBatt_gt18jn,
+          img: trimBatt_gt18jn,
           detailed: {
-            // imgBig: trimBatt_gt18jnBig,
+            imgBig: trimBatt_gt18jnBig,
             fullNameModel: "Триммер аккумуляторный Jonser GT-18JN",
             description: "",
             specifications: [

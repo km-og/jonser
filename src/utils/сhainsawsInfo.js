@@ -9,15 +9,22 @@ import es4300s from "../images/сhainsaws/ES-43300.png";
 import es4300sBig from "../images/сhainsaws/ES-43300@2x.png";
 import jac186s from "../images/сhainsaws/battery/JAC-186S.png";
 import jac186sBig from "../images/сhainsaws/battery/JAC-186S@2x.png";
-// import bs4500 from "../images/сhainsaws/battery";
-// import bs4500Big from "../images/сhainsaws/battery";
+import bs4500 from "../images/сhainsaws/bs4500.png";
+import bs4500Big from "../images/сhainsaws/bs4500@2x.png";
 // import bs5500 from "../images/сhainsaws/battery";
 // import bs5500Big from "../images/сhainsaws/battery";
 // import es2300 from "../images/сhainsaws/battery";
 // import es2300Big from "../images/сhainsaws/battery";
 
 const сhainsawsInfo = {
-  title: "Бензопилы",
+  title: "Цепные пилы",
+  videoReview: "https://www.youtube.com/watch?v=mH_B5xpiQNk",
+  description: [
+    {
+      _id: "1",
+      text: "Цепная пила предназначена для различных задач, таких как спиливание леса, распиловка древесины, валка, пиление деревьев, обрезка веток на высоте, последующий распил, подстригание и резка кустов, а также продольная и поперечная распилка бревен, резка досок вдоль и поперек, а также заготовка дров. Этот вид техники также может использоваться как садовый сучкорез. Продукция этого производителя отличается высокой номинальной мощностью, что позволяет распиливать даже строительные материалы из дерева, такие как ДСП и ДВП.",
+    },
+  ],
   collections: [
     {
       _id: "gs",
@@ -28,9 +35,9 @@ const сhainsawsInfo = {
         {
           _id: "gs_bs4500",
           nameModel: "BS-4500",
-          // img: bs4500,
+          img: bs4500,
           detailed: {
-            // imgBig: bs4500Big,
+            imgBig: bs4500Big,
             fullNameModel: "Бензопила цепная Jonser BS-4500",
             description: "",
             specifications: [
@@ -192,173 +199,173 @@ const сhainsawsInfo = {
             oldPrice: "13 990 ₽",
           },
         },
-        {
-          _id: "gs_bs5500",
-          nameModel: "BS-5500",
-          // img: bs5500,
-          detailed: {
-            // imgBig: bs5500Big,
-            fullNameModel: "Бензопила цепная Jonser BS-5500",
-            description: "",
-            specifications: [
-              {
-                parameter: "Мощность:",
-                value: "5500 Вт, 5.0 л.с",
-                _id: "gs_bs5500_param1",
-              },
-              {
-                parameter: "Длина шины:",
-                value: "45 см",
-                _id: "gs_bs5500_param2",
-              },
-              {
-                parameter: "Количество звеньев:",
-                value: "72 шт",
-                _id: "gs_bs5500_param3",
-              },
-              {
-                parameter: "Шаг:",
-                value: "0.325",
-                _id: "gs_bs5500_param4",
-              },
-              {
-                parameter: "Объем поршневой группы:",
-                value: "52 см3",
-                _id: "gs_bs5500_param5",
-              },
-              {
-                parameter: "Объем топливного бака:",
-                value: "550 мл",
-                _id: "gs_bs5500_param6",
-              },
-              {
-                parameter: "Объем масляного бака:",
-                value: "260мл",
-                _id: "gs_bs5500_param7",
-              },
-              {
-                parameter: "Соотношение масла и бензина:",
-                value: "1:25",
-                _id: "gs_bs5500_param8",
-              },
-              {
-                parameter: "Ручной стартер",
-                value: "",
-                _id: "gs_bs5500_param9",
-              },
-              {
-                parameter: "Обороты холостого хода",
-                value: "2800-3200 об/мин",
-                _id: "gs_bs5500_param10",
-              },
-              {
-                parameter: "Масимальные обороты без нагрузки",
-                value: "13500 об/мин",
-                _id: "gs_bs5500_param11",
-              },
-              {
-                parameter: "Воздушное охлаждение",
-                value: "",
-                _id: "gs_bs5500_param12",
-              },
-              {
-                parameter: "Вес без шины и без цепи / брутто:",
-                value: "5,5 кг / 7,95 кг",
-                _id: "gs_bs5500_param13",
-              },
-              {
-                parameter: "Габариты упаковки:",
-                value: "52 / 25 / 30 см",
-                _id: "gs_bs5500_param14",
-              },
-              {
-                parameter: "Гарантия:",
-                value: "2 года",
-                _id: "gs_bs5500_param15",
-              },
-            ],
-            equipment: [
-              {
-                parameter: "Бензопила:",
-                value: "1 шт",
-                _id: "gs_bs5500_eq1",
-              },
-              {
-                parameter: "Шина 18 дюймов (450мм):",
-                value: "1 шт",
-                _id: "gs_bs5500_eq2",
-              },
-              {
-                parameter: "Цепи 18 дюймов – 45 см (72зв):",
-                value: "2 шт",
-                _id: "gs_bs5500_eq3",
-              },
-              {
-                parameter: "Защитный кожух:",
-                value: "1 шт",
-                _id: "gs_bs5500_eq4",
-              },
-              {
-                parameter: "Свеча зажигания:",
-                value: "1 шт",
-                _id: "gs_bs5500_eq5",
-              },
-              {
-                parameter: "Набор инструментов:",
-                value: "1 шт",
-                _id: "gs_bs5500_eq6",
-              },
-              {
-                parameter: "Заливная воронка:",
-                value: "1 шт",
-                _id: "gs_bs5500_eq7",
-              },
-              {
-                parameter: "Напильник заточный для цепи:",
-                value: "1 шт",
-                _id: "gs_bs5500_eq8",
-              },
-              {
-                parameter: "Инструкция:",
-                value: "1 шт",
-                _id: "gs_bs5500_eq9",
-              },
-            ],
-            advantages: [
-              {
-                parameter: "Антивибрационная рукоятка",
-                _id: "gs_bs5500_ad1",
-              },
-              {
-                parameter: "Антивибрационная система",
-                _id: "gs_bs5500_ad2",
-              },
-              {
-                parameter: "Защитный кожух",
-                _id: "gs_bs5500_ad3",
-              },
-              {
-                parameter: "Тормоз цепи",
-                _id: "gs_bs5500_ad4",
-              },
-              {
-                parameter: "Регулируемый маслянный насос",
-                _id: "gs_bs5500_ad5",
-              },
-              {
-                parameter: "Легкий старт",
-                _id: "gs_bs5500_ad6",
-              },
-              {
-                parameter: "Многоразовый воздушный фильтр",
-                _id: "gs_bs5500_ad7",
-              },
-            ],
-            sale: "-13%",
-            newPrice: "12 990 ₽",
-            oldPrice: "14 990 ₽",
-          },
-        },
+        // {
+        //   _id: "gs_bs5500",
+        //   nameModel: "BS-5500",
+        //   // img: bs5500,
+        //   detailed: {
+        //     // imgBig: bs5500Big,
+        //     fullNameModel: "Бензопила цепная Jonser BS-5500",
+        //     description: "",
+        //     specifications: [
+        //       {
+        //         parameter: "Мощность:",
+        //         value: "5500 Вт, 5.0 л.с",
+        //         _id: "gs_bs5500_param1",
+        //       },
+        //       {
+        //         parameter: "Длина шины:",
+        //         value: "45 см",
+        //         _id: "gs_bs5500_param2",
+        //       },
+        //       {
+        //         parameter: "Количество звеньев:",
+        //         value: "72 шт",
+        //         _id: "gs_bs5500_param3",
+        //       },
+        //       {
+        //         parameter: "Шаг:",
+        //         value: "0.325",
+        //         _id: "gs_bs5500_param4",
+        //       },
+        //       {
+        //         parameter: "Объем поршневой группы:",
+        //         value: "52 см3",
+        //         _id: "gs_bs5500_param5",
+        //       },
+        //       {
+        //         parameter: "Объем топливного бака:",
+        //         value: "550 мл",
+        //         _id: "gs_bs5500_param6",
+        //       },
+        //       {
+        //         parameter: "Объем масляного бака:",
+        //         value: "260мл",
+        //         _id: "gs_bs5500_param7",
+        //       },
+        //       {
+        //         parameter: "Соотношение масла и бензина:",
+        //         value: "1:25",
+        //         _id: "gs_bs5500_param8",
+        //       },
+        //       {
+        //         parameter: "Ручной стартер",
+        //         value: "",
+        //         _id: "gs_bs5500_param9",
+        //       },
+        //       {
+        //         parameter: "Обороты холостого хода",
+        //         value: "2800-3200 об/мин",
+        //         _id: "gs_bs5500_param10",
+        //       },
+        //       {
+        //         parameter: "Масимальные обороты без нагрузки",
+        //         value: "13500 об/мин",
+        //         _id: "gs_bs5500_param11",
+        //       },
+        //       {
+        //         parameter: "Воздушное охлаждение",
+        //         value: "",
+        //         _id: "gs_bs5500_param12",
+        //       },
+        //       {
+        //         parameter: "Вес без шины и без цепи / брутто:",
+        //         value: "5,5 кг / 7,95 кг",
+        //         _id: "gs_bs5500_param13",
+        //       },
+        //       {
+        //         parameter: "Габариты упаковки:",
+        //         value: "52 / 25 / 30 см",
+        //         _id: "gs_bs5500_param14",
+        //       },
+        //       {
+        //         parameter: "Гарантия:",
+        //         value: "2 года",
+        //         _id: "gs_bs5500_param15",
+        //       },
+        //     ],
+        //     equipment: [
+        //       {
+        //         parameter: "Бензопила:",
+        //         value: "1 шт",
+        //         _id: "gs_bs5500_eq1",
+        //       },
+        //       {
+        //         parameter: "Шина 18 дюймов (450мм):",
+        //         value: "1 шт",
+        //         _id: "gs_bs5500_eq2",
+        //       },
+        //       {
+        //         parameter: "Цепи 18 дюймов – 45 см (72зв):",
+        //         value: "2 шт",
+        //         _id: "gs_bs5500_eq3",
+        //       },
+        //       {
+        //         parameter: "Защитный кожух:",
+        //         value: "1 шт",
+        //         _id: "gs_bs5500_eq4",
+        //       },
+        //       {
+        //         parameter: "Свеча зажигания:",
+        //         value: "1 шт",
+        //         _id: "gs_bs5500_eq5",
+        //       },
+        //       {
+        //         parameter: "Набор инструментов:",
+        //         value: "1 шт",
+        //         _id: "gs_bs5500_eq6",
+        //       },
+        //       {
+        //         parameter: "Заливная воронка:",
+        //         value: "1 шт",
+        //         _id: "gs_bs5500_eq7",
+        //       },
+        //       {
+        //         parameter: "Напильник заточный для цепи:",
+        //         value: "1 шт",
+        //         _id: "gs_bs5500_eq8",
+        //       },
+        //       {
+        //         parameter: "Инструкция:",
+        //         value: "1 шт",
+        //         _id: "gs_bs5500_eq9",
+        //       },
+        //     ],
+        //     advantages: [
+        //       {
+        //         parameter: "Антивибрационная рукоятка",
+        //         _id: "gs_bs5500_ad1",
+        //       },
+        //       {
+        //         parameter: "Антивибрационная система",
+        //         _id: "gs_bs5500_ad2",
+        //       },
+        //       {
+        //         parameter: "Защитный кожух",
+        //         _id: "gs_bs5500_ad3",
+        //       },
+        //       {
+        //         parameter: "Тормоз цепи",
+        //         _id: "gs_bs5500_ad4",
+        //       },
+        //       {
+        //         parameter: "Регулируемый маслянный насос",
+        //         _id: "gs_bs5500_ad5",
+        //       },
+        //       {
+        //         parameter: "Легкий старт",
+        //         _id: "gs_bs5500_ad6",
+        //       },
+        //       {
+        //         parameter: "Многоразовый воздушный фильтр",
+        //         _id: "gs_bs5500_ad7",
+        //       },
+        //     ],
+        //     sale: "-13%",
+        //     newPrice: "12 990 ₽",
+        //     oldPrice: "14 990 ₽",
+        //   },
+        // },
         {
           _id: "gs_es4100",
           nameModel: "es-4100",
@@ -1107,118 +1114,118 @@ const сhainsawsInfo = {
     },
     {
       _id: "bs",
-      // subtitle: "Аккумуляторные пилы",
-      subtitle: "Электрические пилы",
+      subtitle: "Аккумуляторные пилы",
+      // subtitle: "Электрические пилы",
       premium: false,
       isHorizontal: true,
       models: [
-        {
-          _id: "bs_es2300",
-          nameModel: "ES-2300",
-          // img: es2300,
-          detailed: {
-            // imgBig: es2300Big,
-            fullNameModel: "Электропила Jonser ES-2300",
-            description: "",
-            specifications: [
-              {
-                parameter: "Мощность:",
-                value: "2300 Вт",
-                _id: "bs_es2300_param1",
-              },
-              {
-                parameter: "Длина шины:",
-                value: '405мм./16"',
-                _id: "bs_es2300_param2",
-              },
-              {
-                parameter: "Количество звеньев:",
-                value: "59 шт",
-                _id: "bs_es2300_param3",
-              },
-              {
-                parameter: "Шаг:",
-                value: "3/8",
-                _id: "bs_es2300_param4",
-              },
-              {
-                parameter: "Коллекторный электродвигатель",
-                value: "",
-                _id: "bs_es2300_param5",
-              },
-              {
-                parameter: "Скорость цепи:",
-                value: "13 м/с",
-                _id: "bs_es2300_param6",
-              },
+        // {
+        //   _id: "bs_es2300",
+        //   nameModel: "ES-2300",
+        //   // img: es2300,
+        //   detailed: {
+        //     // imgBig: es2300Big,
+        //     fullNameModel: "Электропила Jonser ES-2300",
+        //     description: "",
+        //     specifications: [
+        //       {
+        //         parameter: "Мощность:",
+        //         value: "2300 Вт",
+        //         _id: "bs_es2300_param1",
+        //       },
+        //       {
+        //         parameter: "Длина шины:",
+        //         value: '405мм./16"',
+        //         _id: "bs_es2300_param2",
+        //       },
+        //       {
+        //         parameter: "Количество звеньев:",
+        //         value: "59 шт",
+        //         _id: "bs_es2300_param3",
+        //       },
+        //       {
+        //         parameter: "Шаг:",
+        //         value: "3/8",
+        //         _id: "bs_es2300_param4",
+        //       },
+        //       {
+        //         parameter: "Коллекторный электродвигатель",
+        //         value: "",
+        //         _id: "bs_es2300_param5",
+        //       },
+        //       {
+        //         parameter: "Скорость цепи:",
+        //         value: "13 м/с",
+        //         _id: "bs_es2300_param6",
+        //       },
 
-              {
-                parameter: "Автоматическая подача масла",
-                value: "",
-                _id: "bs_es2300_param12",
-              },
-              {
-                parameter: "Вес без шины и без цепи / брутто:",
-                value: "3,3 кг / 4,8 кг",
-                _id: "bs_es2300_param13",
-              },
-              {
-                parameter: "Габариты упаковки:",
-                value: "48 / 47 / 40 см",
-                _id: "bs_es2300_param14",
-              },
-              {
-                parameter: "Гарантия:",
-                value: "2 года",
-                _id: "bs_es2300_param15",
-              },
-            ],
-            equipment: [
-              {
-                parameter: "Электропила:",
-                value: "1 шт",
-                _id: "gs_es2300_eq1",
-              },
-              {
-                parameter: "Шина 16 дюймов (400мм):",
-                value: "1 шт",
-                _id: "gs_es2300_eq2",
-              },
-              {
-                parameter: "Цепь 16 дюймов – 40 см (59зв):",
-                value: "1 шт",
-                _id: "gs_es2300_eq3",
-              },
-              {
-                parameter: "Ключ для сборки:",
-                value: "1 шт",
-                _id: "gs_es2300_eq11",
-              },
-              {
-                parameter: "Инструкция:",
-                value: "1 шт",
-                _id: "gs_es2300_eq12",
-              },
-            ],
-            advantages: [
-              {
-                parameter: "Автоматическая смазка цепи",
-                _id: "gs_es2300_ad1",
-              },
-              {
-                parameter: "Блокировка от случайного включения",
-                _id: "gs_es2300_ad2",
-              },
-              {
-                parameter: "Наклонный распил/рез",
-                _id: "gs_es2300_ad3",
-              },
-            ],
-            sale: "-33%",
-            newPrice: "7 990 ₽",
-            oldPrice: "11 990 ₽",
-          },
-        },
+        //       {
+        //         parameter: "Автоматическая подача масла",
+        //         value: "",
+        //         _id: "bs_es2300_param12",
+        //       },
+        //       {
+        //         parameter: "Вес без шины и без цепи / брутто:",
+        //         value: "3,3 кг / 4,8 кг",
+        //         _id: "bs_es2300_param13",
+        //       },
+        //       {
+        //         parameter: "Габариты упаковки:",
+        //         value: "48 / 47 / 40 см",
+        //         _id: "bs_es2300_param14",
+        //       },
+        //       {
+        //         parameter: "Гарантия:",
+        //         value: "2 года",
+        //         _id: "bs_es2300_param15",
+        //       },
+        //     ],
+        //     equipment: [
+        //       {
+        //         parameter: "Электропила:",
+        //         value: "1 шт",
+        //         _id: "gs_es2300_eq1",
+        //       },
+        //       {
+        //         parameter: "Шина 16 дюймов (400мм):",
+        //         value: "1 шт",
+        //         _id: "gs_es2300_eq2",
+        //       },
+        //       {
+        //         parameter: "Цепь 16 дюймов – 40 см (59зв):",
+        //         value: "1 шт",
+        //         _id: "gs_es2300_eq3",
+        //       },
+        //       {
+        //         parameter: "Ключ для сборки:",
+        //         value: "1 шт",
+        //         _id: "gs_es2300_eq11",
+        //       },
+        //       {
+        //         parameter: "Инструкция:",
+        //         value: "1 шт",
+        //         _id: "gs_es2300_eq12",
+        //       },
+        //     ],
+        //     advantages: [
+        //       {
+        //         parameter: "Автоматическая смазка цепи",
+        //         _id: "gs_es2300_ad1",
+        //       },
+        //       {
+        //         parameter: "Блокировка от случайного включения",
+        //         _id: "gs_es2300_ad2",
+        //       },
+        //       {
+        //         parameter: "Наклонный распил/рез",
+        //         _id: "gs_es2300_ad3",
+        //       },
+        //     ],
+        //     sale: "-33%",
+        //     newPrice: "7 990 ₽",
+        //     oldPrice: "11 990 ₽",
+        //   },
+        // },
         {
           _id: "bs_jac186s",
           nameModel: "jac-186s",

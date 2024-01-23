@@ -14,6 +14,7 @@ import jbr108proBig from "../images/toolKits/jbr108pro@2x.png";
 
 const toolKitsInfo = {
   title: "Наборы",
+  videoReview: "https://www.youtube.com/watch?v=eiwdTyiDx8k",
   collections: [
     {
       _id: "toolKits",

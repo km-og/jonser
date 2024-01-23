@@ -70,6 +70,27 @@
   font-weight: 500;
 }
 
+.popup__link {
+  color: #1e1e1e;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.popup__link::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("../../icons/youtube-dark.svg") no-repeat center;
+  background-size: 100% 100%;
+}
+
 .popup__list {
   list-style: none;
   padding: 0;
@@ -261,5 +282,18 @@
     padding: 20px;
     min-width: 100%;
     box-sizing: border-box;
+  }
+
+  .popup__text {
+    line-height: 1.2;
+  }
+
+  .popup__link {
+    font-size: 15px;
+  }
+
+  .popup__link::before {
+    width: 20px;
+    height: 20px;
   }
 }

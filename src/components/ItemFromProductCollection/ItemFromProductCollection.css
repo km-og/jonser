@@ -46,6 +46,7 @@
   right: 0;
   transform: translateY(-48%);
   max-width: 235px;
+  max-height: 290px;
 }
 
 .collection__model-img_type_horizontal {
