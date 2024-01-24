@@ -50,6 +50,7 @@ function Feedback() {
     } else {
       setIsPreloader(true);
       sendForm({ formValue });
+      setFormValue({ userName: "", userTel: "", comment: "" });
     }
   }
 

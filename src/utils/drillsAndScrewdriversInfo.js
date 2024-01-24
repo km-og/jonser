@@ -6,6 +6,12 @@ import jad21proBig from "../images/drillsAndScrewdrivers/jad-21pro@2x.png";
 
 const drillsAndScrewdriversInfo = {
   title: "Дрели-шуруповёрты",
+  description: [
+    {
+      _id: "1",
+      text: "Аккумуляторные дрели-шуруповёрты предназначены для работ с различными материалами: цветные и черные металлы, дерево, пластмасса, ДСП, а также для откручивания и закручивания различного крепежа.",
+    },
+  ],
   collections: [
     {
       _id: "das",
@@ -20,7 +26,7 @@ const drillsAndScrewdriversInfo = {
           detailed: {
             imgBig: jad18proBig,
             fullNameModel: "Дрель-шуруповерт аккумуляторный Jonser JAD-18 PRO",
-            description: "",
+            movieLink: "https://www.youtube.com/watch?v=XhADreyFqn4",
             specifications: [
               {
                 parameter: "Напряжение аккумулятора:",

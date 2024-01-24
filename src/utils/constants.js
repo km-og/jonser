@@ -67,8 +67,8 @@ const itemsFromCatalog = [
     _id: 8,
   },
   {
-    name: "Остнастка",
-    namalt: "Остнастка",
+    name: "Оснастка",
+    namalt: "Оснастка",
     img: additionally,
     route: "/additionally",
     _id: 9,

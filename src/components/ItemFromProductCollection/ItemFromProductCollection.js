@@ -57,6 +57,7 @@ function ItemFromProductCollection({
           imgBig={detailed.imgBig}
           fullNameModel={detailed.fullNameModel}
           description={detailed.description}
+          movieLink={detailed.movieLink}
           specifications={detailed.specifications}
           equipment={detailed.equipment}
           advantages={detailed.advantages}

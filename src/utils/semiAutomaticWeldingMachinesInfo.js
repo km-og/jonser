@@ -1,8 +1,6 @@
 //Сварочные полуавтоматы
-// поменять jonser180qx
-import jonser180qx from "../images/Semi_automatic_welding_machines/180QX.png";
-// import jonser180qxBig from "../images/Semi_automatic_welding_machines/180QX.png";
-// import jonser180qxBig from "../images/Semi_automatic_welding_machines/180QX@2x.png";
+import jonser180qx from "../images/Semi_automatic_welding_machines/180qx.png";
+import jonser180qxBig from "../images/Semi_automatic_welding_machines/180qx@2x.png";
 import jonser180dqx from "../images/Semi_automatic_welding_machines/180DQX.png";
 import jonser180dqxBig from "../images/Semi_automatic_welding_machines/180DQX@2x.png";
 import jonser1805dqx from "../images/Semi_automatic_welding_machines/1805dqx.png";
@@ -34,6 +32,12 @@ import jonsergtr40kmcutBig from "../images/Semi_automatic_welding_machines/plasm
 
 const semiAutomaticWeldingMachinesInfo = {
   title: "Сварочные полуавтоматы",
+  description: [
+    {
+      _id: "1",
+      text: "Надежные высокопроизводительные сварочные аппараты, которые идеальноподходят для проведения сварочных работ на производстве, стройке, автомастерской, дома или даче. Уникальность конструкций, металлические корпуса, надежные фиксаторы катушки увеличивают срок службы аппаратов.",
+    },
+  ],
   collections: [
     {
       _id: "sawmiClassic",
@@ -46,11 +50,9 @@ const semiAutomaticWeldingMachinesInfo = {
           nameModel: "180qx",
           img: jonser180qx,
           detailed: {
-            // imgBig: jonser180qxBig,
-            imgBig: jonser180qx,
+            imgBig: jonser180qxBig,
             fullNameModel: "Сварочный полуавтомат Jonser 180QX",
-            description:
-              ". Надежный высокопроизводительный сварочный аппарат, который идеально подходит для проведения  сварочных работ на производстве, стройке и автомастерской. Уникальность конструкции, металлический корпус, надежный фиксатор катушки увеличивает срок службы аппарата.",
+
             specifications: [
               {
                 parameter: "Выходной ток:",
@@ -196,7 +198,7 @@ const semiAutomaticWeldingMachinesInfo = {
           detailed: {
             imgBig: jonser180dqxBig,
             fullNameModel: "Сварочный полуавтомат Jonser 180DQX",
-            description: "",
+            movieLink: "https://youtu.be/TA91V6B9Edw?si=INbzND-d-FQhz5WU",
             specifications: [
               {
                 parameter: "Выходной ток:",
@@ -347,7 +349,6 @@ const semiAutomaticWeldingMachinesInfo = {
           detailed: {
             imgBig: jonser1805dqxBig,
             fullNameModel: "Сварочный полуавтомат Jonser 180/5DQX",
-            description: "",
             specifications: [
               {
                 parameter: "Выходной ток:",
@@ -498,7 +499,7 @@ const semiAutomaticWeldingMachinesInfo = {
           detailed: {
             imgBig: jonser185qxBig,
             fullNameModel: "Сварочный полуавтомат Jonser 185QX",
-            description: "",
+            movieLink: "https://www.youtube.com/watch?v=3v0hN26XYJc",
             specifications: [
               {
                 parameter: "Выходной ток:",
@@ -654,7 +655,7 @@ const semiAutomaticWeldingMachinesInfo = {
           detailed: {
             imgBig: jonser190qxBig,
             fullNameModel: "Сварочный полуавтомат Jonser 190QX",
-            description: " ",
+            movieLink: "https://www.youtube.com/watch?v=JIJMoJ9O2us",
             specifications: [
               {
                 parameter: "Выходной ток:",
@@ -818,7 +819,7 @@ const semiAutomaticWeldingMachinesInfo = {
           detailed: {
             imgBig: jonser1805mxgBig,
             fullNameModel: "Сварочный полуавтомат Jonser 180/5MXG",
-            description: " ",
+
             specifications: [
               {
                 parameter: "Выходной ток:",
@@ -970,7 +971,7 @@ const semiAutomaticWeldingMachinesInfo = {
           detailed: {
             imgBig: jonser200qxBig,
             fullNameModel: "Сварочный полуавтомат Jonser 200QX",
-            description: " ",
+
             specifications: [
               {
                 parameter: "Выходной ток:",
@@ -1152,7 +1153,7 @@ const semiAutomaticWeldingMachinesInfo = {
           detailed: {
             imgBig: jonser220qxBig,
             fullNameModel: "Сварочный полуавтомат Jonser 220QX",
-            description: " ",
+
             specifications: [
               {
                 parameter: "Выходной ток:",
@@ -1338,7 +1339,7 @@ const semiAutomaticWeldingMachinesInfo = {
           detailed: {
             imgBig: jonser300qxBig,
             fullNameModel: "Сварочный полуавтомат Jonser 300QX",
-            description: " ",
+
             specifications: [
               {
                 parameter: "Выходной ток:",
@@ -1517,7 +1518,7 @@ const semiAutomaticWeldingMachinesInfo = {
           detailed: {
             imgBig: jonser_gt220Big,
             fullNameModel: "Сварочный полуавтомат Jonser GT220",
-            description: "",
+            movieLink: "https://youtu.be/zd9hptUJJS0?si=OEWz-rYtbRu_FznV",
             specifications: [
               {
                 parameter: "Выходной ток:",
@@ -1707,7 +1708,7 @@ const semiAutomaticWeldingMachinesInfo = {
           detailed: {
             imgBig: jonser_gt250Big,
             fullNameModel: "Сварочный полуавтомат Jonser GT250",
-            description: "",
+
             specifications: [
               {
                 parameter: "Выходной ток:",
@@ -1887,7 +1888,7 @@ const semiAutomaticWeldingMachinesInfo = {
           detailed: {
             imgBig: jonser_gt270pmiBig,
             fullNameModel: "Сварочный полуавтомат Jonser GT-270PMI",
-            description: "",
+            movieLink: "https://www.youtube.com/watch?v=h9K5NuNUDZs",
             specifications: [
               {
                 parameter: "Выходной ток:",
@@ -2104,7 +2105,7 @@ const semiAutomaticWeldingMachinesInfo = {
           detailed: {
             imgBig: jonser_gt300Big,
             fullNameModel: "Сварочный полуавтомат Jonser GT300",
-            description: "",
+
             specifications: [
               {
                 parameter: "Выходной ток:",
@@ -2287,7 +2288,7 @@ const semiAutomaticWeldingMachinesInfo = {
           detailed: {
             imgBig: jonsergtr40kmcutBig,
             fullNameModel: "Плазморез Jonser GTR-40KM CUT",
-            description: "",
+            movieLink: "https://www.youtube.com/watch?v=xHvIl9Xa9Uo",
             specifications: [
               {
                 parameter: "Максимальный входной ток:",

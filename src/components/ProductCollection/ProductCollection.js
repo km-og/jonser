@@ -3,6 +3,8 @@ import "./ProductCollection.css";
 
 function ProductCollection({
   subtitle,
+  subdescription,
+  videoReview,
   premium,
   isHorizontal,
   alignImageRight,
@@ -12,6 +14,11 @@ function ProductCollection({
   return (
     <div className="collection">
       <h3 className="collection__subtitle">{subtitle}</h3>
+      {subdescription ? (
+        <p className="collection__subdescription">{subdescription}</p>
+      ) : (
+        ""
+      )}
       {premium ? (
         <div className="collection__container collection__container_type_premium">
           <ul

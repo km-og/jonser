@@ -7,6 +7,7 @@ function PopupDetailedInfo({
   imgBig,
   fullNameModel,
   description,
+  movieLink,
   specifications,
   equipment,
   advantages,
@@ -81,6 +82,7 @@ function PopupDetailedInfo({
             <span className="popup__text_type_bold">{fullNameModel}</span>
             {description}
           </p>
+
           <ul className="popup__list">
             {specifications ? (
               <li className="popup__item">
@@ -183,6 +185,18 @@ function PopupDetailedInfo({
               " "
             )}
           </ul>
+          {movieLink ? (
+            <a
+              href={movieLink}
+              target="_blank"
+              rel="noreferrer"
+              className="popup__link link"
+            >
+              Видео на YouTube
+            </a>
+          ) : (
+            ""
+          )}
           <div className="popup__purchase">
             <div className="popup__price">
               <p className="popup__sale">{sale}</p>

@@ -10,10 +10,18 @@
   font-weight: 500;
   font-size: 22px;
   line-height: 1.2;
-  padding: 0;
   color: #1e1e1e;
   border-bottom: 2px solid #1e1e1e;
   padding: 0 0 5px;
+}
+
+.collection__subdescription {
+  max-width: 1140px;
+  width: 89%;
+  margin: 20px auto 0;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .collection__container_type_premium {
@@ -69,9 +77,14 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
   }
+
   .collection__list_type_horizontal {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: repeat(1, 360px);
     grid-auto-rows: 360px;
+  }
+
+  .collection__subdescription {
+    font-size: 15px;
   }
 }
