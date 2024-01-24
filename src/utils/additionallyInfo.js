@@ -18,7 +18,7 @@ import fcw085c from "../images/additionally/fcw085C.png";
 import fcw085cBig from "../images/additionally/fcw085C@2x.png";
 
 const additionallyInfo = {
-  title: "Остнастка",
+  title: "Оснастка",
   description: "",
   collections: [
     {

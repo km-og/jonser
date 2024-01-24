@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost:3001/send-form";
+const baseUrl = "https://api.jonser.ru/send-form";
 
 const sendData = (userName, userTel, comment) => {
   return fetch(`${baseUrl}/`, {
