@@ -6,7 +6,7 @@ import "./ProductPage.css";
 function ProductPage({ infoPage, installingColorLinks }) {
   useEffect(() => {
     installingColorLinks();
-  }, []);
+  });
 
   return (
     <section className="products">

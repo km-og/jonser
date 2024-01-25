@@ -17,30 +17,33 @@ import { сhainsawsInfo } from "../../utils/сhainsawsInfo";
 import ProductPage from "../ProductPage/ProductPage";
 import Privacy from "../Privacy/Privacy";
 import Delivery from "../Delivery/Delivery";
+import PageNotFound from "../PageNotFound/PageNotFound";
 
 function App() {
-  const [isDarkLinks, setIsDarkLinks] = useState(false);
+  const [isDarkLinks, setIsDarkLinks] = useState(true);
   const [isFixedMenu, setIsFixedMenu] = useState(false);
   const [heightForScroll, setHeightForScroll] = useState(0);
+  const mobileWidth = 768;
 
   useEffect(() => {
+    if (window.screen.width < mobileWidth) {
+      setHeightForScroll(350);
+    } else {
+      setHeightForScroll(420);
+    }
     function handleScroll() {
-      if (window.screen.width < 768) {
-        setHeightForScroll(700);
+      if (window.scrollY < heightForScroll) {
+        setIsFixedMenu(false);
+        setIsDarkLinks(true);
+        // switchFixedMenu();
+        // return;
       } else {
-        setHeightForScroll(840);
-      }
-      if (window.scrollY > heightForScroll) {
-        // if (window.scrollY > 840) {
         setIsFixedMenu(true);
         setIsDarkLinks(false);
-        return;
-      } else {
-        setIsFixedMenu(false);
       }
     }
     window.addEventListener("scroll", handleScroll);
-  }, []);
+  });
 
   function switchToDarkLinks() {
     setIsDarkLinks(true);
@@ -162,6 +165,7 @@ function App() {
             path="/privacy"
             element={<Privacy switchFixedMenu={switchFixedMenu} />}
           />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </main>
       <Footer scrollToTop={scrollToTop} />
