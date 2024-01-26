@@ -1,13 +1,8 @@
-import { useEffect } from "react";
 import ProductCollection from "../ProductCollection/ProductCollection";
 import ScrollToTopOnMount from "../ScrollToTopOnMount/ScrollToTopOnMount";
 import "./ProductPage.css";
 
-function ProductPage({ infoPage, installingColorLinks }) {
-  useEffect(() => {
-    installingColorLinks();
-  });
-
+function ProductPage({ infoPage }) {
   return (
     <section className="products">
       <ScrollToTopOnMount />

@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 function ScrollToTopOnMount() {
   const navigate = useNavigate();
   const hash = window.location.hash;
-
   useEffect(() => {
     if (hash) {
       const targetElement = document.querySelector(hash);

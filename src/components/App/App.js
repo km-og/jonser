@@ -1,8 +1,7 @@
-// import logo from './logo.svg';
 import "./App.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Main from "../Main/Main";
 import { semiAutomaticWeldingMachinesInfo } from "../../utils/semiAutomaticWeldingMachinesInfo";
@@ -22,44 +21,49 @@ import PageNotFound from "../PageNotFound/PageNotFound";
 function App() {
   const [isDarkLinks, setIsDarkLinks] = useState(true);
   const [isFixedMenu, setIsFixedMenu] = useState(false);
-  const [heightForScroll, setHeightForScroll] = useState(0);
-  const mobileWidth = 768;
+  const heightForScroll = 350;
+
+  const location = useLocation();
+  let path = location.pathname;
 
   useEffect(() => {
-    if (window.screen.width < mobileWidth) {
-      setHeightForScroll(350);
-    } else {
-      setHeightForScroll(420);
+    function switchFixedMenu() {
+      setIsFixedMenu(true);
+      setIsDarkLinks(false);
     }
-    function handleScroll() {
-      if (window.scrollY < heightForScroll) {
-        setIsFixedMenu(false);
-        setIsDarkLinks(true);
-        // switchFixedMenu();
-        // return;
+
+    function switchNotFixedMenu() {
+      setIsFixedMenu(false);
+      setIsDarkLinks(true);
+    }
+
+    function checkPath() {
+      if (path !== "/") {
+        switchFixedMenu();
+        window.removeEventListener("scroll", checkPath);
+        return;
       } else {
-        setIsFixedMenu(true);
-        setIsDarkLinks(false);
+        handleScroll();
       }
     }
-    window.addEventListener("scroll", handleScroll);
-  });
 
-  function switchToDarkLinks() {
-    setIsDarkLinks(true);
-  }
+    function handleScroll() {
+      if (window.scrollY < heightForScroll) {
+        switchNotFixedMenu();
+      } else {
+        switchFixedMenu();
+      }
+    }
 
-  function switchToLightLinks() {
-    setIsDarkLinks(false);
-  }
+    window.addEventListener("scroll", checkPath);
+
+    return () => {
+      window.removeEventListener("scroll", checkPath);
+    };
+  }, [path, location]);
 
   function scrollToTop() {
     window.scrollTo(0, 0);
-  }
-
-  function switchFixedMenu() {
-    setIsFixedMenu(true);
-    setIsDarkLinks(false);
   }
 
   return (
@@ -71,100 +75,47 @@ function App() {
       />
       <main className="content">
         <Routes>
-          <Route
-            exact
-            path="/"
-            element={<Main installingColorLinks={switchToDarkLinks} />}
-          />
+          <Route exact path="/" element={<Main />} />
           <Route
             path="/semiAutomaticWeldingMachines"
             element={
-              <ProductPage
-                infoPage={semiAutomaticWeldingMachinesInfo}
-                installingColorLinks={switchToLightLinks}
-              />
+              <ProductPage infoPage={semiAutomaticWeldingMachinesInfo} />
             }
           />
           <Route
             path="/chainsaws"
-            element={
-              <ProductPage
-                infoPage={сhainsawsInfo}
-                installingColorLinks={switchToLightLinks}
-              />
-            }
+            element={<ProductPage infoPage={сhainsawsInfo} />}
           />
           <Route
             path="/drillsAndScrewdrivers"
-            element={
-              <ProductPage
-                infoPage={drillsAndScrewdriversInfo}
-                installingColorLinks={switchToLightLinks}
-              />
-            }
+            element={<ProductPage infoPage={drillsAndScrewdriversInfo} />}
           />
           <Route
             path="/gasolineGenerators"
-            element={
-              <ProductPage
-                infoPage={gasolineGeneratorsInfo}
-                installingColorLinks={switchToLightLinks}
-              />
-            }
+            element={<ProductPage infoPage={gasolineGeneratorsInfo} />}
           />
           <Route
             path="/angleGrinders"
-            element={
-              <ProductPage
-                infoPage={angleGrindersInfo}
-                installingColorLinks={switchToLightLinks}
-              />
-            }
+            element={<ProductPage infoPage={angleGrindersInfo} />}
           />
           <Route
             path="/compressors"
-            element={
-              <ProductPage
-                infoPage={compressorsInfo}
-                installingColorLinks={switchToLightLinks}
-              />
-            }
+            element={<ProductPage infoPage={compressorsInfo} />}
           />
           <Route
             path="/trimmers"
-            element={
-              <ProductPage
-                infoPage={trimmersInfo}
-                installingColorLinks={switchToLightLinks}
-              />
-            }
+            element={<ProductPage infoPage={trimmersInfo} />}
           />
           <Route
             path="/toolKits"
-            element={
-              <ProductPage
-                infoPage={toolKitsInfo}
-                installingColorLinks={switchToLightLinks}
-              />
-            }
+            element={<ProductPage infoPage={toolKitsInfo} />}
           />
           <Route
             path="/additionally"
-            element={
-              <ProductPage
-                infoPage={additionallyInfo}
-                installingColorLinks={switchToLightLinks}
-              />
-            }
+            element={<ProductPage infoPage={additionallyInfo} />}
           />
-          <Route
-            path="/delivery"
-            element={<Delivery switchFixedMenu={switchFixedMenu} />}
-          />
-          <Route
-            path="/privacy"
-            element={<Privacy switchFixedMenu={switchFixedMenu} />}
-          />
+          <Route path="/delivery" element={<Delivery />} />
+          <Route path="/privacy" element={<Privacy />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </main>

@@ -1,12 +1,7 @@
-import { useEffect } from "react";
 import "./Delivery.css";
 import { NavLink } from "react-router-dom";
 
-function Delivery({ switchFixedMenu }) {
-  useEffect(() => {
-    switchFixedMenu();
-  }, []);
-
+function Delivery() {
   return (
     <section className="delivery">
       <div className="delivery__container">
