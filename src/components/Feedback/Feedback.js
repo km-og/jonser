@@ -8,8 +8,8 @@ import PopupRequest from "../PopupRequest/PopupRequest";
 
 function Feedback() {
   const [isValidForm, setIsValidForm] = useState(false);
-  const [isValidInputName, setIsValidInputName] = useState(true);
-  const [isValidInputTel, setIsValidInputTel] = useState(true);
+  const [isValidInputName, setIsValidInputName] = useState(false);
+  const [isValidInputTel, setIsValidInputTel] = useState(false);
   const [isValidInputAgree, setIsValidInputAgree] = useState(false);
   const [isErrorTextForName, setIsErrorTextForName] = useState("");
   const [isErrorTextForTel, setIsErrorTextForTel] = useState("");

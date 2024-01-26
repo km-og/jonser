@@ -28,7 +28,7 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 1.1;
-  color: #d9d9d9;
+  color: var(--main-color);
 }
 
 .navigation__link_type_active {
@@ -41,7 +41,7 @@
   .navigation {
     display: block;
     width: 67.7%;
-    background-color: #202020;
+    background-color: var(--dark-color);
     opacity: 0.95;
     z-index: 99;
     height: 100vh;

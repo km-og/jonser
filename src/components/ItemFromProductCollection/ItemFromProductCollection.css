@@ -28,7 +28,7 @@
 }
 
 .collection__model-name {
-  color: #d9d9d9;
+  color: var(--main-color);
   font-size: 15px;
   font-weight: 500;
   line-height: 1.4;
@@ -69,8 +69,8 @@
   width: 100%;
   border: none;
   padding: 10px 0;
-  background-color: #a1a1a1;
-  color: #1e1e1e;
+  background-color: var(--bg-btn-color);
+  color: var(--dark-color);
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
@@ -79,8 +79,8 @@
 }
 
 .collection__btn_type_premium {
-  background-color: #1e1e1e;
-  color: #d9d9d9;
+  background-color: var(--dark-color);
+  color: var(--main-color);
 }
 
 @media screen and (max-width: 1024px) {

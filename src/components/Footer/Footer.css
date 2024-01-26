@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
-  background-color: #1e1e1e;
-  color: #d9d9d9;
+  background-color: var(--dark-color);
+  color: var(--main-color);
   padding: 20px 0;
 }
 
@@ -22,13 +22,13 @@
 }
 
 .footer__tel {
-  color: #d9d9d9;
+  color: var(--main-color);
   display: flex;
   flex-direction: column;
 }
 
 .footer__department {
-  color: #8f8f8f;
+  color: var(--label-color);
 }
 
 .footer__list {
