@@ -1267,7 +1267,7 @@ const сhainsawsInfo = {
               },
               {
                 parameter: "Время зарядки полностью разряженного АКБ:",
-                value: "60 vby",
+                value: "60 мин",
                 _id: "bs_jac186s_param6",
               },
               {

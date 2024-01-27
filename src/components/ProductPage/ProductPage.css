@@ -20,6 +20,10 @@
   left: 0;
 }
 
+.products__wrapper {
+  position: relative;
+}
+
 .products__title {
   max-width: 1140px;
   width: 89%;
@@ -28,7 +32,6 @@
   font-size: 28px;
   line-height: 1.2;
   padding: 0;
-  position: relative;
 }
 
 .products__description {
@@ -39,11 +42,9 @@
   font-size: 20px;
   line-height: 1.2;
   padding: 0;
-  position: relative;
 }
 
 .products__link {
-  position: relative;
   color: var(--dark-color);
   padding: 1px 0 0;
   font-size: 20px;
