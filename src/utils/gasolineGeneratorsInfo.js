@@ -28,6 +28,19 @@ const gasolineGeneratorsInfo = {
           _id: "gg_gg3000",
           nameModel: "gg-3000",
           img: gg3000,
+          nameProduct: "бензиновый генератор",
+          titleParams: [
+            {
+              param: "мощность:",
+              value: "3000Вт",
+              _id: "gg_gg3000_tp1",
+            },
+            {
+              param: "Объем бака:",
+              value: "15л",
+              _id: "gg_gg3000_tp2",
+            },
+          ],
           detailed: {
             imgBig: gg3000Big,
             fullNameModel: "Электрогенератор бензиновый Jonser GG-3000",
@@ -187,6 +200,19 @@ const gasolineGeneratorsInfo = {
           _id: "gg_gg3500",
           nameModel: "gg-3500",
           img: gg3500,
+          nameProduct: "бензиновый генератор",
+          titleParams: [
+            {
+              param: "мощность:",
+              value: "3500Вт",
+              _id: "gg_gg3500_tp1",
+            },
+            {
+              param: "Объем бака:",
+              value: "15л",
+              _id: "gg_gg3500_tp2",
+            },
+          ],
           detailed: {
             imgBig: gg3500Big,
             fullNameModel: "Электрогенератор бензиновый Jonser GG-3500",

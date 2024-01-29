@@ -1,5 +1,6 @@
 //Бензиновые пилы
 import es4100 from "../images/сhainsaws/ES-4100.png";
+// import es4100Big from "../images/сhainsaws/Capture00196_pixian_ai_pixian_ai_pixian_ai.png";
 import es4100Big from "../images/сhainsaws/ES-4100@2x.png";
 import es4200 from "../images/сhainsaws/ES-4200.png";
 import es4200Big from "../images/сhainsaws/ES-4200@2x.png";
@@ -9,8 +10,8 @@ import es4300s from "../images/сhainsaws/ES-43300.png";
 import es4300sBig from "../images/сhainsaws/ES-43300@2x.png";
 import jac186s from "../images/сhainsaws/battery/JAC-186S.png";
 import jac186sBig from "../images/сhainsaws/battery/JAC-186S@2x.png";
-import bs4500 from "../images/сhainsaws/bs4500.png";
-import bs4500Big from "../images/сhainsaws/bs4500@2x.png";
+// import bs4500 from "../images/сhainsaws/bs4500.png";
+// import bs4500Big from "../images/сhainsaws/bs4500@2x.png";
 // import bs5500 from "../images/сhainsaws/battery";
 // import bs5500Big from "../images/сhainsaws/battery";
 // import es2300 from "../images/сhainsaws/battery";
@@ -32,173 +33,185 @@ const сhainsawsInfo = {
       premium: false,
       isHorizontal: true,
       models: [
-        {
-          _id: "gs_bs4500",
-          nameModel: "BS-4500",
-          img: bs4500,
-          detailed: {
-            imgBig: bs4500Big,
-            fullNameModel: "Бензопила цепная Jonser BS-4500",
-            description: "",
-            specifications: [
-              {
-                parameter: "Мощность:",
-                value: "4500 Вт, 4.7 л.с",
-                _id: "gs_bs4500_param1",
-              },
-              {
-                parameter: "Длина шины:",
-                value: "45 см",
-                _id: "gs_bs4500_param2",
-              },
-              {
-                parameter: "Количество звеньев:",
-                value: "72 шт",
-                _id: "gs_bs4500_param3",
-              },
-              {
-                parameter: "Шаг:",
-                value: "0.325",
-                _id: "gs_bs4500_param4",
-              },
-              {
-                parameter: "Объем поршневой группы:",
-                value: "52 см3",
-                _id: "gs_bs4500_param5",
-              },
-              {
-                parameter: "Объем топливного бака:",
-                value: "550 мл",
-                _id: "gs_bs4500_param6",
-              },
-              {
-                parameter: "Объем масляного бака:",
-                value: "260мл",
-                _id: "gs_bs4500_param7",
-              },
-              {
-                parameter: "Соотношение масла и бензина:",
-                value: "1:25",
-                _id: "gs_bs4500_param8",
-              },
-              {
-                parameter: "Ручной стартер",
-                value: "",
-                _id: "gs_bs4500_param9",
-              },
-              {
-                parameter: "Обороты холостого хода",
-                value: "3300 об/мин",
-                _id: "gs_bs4500_param10",
-              },
-              {
-                parameter: "Масимальные обороты без нагрузки",
-                value: "13500 об/мин",
-                _id: "gs_bs4500_param11",
-              },
-              {
-                parameter: "Воздушное охлаждение",
-                value: "",
-                _id: "gs_bs4500_param12",
-              },
-              {
-                parameter: "Вес без шины и без цепи / брутто:",
-                value: "5,2 кг / 8,75 кг",
-                _id: "gs_bs4500_param13",
-              },
-              {
-                parameter: "Габариты упаковки:",
-                value: "52 / 25 / 30 см",
-                _id: "gs_bs4500_param14",
-              },
-              {
-                parameter: "Гарантия:",
-                value: "2 года",
-                _id: "gs_bs4500_param15",
-              },
-            ],
-            equipment: [
-              {
-                parameter: "Бензопила:",
-                value: "1 шт",
-                _id: "gs_bs4500_eq1",
-              },
-              {
-                parameter: "Шина 18 дюймов (450мм):",
-                value: "1 шт",
-                _id: "gs_bs4500_eq2",
-              },
-              {
-                parameter: "Цепи 18 дюймов – 45 см (72зв):",
-                value: "2 шт",
-                _id: "gs_bs4500_eq3",
-              },
-              {
-                parameter: "Защитный кожух:",
-                value: "1 шт",
-                _id: "gs_bs4500_eq4",
-              },
-              {
-                parameter: "Свеча зажигания:",
-                value: "1 шт",
-                _id: "gs_bs4500_eq5",
-              },
-              {
-                parameter: "Набор инструментов:",
-                value: "1 шт",
-                _id: "gs_bs4500_eq6",
-              },
-              {
-                parameter: "Заливная воронка:",
-                value: "1 шт",
-                _id: "gs_bs4500_eq7",
-              },
-              {
-                parameter: "Напильник заточный для цепи:",
-                value: "1 шт",
-                _id: "gs_bs4500_eq8",
-              },
-              {
-                parameter: "Инструкция:",
-                value: "1 шт",
-                _id: "gs_bs4500_eq9",
-              },
-            ],
-            advantages: [
-              {
-                parameter: "Антивибрационная рукоятка",
-                _id: "gs_bs4500_ad1",
-              },
-              {
-                parameter: "Антивибрационная система",
-                _id: "gs_bs4500_ad2",
-              },
-              {
-                parameter: "Защитный кожух",
-                _id: "gs_bs4500_ad3",
-              },
-              {
-                parameter: "Тормоз цепи",
-                _id: "gs_bs4500_ad4",
-              },
-              {
-                parameter: "Регулируемый маслянный насос",
-                _id: "gs_bs4500_ad5",
-              },
-              {
-                parameter: "Легкий старт",
-                _id: "gs_bs4500_ad6",
-              },
-              {
-                parameter: "Многоразовый воздушный фильтр",
-                _id: "gs_bs4500_ad7",
-              },
-            ],
-            sale: "-14%",
-            newPrice: "11 990 ₽",
-            oldPrice: "13 990 ₽",
-          },
-        },
+        // {
+        //   _id: "gs_bs4500",
+        //   nameModel: "BS-4500",
+        //   img: bs4500,
+        //   titleParams: [
+        //     {
+        //       param: "ампераж:",
+        //       value: "180А",
+        //       _id: "gs_bs4500_tp1",
+        //     },
+        //     {
+        //       param: "вместимость катушки:",
+        //       value: "до 1 кг",
+        //       _id: "gs_bs4500_tp2",
+        //     },
+        //   ],
+        //   detailed: {
+        //     imgBig: bs4500Big,
+        //     fullNameModel: "Бензопила цепная Jonser BS-4500",
+        //     description: "",
+        //     specifications: [
+        //       {
+        //         parameter: "Мощность:",
+        //         value: "4500 Вт, 4.7 л.с",
+        //         _id: "gs_bs4500_param1",
+        //       },
+        //       {
+        //         parameter: "Длина шины:",
+        //         value: "45 см",
+        //         _id: "gs_bs4500_param2",
+        //       },
+        //       {
+        //         parameter: "Количество звеньев:",
+        //         value: "72 шт",
+        //         _id: "gs_bs4500_param3",
+        //       },
+        //       {
+        //         parameter: "Шаг:",
+        //         value: "0.325",
+        //         _id: "gs_bs4500_param4",
+        //       },
+        //       {
+        //         parameter: "Объем поршневой группы:",
+        //         value: "52 см3",
+        //         _id: "gs_bs4500_param5",
+        //       },
+        //       {
+        //         parameter: "Объем топливного бака:",
+        //         value: "550 мл",
+        //         _id: "gs_bs4500_param6",
+        //       },
+        //       {
+        //         parameter: "Объем масляного бака:",
+        //         value: "260мл",
+        //         _id: "gs_bs4500_param7",
+        //       },
+        //       {
+        //         parameter: "Соотношение масла и бензина:",
+        //         value: "1:25",
+        //         _id: "gs_bs4500_param8",
+        //       },
+        //       {
+        //         parameter: "Ручной стартер",
+        //         value: "",
+        //         _id: "gs_bs4500_param9",
+        //       },
+        //       {
+        //         parameter: "Обороты холостого хода",
+        //         value: "3300 об/мин",
+        //         _id: "gs_bs4500_param10",
+        //       },
+        //       {
+        //         parameter: "Масимальные обороты без нагрузки",
+        //         value: "13500 об/мин",
+        //         _id: "gs_bs4500_param11",
+        //       },
+        //       {
+        //         parameter: "Воздушное охлаждение",
+        //         value: "",
+        //         _id: "gs_bs4500_param12",
+        //       },
+        //       {
+        //         parameter: "Вес без шины и без цепи / брутто:",
+        //         value: "5,2 кг / 8,75 кг",
+        //         _id: "gs_bs4500_param13",
+        //       },
+        //       {
+        //         parameter: "Габариты упаковки:",
+        //         value: "52 / 25 / 30 см",
+        //         _id: "gs_bs4500_param14",
+        //       },
+        //       {
+        //         parameter: "Гарантия:",
+        //         value: "2 года",
+        //         _id: "gs_bs4500_param15",
+        //       },
+        //     ],
+        //     equipment: [
+        //       {
+        //         parameter: "Бензопила:",
+        //         value: "1 шт",
+        //         _id: "gs_bs4500_eq1",
+        //       },
+        //       {
+        //         parameter: "Шина 18 дюймов (450мм):",
+        //         value: "1 шт",
+        //         _id: "gs_bs4500_eq2",
+        //       },
+        //       {
+        //         parameter: "Цепи 18 дюймов – 45 см (72зв):",
+        //         value: "2 шт",
+        //         _id: "gs_bs4500_eq3",
+        //       },
+        //       {
+        //         parameter: "Защитный кожух:",
+        //         value: "1 шт",
+        //         _id: "gs_bs4500_eq4",
+        //       },
+        //       {
+        //         parameter: "Свеча зажигания:",
+        //         value: "1 шт",
+        //         _id: "gs_bs4500_eq5",
+        //       },
+        //       {
+        //         parameter: "Набор инструментов:",
+        //         value: "1 шт",
+        //         _id: "gs_bs4500_eq6",
+        //       },
+        //       {
+        //         parameter: "Заливная воронка:",
+        //         value: "1 шт",
+        //         _id: "gs_bs4500_eq7",
+        //       },
+        //       {
+        //         parameter: "Напильник заточный для цепи:",
+        //         value: "1 шт",
+        //         _id: "gs_bs4500_eq8",
+        //       },
+        //       {
+        //         parameter: "Инструкция:",
+        //         value: "1 шт",
+        //         _id: "gs_bs4500_eq9",
+        //       },
+        //     ],
+        //     advantages: [
+        //       {
+        //         parameter: "Антивибрационная рукоятка",
+        //         _id: "gs_bs4500_ad1",
+        //       },
+        //       {
+        //         parameter: "Антивибрационная система",
+        //         _id: "gs_bs4500_ad2",
+        //       },
+        //       {
+        //         parameter: "Защитный кожух",
+        //         _id: "gs_bs4500_ad3",
+        //       },
+        //       {
+        //         parameter: "Тормоз цепи",
+        //         _id: "gs_bs4500_ad4",
+        //       },
+        //       {
+        //         parameter: "Регулируемый маслянный насос",
+        //         _id: "gs_bs4500_ad5",
+        //       },
+        //       {
+        //         parameter: "Легкий старт",
+        //         _id: "gs_bs4500_ad6",
+        //       },
+        //       {
+        //         parameter: "Многоразовый воздушный фильтр",
+        //         _id: "gs_bs4500_ad7",
+        //       },
+        //     ],
+        //     sale: "-14%",
+        //     newPrice: "11 990 ₽",
+        //     oldPrice: "13 990 ₽",
+        //   },
+        // },
         // {
         //   _id: "gs_bs5500",
         //   nameModel: "BS-5500",
@@ -370,6 +383,19 @@ const сhainsawsInfo = {
           _id: "gs_es4100",
           nameModel: "es-4100",
           img: es4100,
+          nameProduct: "Бензиновая пила",
+          titleParams: [
+            {
+              param: "мощность:",
+              value: "1900 Вт, 2.0 л.с",
+              _id: "gs_es4100_tp1",
+            },
+            {
+              param: "длина шины:",
+              value: "12 дм",
+              _id: "gs_es4100_tp2",
+            },
+          ],
           detailed: {
             imgBig: es4100Big,
             fullNameModel: "Бензопила цепная Jonser ES-4100",
@@ -547,6 +573,19 @@ const сhainsawsInfo = {
           _id: "gs_es4200",
           nameModel: "es-4200",
           img: es4200,
+          nameProduct: "Бензиновая пила",
+          titleParams: [
+            {
+              param: "мощность:",
+              value: "3900 Вт, 4.0 л.с",
+              _id: "gs_es4200_tp1",
+            },
+            {
+              param: "длина шины (2шт.):",
+              value: "16дм / 14дм",
+              _id: "gs_es4200_tp2",
+            },
+          ],
           detailed: {
             imgBig: es4200Big,
             fullNameModel: "Бензопила цепная Jonser ES-4200",
@@ -559,7 +598,7 @@ const сhainsawsInfo = {
               },
               {
                 parameter: "Длина шины (2шт):",
-                value: "16 дм/14дм",
+                value: "16дм / 14дм",
                 _id: "gs_es4200_param2",
               },
               {
@@ -747,6 +786,19 @@ const сhainsawsInfo = {
           _id: "gs_es43300",
           nameModel: "es-43300",
           img: es43300,
+          nameProduct: "Бензиновая пила",
+          titleParams: [
+            {
+              param: "мощность:",
+              value: "4800 Вт, 4.9 л.с",
+              _id: "gs_es43300_tp1",
+            },
+            {
+              param: "длина шины (2шт.):",
+              value: "18дм / 45см",
+              _id: "gs_es43300_tp2",
+            },
+          ],
           detailed: {
             imgBig: es43300Big,
             fullNameModel: "Бензопила цепная Jonser ES-43300",
@@ -759,7 +811,7 @@ const сhainsawsInfo = {
               },
               {
                 parameter: "Длина шины:",
-                value: "18дм/45см",
+                value: "18дм / 45см",
                 _id: "gs_es43300_param2",
               },
               {
@@ -929,6 +981,19 @@ const сhainsawsInfo = {
           _id: "gs_es4300s",
           nameModel: "es-4300s",
           img: es4300s,
+          nameProduct: "Бензиновая пила",
+          titleParams: [
+            {
+              param: "мощность:",
+              value: "5800  Вт, 5.1 л.с",
+              _id: "gs_es4300s_tp1",
+            },
+            {
+              param: "длина шины (2шт.):",
+              value: "18дм / 45см",
+              _id: "gs_es4300s_tp2",
+            },
+          ],
           detailed: {
             imgBig: es4300sBig,
             fullNameModel: "Бензопила цепная Jonser ES-4300S",
@@ -941,7 +1006,7 @@ const сhainsawsInfo = {
               },
               {
                 parameter: "Длина шины:",
-                value: "18дм/45см",
+                value: "18дм / 45см",
                 _id: "gs_es4300s_param2",
               },
               {
@@ -1230,6 +1295,19 @@ const сhainsawsInfo = {
           _id: "bs_jac186s",
           nameModel: "jac-186s",
           img: jac186s,
+          nameProduct: "Аккумуляторная мини-пила",
+          titleParams: [
+            {
+              param: "вольтаж:",
+              value: "18 В",
+              _id: "bs_jac186s_tp1",
+            },
+            {
+              param: "время работы:",
+              value: "120 мин",
+              _id: "bs_jac186s_tp2",
+            },
+          ],
           detailed: {
             imgBig: jac186sBig,
             fullNameModel: "Аккумуляторная цепная мини-пила Jonser JAC-186S",

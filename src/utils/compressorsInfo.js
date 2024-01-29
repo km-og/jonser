@@ -22,7 +22,6 @@ const compressorsInfo = {
       subtitle: "Компрессор воздушный",
       premium: false,
       isHorizontal: false,
-      alignImageRight: false,
       models: [
         // {
         //   _id: "compr_jac100_2400ss",
@@ -117,6 +116,19 @@ const compressorsInfo = {
           _id: "compr_jac50_2000ss",
           nameModel: "jac-50/2000ss",
           img: jac50_2000ss,
+          nameProduct: "Компрессор воздушный",
+          titleParams: [
+            {
+              param: "мощность:",
+              value: "2000 Вт",
+              _id: "compr_jac50_2000ss_tp1",
+            },
+            {
+              param: "Рабочее давление:",
+              value: "8 бар",
+              _id: "compr_jac50_2000ss_tp2",
+            },
+          ],
           detailed: {
             imgBig: jac50_2000ssBig,
             fullNameModel: "Компрессор воздушный масляный Jonser JAC-50/2000SS",

@@ -1,14 +1,7 @@
 import ItemFromProductCollection from "../ItemFromProductCollection/ItemFromProductCollection";
 import "./ProductCollection.css";
 
-function ProductCollection({
-  subtitle,
-  premium,
-  isHorizontal,
-  alignImageRight,
-  alignImageTop,
-  models,
-}) {
+function ProductCollection({ subtitle, premium, isHorizontal, models }) {
   return (
     <section className="collection">
       <div
@@ -31,13 +24,11 @@ function ProductCollection({
           {models.map((model) => (
             <ItemFromProductCollection
               nameModel={model.nameModel}
+              nameProduct={model.nameProduct}
               img={model.img}
+              titleParams={model.titleParams}
               detailed={model.detailed}
               key={model._id}
-              premium={premium}
-              isHorizontal={isHorizontal}
-              alignImageRight={alignImageRight}
-              alignImageTop={alignImageTop}
             />
           ))}
         </ul>

@@ -21,13 +21,24 @@ const toolKitsInfo = {
       subtitle: "Наборы инструментов",
       premium: false,
       isHorizontal: false,
-      alignImageRight: false,
-      alignImageTop: false,
       models: [
         {
           _id: "toolKits_jbr12",
           nameModel: "jbr 12",
           img: jbr12,
+          nameProduct: "Набор инструментов",
+          titleParams: [
+            {
+              param: "кол-во инструментов:",
+              value: "12",
+              _id: "toolKits_jbr12_tp1",
+            },
+            {
+              param: "резьба:",
+              value: `1/2"`,
+              _id: "toolKits_jbr12_tp2",
+            },
+          ],
           detailed: {
             imgBig: jbr12Big,
             fullNameModel: "Набор инструментов Jonser JBR 12",
@@ -112,6 +123,19 @@ const toolKitsInfo = {
           _id: "toolKits_jbr24",
           nameModel: "jbr 24",
           img: jbr24,
+          nameProduct: "Набор инструментов",
+          titleParams: [
+            {
+              param: "кол-во инструментов:",
+              value: "24",
+              _id: "toolKits_jbr24_tp1",
+            },
+            {
+              param: "резьба:",
+              value: `1/2"`,
+              _id: "toolKits_jbr24_tp2",
+            },
+          ],
           detailed: {
             imgBig: jbr24Big,
             fullNameModel: "Набор инструментов Jonser JBR 24",
@@ -196,6 +220,19 @@ const toolKitsInfo = {
           _id: "toolKits_jbr32pro",
           nameModel: "jbr 32 pro",
           img: jbr32pro,
+          nameProduct: "Набор инструментов",
+          titleParams: [
+            {
+              param: "кол-во инструментов:",
+              value: "32",
+              _id: "toolKits_jbr32_tp1",
+            },
+            {
+              param: "резьба:",
+              value: `1/2"`,
+              _id: "toolKits_jbr32_tp2",
+            },
+          ],
           detailed: {
             imgBig: jbr32proBig,
             fullNameModel: "Набор инструментов Jonser JBR 32 PRO",
@@ -280,6 +317,19 @@ const toolKitsInfo = {
           _id: "toolKits_jbr82pro",
           nameModel: "jbr 82 pro",
           img: jbr82pro,
+          nameProduct: "Набор инструментов",
+          titleParams: [
+            {
+              param: "кол-во инструментов:",
+              value: "82",
+              _id: "toolKits_jbr82pro_tp1",
+            },
+            {
+              param: "резьба:",
+              value: `1/2"`,
+              _id: "toolKits_jbr82pro_tp2",
+            },
+          ],
           detailed: {
             imgBig: jbr82proBig,
             fullNameModel: "Набор инструментов Jonser JBR 82 PRO",
@@ -391,6 +441,19 @@ const toolKitsInfo = {
           _id: "toolKits_jbr94pro",
           nameModel: "jbr 94 pro",
           img: jbr94pro,
+          nameProduct: "Набор инструментов",
+          titleParams: [
+            {
+              param: "кол-во инструментов:",
+              value: "94",
+              _id: "toolKits_jbr94_tp1",
+            },
+            {
+              param: "резьба:",
+              value: `1/2", 1/4"`,
+              _id: "toolKits_jbr94_tp2",
+            },
+          ],
           detailed: {
             imgBig: jbr94proBig,
             fullNameModel: "Набор инструментов Jonser JBR 94 PRO",
@@ -503,6 +566,19 @@ const toolKitsInfo = {
           _id: "toolKits_jbr108pro",
           nameModel: "jbr 108 pro",
           img: jbr108pro,
+          nameProduct: "Набор инструментов",
+          titleParams: [
+            {
+              param: "кол-во инструментов:",
+              value: "108",
+              _id: "toolKits_jbr108_tp1",
+            },
+            {
+              param: "резьба:",
+              value: `1/2", 1/4"`,
+              _id: "toolKits_jbr108_tp2",
+            },
+          ],
           detailed: {
             imgBig: jbr108proBig,
             fullNameModel: "Набор инструментов Jonser JBR 108 PRO",

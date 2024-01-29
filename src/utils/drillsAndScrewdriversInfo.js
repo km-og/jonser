@@ -23,6 +23,19 @@ const drillsAndScrewdriversInfo = {
           _id: "das_jad18pro",
           nameModel: "jad-18 pro",
           img: jad18pro,
+          nameProduct: "аккумуляторная дрель-шуруповерт",
+          titleParams: [
+            {
+              param: "вольтаж:",
+              value: "18V",
+              _id: "das_jad18pro_tp1",
+            },
+            {
+              param: "крутящий момент:",
+              value: "40hm",
+              _id: "das_jad18pro_tp2",
+            },
+          ],
           detailed: {
             imgBig: jad18proBig,
             fullNameModel: "Дрель-шуруповерт аккумуляторный Jonser JAD-18 PRO",
@@ -218,6 +231,19 @@ const drillsAndScrewdriversInfo = {
           _id: "das_jad21pro",
           nameModel: "jad-21 pro",
           img: jad21pro,
+          nameProduct: "аккумуляторная дрель-шуруповерт",
+          titleParams: [
+            {
+              param: "вольтаж:",
+              value: "21V",
+              _id: "das_jad21pro_tp1",
+            },
+            {
+              param: "крутящий момент:",
+              value: "50hm",
+              _id: "das_jad21pro_tp2",
+            },
+          ],
           detailed: {
             imgBig: jad21proBig,
             fullNameModel: "Дрель-шуруповерт аккумуляторный Jonser JAD-21 PRO",

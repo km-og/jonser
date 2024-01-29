@@ -22,68 +22,28 @@ const additionallyInfo = {
   description: "",
   collections: [
     {
-      _id: "oils",
-      subtitle: "Моторные масла",
-      premium: false,
-      isHorizontal: false,
-      alignImageRight: false,
-      models: [
-        {
-          _id: "oils_2t",
-          nameModel: "2t premium",
-          img: oil2t,
-          detailed: {
-            imgBig: oil2tBig,
-            fullNameModel: "Моторное масло Jonser 2T Premium",
-            description:
-              " - это полусинтетическое масло для 2-тактных двигателей. Специально разработано для двигателей с воздушным охлаждением. Полусинтетическое масло благодаря своим характеристикам способно работать на высоком уровне максимально длительное время. Такое масло снижает риск возникновения неисправностей оборудования, обеспечивает бесперебойную работу, снижает стоимость затрат на обслуживание, продлевает срок службы двигателя. Используется в двухтактных двигателях с воздушным охлаждением, устанавливаемых на мотоблоках, бензопилах, газонокосилках и другой технике.",
-            specifications: [
-              {
-                parameter: "Объем :",
-                value: "1л",
-                _id: "oils_2t_param1",
-              },
-            ],
-            sale: "-16%",
-            newPrice: "990 ₽",
-            oldPrice: "1 190 ₽",
-          },
-        },
-        {
-          _id: "oils_4t",
-          nameModel: "4t premium",
-          img: oil4t,
-          detailed: {
-            imgBig: oil4tBig,
-            fullNameModel: "Моторное масло Jonser 4T Premium",
-            description:
-              " - это полусинтетическое масло для 4-тактных двигателей. Специально разработано для двигателей с воздушным охлаждением. Полусинтетическое масло благодаря своим характеристикам способно работать на высоком уровне максимально длительное время. По сравнению с минеральными маслами полусинтетическое может использоваться при самом широком температурном диапазоне, обладает лучшей текучестью при низких температурах, лучшей термоустойчивостью, лучшей устойчивостью к окислению, низкой летучестью, низким нагарообразованием, лучшим контролем над износом.",
-            specifications: [
-              {
-                parameter: "Объем :",
-                value: "1л",
-                _id: "oils_2t_param1",
-              },
-            ],
-            sale: "-16%",
-            newPrice: "990 ₽",
-            oldPrice: "1 190 ₽",
-          },
-        },
-      ],
-    },
-    {
       _id: "chain",
       subtitle: "Цепи",
       premium: false,
       isHorizontal: false,
-      alignImageRight: false,
-      alignImageTop: false,
       models: [
         {
           _id: "chain_3850",
           nameModel: "3/8 - 50",
           img: chain3850,
+          nameProduct: "цепь для пилы",
+          titleParams: [
+            {
+              param: "кол-во звеньев:",
+              value: "50",
+              _id: "chain_3850_tp1",
+            },
+            {
+              param: "шаг:",
+              value: "3/8",
+              _id: "chain_3850_tp2",
+            },
+          ],
           detailed: {
             imgBig: chain3850Big,
             fullNameModel: "Цепь для пилы Jonser 3/8 - 50",
@@ -119,6 +79,19 @@ const additionallyInfo = {
           _id: "chain_3856",
           nameModel: "3/8 - 56",
           img: chain3850,
+          nameProduct: "цепь для пилы",
+          titleParams: [
+            {
+              param: "кол-во звеньев:",
+              value: "56",
+              _id: "chain_3856_tp1",
+            },
+            {
+              param: "шаг:",
+              value: "3/8",
+              _id: "chain_3856_tp2",
+            },
+          ],
           detailed: {
             imgBig: chain3850Big,
             fullNameModel: "Цепь для пилы Jonser 3/8 - 56",
@@ -154,6 +127,19 @@ const additionallyInfo = {
           _id: "chain_3857",
           nameModel: "3/8 - 57",
           img: chain3850,
+          nameProduct: "цепь для пилы",
+          titleParams: [
+            {
+              param: "кол-во звеньев:",
+              value: "57",
+              _id: "chain_3857_tp1",
+            },
+            {
+              param: "шаг:",
+              value: "3/8",
+              _id: "chain_3857_tp2",
+            },
+          ],
           detailed: {
             imgBig: chain3850Big,
             fullNameModel: "Цепь для пилы Jonser 3/8 - 57",
@@ -189,6 +175,19 @@ const additionallyInfo = {
           _id: "chain_032564",
           nameModel: "0.325 - 64",
           img: chain3850,
+          nameProduct: "цепь для пилы",
+          titleParams: [
+            {
+              param: "кол-во звеньев:",
+              value: "64",
+              _id: "chain_032564_tp1",
+            },
+            {
+              param: "шаг:",
+              value: "0,325",
+              _id: "chain_032564_tp2",
+            },
+          ],
           detailed: {
             imgBig: chain3850Big,
             fullNameModel: "Цепь для пилы Jonser 0.325 - 64",
@@ -224,6 +223,19 @@ const additionallyInfo = {
           _id: "chain_032572",
           nameModel: "0.325 - 72",
           img: chain3850,
+          nameProduct: "цепь для пилы",
+          titleParams: [
+            {
+              param: "кол-во звеньев:",
+              value: "72",
+              _id: "chain_032572_tp1",
+            },
+            {
+              param: "шаг:",
+              value: "0,325",
+              _id: "chain_032572_tp2",
+            },
+          ],
           detailed: {
             imgBig: chain3850Big,
             fullNameModel: "Цепь для пилы Jonser 0.325 - 72",
@@ -262,13 +274,24 @@ const additionallyInfo = {
       subtitle: "Цепи Super Series",
       premium: true,
       isHorizontal: false,
-      alignImageRight: false,
-      alignImageTop: false,
       models: [
         {
           _id: "chainS_3850s",
           nameModel: "3/8 - 50s",
           img: chain3850,
+          nameProduct: "цепь для пилы",
+          titleParams: [
+            {
+              param: "кол-во звеньев:",
+              value: "50",
+              _id: "chainS_3850s_tp1",
+            },
+            {
+              param: "шаг:",
+              value: "3/8",
+              _id: "chainS_3850s_tp2",
+            },
+          ],
           detailed: {
             imgBig: chain3850Big,
             fullNameModel: "Цепь для пилы Jonser 3/8 - 50s",
@@ -304,6 +327,19 @@ const additionallyInfo = {
           _id: "chainS_3856s",
           nameModel: "3/8 - 56s",
           img: chain3850,
+          nameProduct: "цепь для пилы",
+          titleParams: [
+            {
+              param: "кол-во звеньев:",
+              value: "56",
+              _id: "chainS_3856s_tp1",
+            },
+            {
+              param: "шаг:",
+              value: "3/8",
+              _id: "chainS_3856s_tp2",
+            },
+          ],
           detailed: {
             imgBig: chain3850Big,
             fullNameModel: "Цепь для пилы Jonser 3/8 - 56s",
@@ -339,6 +375,19 @@ const additionallyInfo = {
           _id: "chainS_3857",
           nameModel: "3/8 - 57",
           img: chain3850,
+          nameProduct: "цепь для пилы",
+          titleParams: [
+            {
+              param: "кол-во звеньев:",
+              value: "57",
+              _id: "chainS_3857_tp1",
+            },
+            {
+              param: "шаг:",
+              value: "3/8",
+              _id: "chainS_3857_tp2",
+            },
+          ],
           detailed: {
             imgBig: chain3850Big,
             fullNameModel: "Цепь для пилы Jonser 3/8 - 57",
@@ -374,6 +423,19 @@ const additionallyInfo = {
           _id: "chainS_032564s",
           nameModel: "0.325 - 64s",
           img: chain3850,
+          nameProduct: "цепь для пилы",
+          titleParams: [
+            {
+              param: "кол-во звеньев:",
+              value: "64",
+              _id: "chainS_032564s_tp1",
+            },
+            {
+              param: "шаг:",
+              value: "0,325",
+              _id: "chainS_032564s_tp2",
+            },
+          ],
           detailed: {
             imgBig: chain3850Big,
             fullNameModel: "Цепь для пилы Jonser 0.325 - 64s",
@@ -409,6 +471,19 @@ const additionallyInfo = {
           _id: "chainS_032572s",
           nameModel: "0.325 - 72s",
           img: chain3850,
+          nameProduct: "цепь для пилы",
+          titleParams: [
+            {
+              param: "кол-во звеньев:",
+              value: "72",
+              _id: "chainS_032572s_tp1",
+            },
+            {
+              param: "шаг:",
+              value: "0,325",
+              _id: "chainS_032572s_tp2",
+            },
+          ],
           detailed: {
             imgBig: chain3850Big,
             fullNameModel: "Цепь для пилы Jonser 0.325 - 72s",
@@ -443,17 +518,105 @@ const additionallyInfo = {
       ],
     },
     {
+      _id: "oils",
+      subtitle: "Моторные масла",
+      premium: false,
+      isHorizontal: false,
+      models: [
+        {
+          _id: "oils_2t",
+          nameModel: "2t premium",
+          img: oil2t,
+          nameProduct: "моторное масло",
+          titleParams: [
+            {
+              param: "Объем:",
+              value: "1л",
+              _id: "oils_2t_tp1",
+            },
+            {
+              param: "применение:",
+              value: "для 2-тактных двигателей",
+              _id: "oils_2t_tp2",
+            },
+          ],
+          detailed: {
+            imgBig: oil2tBig,
+            fullNameModel: "Моторное масло Jonser 2T Premium",
+            description:
+              " - это полусинтетическое масло для 2-тактных двигателей. Специально разработано для двигателей с воздушным охлаждением. Полусинтетическое масло благодаря своим характеристикам способно работать на высоком уровне максимально длительное время. Такое масло снижает риск возникновения неисправностей оборудования, обеспечивает бесперебойную работу, снижает стоимость затрат на обслуживание, продлевает срок службы двигателя. Используется в двухтактных двигателях с воздушным охлаждением, устанавливаемых на мотоблоках, бензопилах, газонокосилках и другой технике.",
+            specifications: [
+              {
+                parameter: "Объем :",
+                value: "1л",
+                _id: "oils_2t_param1",
+              },
+            ],
+            sale: "-16%",
+            newPrice: "990 ₽",
+            oldPrice: "1 190 ₽",
+          },
+        },
+        {
+          _id: "oils_4t",
+          nameModel: "4t premium",
+          img: oil4t,
+          nameProduct: "моторное масло",
+          titleParams: [
+            {
+              param: "Объем:",
+              value: "1л",
+              _id: "oils_4t_tp1",
+            },
+            {
+              param: "применение:",
+              value: "для 4-тактных двигателей",
+              _id: "oils_4t_tp2",
+            },
+          ],
+          detailed: {
+            imgBig: oil4tBig,
+            fullNameModel: "Моторное масло Jonser 4T Premium",
+            description:
+              " - это полусинтетическое масло для 4-тактных двигателей. Специально разработано для двигателей с воздушным охлаждением. Полусинтетическое масло благодаря своим характеристикам способно работать на высоком уровне максимально длительное время. По сравнению с минеральными маслами полусинтетическое может использоваться при самом широком температурном диапазоне, обладает лучшей текучестью при низких температурах, лучшей термоустойчивостью, лучшей устойчивостью к окислению, низкой летучестью, низким нагарообразованием, лучшим контролем над износом.",
+            specifications: [
+              {
+                parameter: "Объем :",
+                value: "1л",
+                _id: "oils_2t_param1",
+              },
+            ],
+            sale: "-16%",
+            newPrice: "990 ₽",
+            oldPrice: "1 190 ₽",
+          },
+        },
+      ],
+    },
+
+    {
       _id: "wire",
       subtitle: "Проволока",
       premium: false,
       isHorizontal: false,
-      alignImageRight: false,
-      alignImageTop: false,
       models: [
         {
           _id: "wire_fcw081",
           nameModel: "fcw 0,8 - 1",
           img: fcw081,
+          nameProduct: "порошковая проволока",
+          titleParams: [
+            {
+              param: "толщина:",
+              value: "0,8 мм",
+              _id: "wire_fcw081_tp1",
+            },
+            {
+              param: "вес:",
+              value: "1 кг",
+              _id: "wire_fcw081_tp2",
+            },
+          ],
           detailed: {
             imgBig: fcw081Big,
             fullNameModel:
@@ -485,6 +648,19 @@ const additionallyInfo = {
           _id: "wire_fcw101",
           nameModel: "fcw 1,0 - 1",
           img: fcw101,
+          nameProduct: "порошковая проволока",
+          titleParams: [
+            {
+              param: "толщина:",
+              value: "1,0 мм",
+              _id: "wire_fcw101_tp1",
+            },
+            {
+              param: "вес:",
+              value: "1 кг",
+              _id: "wire_fcw101_tp2",
+            },
+          ],
           detailed: {
             imgBig: fcw101Big,
             fullNameModel:
@@ -516,6 +692,19 @@ const additionallyInfo = {
           _id: "wire_fcw085",
           nameModel: "fcw 0,8 - 5",
           img: fcw085,
+          nameProduct: "порошковая проволока",
+          titleParams: [
+            {
+              param: "толщина:",
+              value: "0,8 мм",
+              _id: "wire_fcw085_tp1",
+            },
+            {
+              param: "вес:",
+              value: "5 кг",
+              _id: "wire_fcw085_tp2",
+            },
+          ],
           detailed: {
             imgBig: fcw085Big,
             fullNameModel: "Сварочная проволока Jonser FCW 0,8 - 5",
@@ -546,6 +735,19 @@ const additionallyInfo = {
           _id: "wire_fcw085c",
           nameModel: "fcw 0,8 - 5 омеднённая",
           img: fcw085c,
+          nameProduct: "порошковая проволока",
+          titleParams: [
+            {
+              param: "толщина:",
+              value: "0,8 мм",
+              _id: "wire_fcw085c_tp1",
+            },
+            {
+              param: "вес:",
+              value: "5 кг",
+              _id: "wire_fcw085c_tp2",
+            },
+          ],
           detailed: {
             imgBig: fcw085cBig,
             fullNameModel: "Сварочная проволока омеднённая Jonser FCW 0,8 - 5",

@@ -25,12 +25,24 @@ const angleGrindersInfo = {
       subtitle: "Угловые шлифовальные машины (УШМ)",
       premium: false,
       isHorizontal: false,
-      alignImageRight: true,
       models: [
         {
           _id: "ag_jga1200iq",
           nameModel: "jga-1200iq",
           img: jga1200iq,
+          nameProduct: "болгарка (ушм)",
+          titleParams: [
+            {
+              param: "мощность:",
+              value: "1200Вт",
+              _id: "ag_jga1200iq_tp1",
+            },
+            {
+              param: "диаметр диска:",
+              value: "125мм",
+              _id: "ag_jga1200iq_tp2",
+            },
+          ],
           detailed: {
             imgBig: jga1200iqBig,
             fullNameModel: "Машина углошлифовальная Jonser JGA-1200IQ",
@@ -180,6 +192,19 @@ const angleGrindersInfo = {
           _id: "ag_jga1300i",
           nameModel: "jga-1300i",
           img: jga1300i,
+          nameProduct: "болгарка (ушм)",
+          titleParams: [
+            {
+              param: "мощность:",
+              value: "1300Вт",
+              _id: "ag_jga1300i_tp1",
+            },
+            {
+              param: "диаметр диска:",
+              value: "125мм",
+              _id: "ag_jga1300i_tp2",
+            },
+          ],
           detailed: {
             imgBig: jga1300iBig,
             fullNameModel: "Машина углошлифовальная Jonser JGA-1300I",
@@ -326,6 +351,19 @@ const angleGrindersInfo = {
           _id: "ag_jga1800i",
           nameModel: "jga-1800i",
           img: jga1800i,
+          nameProduct: "болгарка (ушм)",
+          titleParams: [
+            {
+              param: "мощность:",
+              value: "1800Вт",
+              _id: "ag_jga1800i_tp1",
+            },
+            {
+              param: "диаметр диска:",
+              value: "150мм",
+              _id: "ag_jga1800i_tp2",
+            },
+          ],
           detailed: {
             imgBig: jga1800iBig,
             fullNameModel:
@@ -473,6 +511,19 @@ const angleGrindersInfo = {
           _id: "ag_jga2300iq",
           nameModel: "jga-2300iq",
           img: jga2300iq,
+          nameProduct: "болгарка (ушм)",
+          titleParams: [
+            {
+              param: "мощность:",
+              value: "2300Вт",
+              _id: "ag_jga2300iq_tp1",
+            },
+            {
+              param: "диаметр диска:",
+              value: "180мм",
+              _id: "ag_jga2300iq_tp2",
+            },
+          ],
           detailed: {
             imgBig: jga2300iqBig,
             fullNameModel:
@@ -633,6 +684,19 @@ const angleGrindersInfo = {
           _id: "ag_jga2800",
           nameModel: "jga-2800",
           img: jga2800,
+          nameProduct: "болгарка (ушм)",
+          titleParams: [
+            {
+              param: "мощность:",
+              value: "2800Вт",
+              _id: "ag_jga2800_tp1",
+            },
+            {
+              param: "диаметр диска:",
+              value: "230мм",
+              _id: "ag_jga2800_tp2",
+            },
+          ],
           detailed: {
             imgBig: jga2800Big,
             fullNameModel:

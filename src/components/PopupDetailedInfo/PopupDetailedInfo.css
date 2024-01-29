@@ -39,7 +39,6 @@
   max-width: 545px;
   height: auto;
   max-height: calc(80vh - 150px);
-  /* align-self: center; */
   align-self: start;
   object-fit: contain;
 }
@@ -115,7 +114,6 @@
 .popup__icon {
   display: flex;
   align-content: center;
-  /* background-size: 20px 20px; */
   width: 20px;
   height: 20px;
   position: absolute;
@@ -157,7 +155,6 @@
 }
 
 .popup__text_type_parameter {
-  /* font-weight: 500; */
   word-break: keep-all;
   text-overflow: ellipsis;
   width: calc(50% - 10px);
@@ -199,7 +196,7 @@
 .popup__new-price {
   margin: 0;
   font-size: 35px;
-  /* font-weight: 500; */
+
   line-height: 1;
   color: var(--dark-color);
 }
@@ -207,7 +204,7 @@
 .popup__old-price {
   margin: 0;
   font-size: 20px;
-  /* font-weight: 500; */
+
   line-height: 1;
   color: var(--old-text);
   text-decoration: line-through;

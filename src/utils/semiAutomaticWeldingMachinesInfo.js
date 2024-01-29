@@ -1,5 +1,6 @@
 //Сварочные полуавтоматы
 import jonser180dqx from "../images/Semi_automatic_welding_machines/180DQX.png";
+// import jonser180dqxBig from "../images/Semi_automatic_welding_machines/IMG_7216_pixian_ai.png";
 import jonser180dqxBig from "../images/Semi_automatic_welding_machines/180DQX@2x.png";
 import jonser1805dqx from "../images/Semi_automatic_welding_machines/1805dqx.png";
 import jonser1805dqxBig from "../images/Semi_automatic_welding_machines/1805dqx@2x.png";
@@ -46,7 +47,20 @@ const semiAutomaticWeldingMachinesInfo = {
         {
           _id: "sawmiClassic_180dqx",
           nameModel: "180dqx",
+          nameProduct: "Сварочный полуавтомат",
           img: jonser180dqx,
+          titleParams: [
+            {
+              param: "ампераж:",
+              value: "180А",
+              _id: "sawmi_180dqx_tp1",
+            },
+            {
+              param: "вместимость катушки:",
+              value: "до 1 кг",
+              _id: "sawmi_180dqx_tp2",
+            },
+          ],
           detailed: {
             imgBig: jonser180dqxBig,
             fullNameModel: "Сварочный полуавтомат Jonser 180DQX",
@@ -197,7 +211,20 @@ const semiAutomaticWeldingMachinesInfo = {
         {
           _id: "sawmiClassic_1805dqx",
           nameModel: "180/5dqx",
+          nameProduct: "Сварочный полуавтомат",
           img: jonser1805dqx,
+          titleParams: [
+            {
+              param: "ампераж:",
+              value: "180А",
+              _id: "sawmi_1805dqx_tp1",
+            },
+            {
+              param: "вместимость катушки:",
+              value: "от 1 до 5 кг",
+              _id: "sawmi_1805dqx_tp2",
+            },
+          ],
           detailed: {
             imgBig: jonser1805dqxBig,
             fullNameModel: "Сварочный полуавтомат Jonser 180/5DQX",
@@ -347,7 +374,20 @@ const semiAutomaticWeldingMachinesInfo = {
         {
           _id: "sawmiClassic_185qx",
           nameModel: "185qx",
+          nameProduct: "Сварочный полуавтомат",
           img: jonser185qx,
+          titleParams: [
+            {
+              param: "ампераж:",
+              value: "185А",
+              _id: "sawmi_185dqx_tp1",
+            },
+            {
+              param: "вместимость катушки:",
+              value: "до 1 кг",
+              _id: "sawmi_185dqx_tp2",
+            },
+          ],
           detailed: {
             imgBig: jonser185qxBig,
             fullNameModel: "Сварочный полуавтомат Jonser 185QX",
@@ -503,7 +543,20 @@ const semiAutomaticWeldingMachinesInfo = {
         {
           _id: "sawmiClassic_190qx",
           nameModel: "190qx",
+          nameProduct: "Сварочный полуавтомат",
           img: jonser190qx,
+          titleParams: [
+            {
+              param: "ампераж:",
+              value: "190А",
+              _id: "sawmi_190dqx_tp1",
+            },
+            {
+              param: "вместимость катушки:",
+              value: "до 1 кг",
+              _id: "sawmi_190dqx_tp2",
+            },
+          ],
           detailed: {
             imgBig: jonser190qxBig,
             fullNameModel: "Сварочный полуавтомат Jonser 190QX",
@@ -667,7 +720,20 @@ const semiAutomaticWeldingMachinesInfo = {
         {
           _id: "sawmiClassic_1805mxg",
           nameModel: "180/5mxg",
+          nameProduct: "Сварочный полуавтомат",
           img: jonser1805mxg,
+          titleParams: [
+            {
+              param: "ампераж:",
+              value: "180А",
+              _id: "sawmi_1805mxg_tp1",
+            },
+            {
+              param: "вместимость катушки:",
+              value: "от 1 до 5 кг",
+              _id: "sawmi_1805mxg_tp2",
+            },
+          ],
           detailed: {
             imgBig: jonser1805mxgBig,
             fullNameModel: "Сварочный полуавтомат Jonser 180/5MXG",
@@ -819,7 +885,20 @@ const semiAutomaticWeldingMachinesInfo = {
         {
           _id: "sawmiClassic_200qx",
           nameModel: "200qx",
+          nameProduct: "Сварочный полуавтомат",
           img: jonser200qx,
+          titleParams: [
+            {
+              param: "ампераж:",
+              value: "200А",
+              _id: "sawmi_200qx_tp1",
+            },
+            {
+              param: "вместимость катушки:",
+              value: "до 1 кг",
+              _id: "sawmi_200qx_tp2",
+            },
+          ],
           detailed: {
             imgBig: jonser200qxBig,
             fullNameModel: "Сварочный полуавтомат Jonser 200QX",
@@ -1001,7 +1080,20 @@ const semiAutomaticWeldingMachinesInfo = {
         {
           _id: "sawmiClassic_220qx",
           nameModel: "220qx",
+          nameProduct: "Сварочный полуавтомат",
           img: jonser220qx,
+          titleParams: [
+            {
+              param: "ампераж:",
+              value: "220А",
+              _id: "sawmi_220qx_tp1",
+            },
+            {
+              param: "вместимость катушки:",
+              value: "до 1 кг",
+              _id: "sawmi_220qx_tp2",
+            },
+          ],
           detailed: {
             imgBig: jonser220qxBig,
             fullNameModel: "Сварочный полуавтомат Jonser 220QX",
@@ -1187,7 +1279,20 @@ const semiAutomaticWeldingMachinesInfo = {
         {
           _id: "sawmiClassic_300qx",
           nameModel: "300qx",
+          nameProduct: "Сварочный полуавтомат",
           img: jonser300qx,
+          titleParams: [
+            {
+              param: "ампераж:",
+              value: "300А",
+              _id: "sawmi_300qx_tp1",
+            },
+            {
+              param: "вместимость катушки:",
+              value: "от 1 до 5 кг",
+              _id: "sawmi_300qx_tp2",
+            },
+          ],
           detailed: {
             imgBig: jonser300qxBig,
             fullNameModel: "Сварочный полуавтомат Jonser 300QX",
@@ -1366,7 +1471,20 @@ const semiAutomaticWeldingMachinesInfo = {
         {
           _id: "sawmiPremium_gt220",
           nameModel: "gt220",
+          nameProduct: "Сварочный полуавтомат",
           img: jonser_gt220,
+          titleParams: [
+            {
+              param: "ампераж:",
+              value: "220А",
+              _id: "sawmi_gt220_tp1",
+            },
+            {
+              param: "вместимость катушки:",
+              value: "от 1 до 5 кг",
+              _id: "sawmi_gt220_tp2",
+            },
+          ],
           detailed: {
             imgBig: jonser_gt220Big,
             fullNameModel: "Сварочный полуавтомат Jonser GT220",
@@ -1556,7 +1674,20 @@ const semiAutomaticWeldingMachinesInfo = {
         {
           _id: "sawmiPremium_gt250",
           nameModel: "gt250",
+          nameProduct: "Сварочный полуавтомат",
           img: jonser_gt250,
+          titleParams: [
+            {
+              param: "ампераж:",
+              value: "250А",
+              _id: "sawmi_gt250_tp1",
+            },
+            {
+              param: "вместимость катушки:",
+              value: "от 1 до 5 кг",
+              _id: "sawmi_gt250_tp2",
+            },
+          ],
           detailed: {
             imgBig: jonser_gt250Big,
             fullNameModel: "Сварочный полуавтомат Jonser GT250",
@@ -1736,7 +1867,20 @@ const semiAutomaticWeldingMachinesInfo = {
         {
           _id: "sawmiPremium_gt270pmi",
           nameModel: "gt-270pmi",
+          nameProduct: "Сварочный полуавтомат",
           img: jonser_gt270pmi,
+          titleParams: [
+            {
+              param: "ампераж:",
+              value: "270А",
+              _id: "sawmi_gt270pmi_tp1",
+            },
+            {
+              param: "вместимость катушки:",
+              value: "от 1 до 5 кг",
+              _id: "sawmi_gt270pmi_tp2",
+            },
+          ],
           detailed: {
             imgBig: jonser_gt270pmiBig,
             fullNameModel: "Сварочный полуавтомат Jonser GT-270PMI",
@@ -1953,7 +2097,20 @@ const semiAutomaticWeldingMachinesInfo = {
         {
           _id: "sawmiPremium_gt300",
           nameModel: "gt300",
+          nameProduct: "Сварочный полуавтомат",
           img: jonser_gt300,
+          titleParams: [
+            {
+              param: "ампераж:",
+              value: "300А",
+              _id: "sawmi_gt300_tp1",
+            },
+            {
+              param: "вместимость катушки:",
+              value: "от 1 до 5 кг",
+              _id: "sawmi_gt300_tp2",
+            },
+          ],
           detailed: {
             imgBig: jonser_gt300Big,
             fullNameModel: "Сварочный полуавтомат Jonser GT300",
@@ -2136,7 +2293,20 @@ const semiAutomaticWeldingMachinesInfo = {
         {
           _id: "sawmiPlasma_gtr40kmcut",
           nameModel: "gTR-40KM cut",
+          nameProduct: "Сварочный плазморез",
           img: jonsergtr40kmcut,
+          titleParams: [
+            {
+              param: "ампераж:",
+              value: "40А",
+              _id: "sawmi_gtr40kmcut_tp1",
+            },
+            {
+              param: "Макс. толщина реза:",
+              value: "15 мм.",
+              _id: "sawmi_gtr40kmcut_tp2",
+            },
+          ],
           detailed: {
             imgBig: jonsergtr40kmcutBig,
             fullNameModel: "Плазморез Jonser GTR-40KM CUT",
