@@ -42,7 +42,7 @@
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 225px;
+  max-width: 235px;
 }
 
 @media screen and (max-width: 1024px) {

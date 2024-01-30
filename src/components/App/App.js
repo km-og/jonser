@@ -17,6 +17,7 @@ import ProductPage from "../ProductPage/ProductPage";
 import Privacy from "../Privacy/Privacy";
 import Delivery from "../Delivery/Delivery";
 import PageNotFound from "../PageNotFound/PageNotFound";
+import oilsInfo from "../../utils/oilsInfo";
 
 function App() {
   const [isDarkLinks, setIsDarkLinks] = useState(true);
@@ -110,6 +111,7 @@ function App() {
             path="/toolKits"
             element={<ProductPage infoPage={toolKitsInfo} />}
           />
+          <Route path="/oils" element={<ProductPage infoPage={oilsInfo} />} />
           <Route
             path="/additionally"
             element={<ProductPage infoPage={additionallyInfo} />}

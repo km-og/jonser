@@ -8,6 +8,7 @@ import сhainsaws from "../images/сhainsaws/preview.png";
 import trimmers from "../images/trimmers/preview.png";
 import toolKits from "../images/toolKits/preview.png";
 import additionally from "../images/additionally/preview.png";
+import oils from "../images/oils/preview.png";
 
 const itemsFromCatalog = [
   {
@@ -25,18 +26,18 @@ const itemsFromCatalog = [
     _id: 2,
   },
   {
-    name: "Бензогенераторы",
-    alt: "Бензогенераторы",
-    img: gasolineGenerators,
-    route: "/gasolineGenerators",
-    _id: 3,
+    name: "Наборы инструментов",
+    alt: "Наборы инструментов",
+    img: toolKits,
+    route: "/toolKits",
+    _id: 8,
   },
   {
-    name: "Угловые шлифовальные машины (УШМ)",
-    alt: "Угловые шлифовальные машины (УШМ)",
-    img: angleGrinders,
-    route: "/angleGrinders",
-    _id: 4,
+    name: "Масло",
+    alt: "Наборы инструментов",
+    img: oils,
+    route: "/oils",
+    _id: 8,
   },
   {
     name: "Дрели–шуруповерты",
@@ -44,6 +45,13 @@ const itemsFromCatalog = [
     img: drillsAndScrewdrivers,
     route: "/drillsAndScrewdrivers",
     _id: 5,
+  },
+  {
+    name: "Бензиновые генераторы",
+    alt: "Бензиновые генераторы",
+    img: gasolineGenerators,
+    route: "/gasolineGenerators",
+    _id: 3,
   },
   {
     name: "Бензопилы",
@@ -60,15 +68,15 @@ const itemsFromCatalog = [
     _id: 7,
   },
   {
-    name: "Наборы инструментов",
-    nalt: "Наборы инструментов",
-    img: toolKits,
-    route: "/toolKits",
-    _id: 8,
+    name: "Угловые шлифовальные машины (УШМ)",
+    alt: "Угловые шлифовальные машины (УШМ)",
+    img: angleGrinders,
+    route: "/angleGrinders",
+    _id: 4,
   },
   {
-    name: "Оснастка",
-    namalt: "Оснастка",
+    name: "Дополнительно",
+    alt: "Дополнительно",
     img: additionally,
     route: "/additionally",
     _id: 9,
