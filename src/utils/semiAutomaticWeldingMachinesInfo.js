@@ -2330,7 +2330,7 @@ const semiAutomaticWeldingMachinesInfo = {
               },
               {
                 parameter: "Бесконтактный способ зажигания дуги",
-                value: "",
+                value: "Да",
                 _id: "sawmiClassic_gt300_param4",
               },
               {

@@ -5,8 +5,7 @@ import oil4t from "../images/oils/4t-premium.png";
 import oil4tBig from "../images/oils/4t-premium@2x.png";
 
 const oilsInfo = {
-  title: "Дополнительно",
-  description: "",
+  title: "Масло",
   collections: [
     {
       _id: "oils",

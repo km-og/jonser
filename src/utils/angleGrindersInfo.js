@@ -46,7 +46,6 @@ const angleGrindersInfo = {
           detailed: {
             imgBig: jga1200iqBig,
             fullNameModel: "Машина углошлифовальная Jonser JGA-1200IQ",
-            description: "",
             specifications: [
               {
                 parameter: "Коллекторный двигатель мощностью:",
@@ -90,7 +89,7 @@ const angleGrindersInfo = {
               },
               {
                 parameter: "Регулировка оборотов с плавным пуском",
-                value: "",
+                value: "Да",
                 _id: "ag_jga1200iq_param9",
               },
 
@@ -208,7 +207,6 @@ const angleGrindersInfo = {
           detailed: {
             imgBig: jga1300iBig,
             fullNameModel: "Машина углошлифовальная Jonser JGA-1300I",
-            description: "",
             specifications: [
               {
                 parameter: "Коллекторный двигатель мощностью:",
@@ -252,12 +250,12 @@ const angleGrindersInfo = {
               },
               {
                 parameter: "Регулировка оборотов",
-                value: "",
+                value: "Да",
                 _id: "ag_jga1300i_param9",
               },
               {
                 parameter: "Фиксатор выключателя",
-                value: "",
+                value: "Да",
                 _id: "ag_jga1300i_param10",
               },
 
@@ -368,7 +366,6 @@ const angleGrindersInfo = {
             imgBig: jga1800iBig,
             fullNameModel:
               "Машина шлифовальная угловая болгарка Jonser JGA-1800I",
-            description: "",
             specifications: [
               {
                 parameter: "Коллекторный двигатель мощностью:",
@@ -412,12 +409,12 @@ const angleGrindersInfo = {
               },
               {
                 parameter: "Регулировка оборотов с плавным пуском",
-                value: "",
+                value: "Да",
                 _id: "ag_jga1800i_param9",
               },
               {
                 parameter: "Фиксатор выключателя",
-                value: "",
+                value: "Да",
                 _id: "ag_jga1800i_param10",
               },
 
@@ -528,7 +525,6 @@ const angleGrindersInfo = {
             imgBig: jga2300iqBig,
             fullNameModel:
               "Машина шлифовальная угловая болгарка Jonser JGA-2300IQ",
-            description: "",
             specifications: [
               {
                 parameter: "Коллекторный двигатель мощностью:",
@@ -572,17 +568,17 @@ const angleGrindersInfo = {
               },
               {
                 parameter: "Регулировка оборотов с плавным пуском",
-                value: "",
+                value: "Да",
                 _id: "ag_jga2300iq_param9",
               },
               {
                 parameter: "Фиксатор выключателя",
-                value: "",
+                value: "Да",
                 _id: "ag_jga2300iq_param10",
               },
               {
                 parameter: "Защита от случайного пуска",
-                value: "",
+                value: "Да",
                 _id: "ag_jga2300iq_param11",
               },
 
@@ -701,7 +697,6 @@ const angleGrindersInfo = {
             imgBig: jga2800Big,
             fullNameModel:
               "Машина шлифовальная угловая болгарка Jonser JGA-2800",
-            description: "",
             specifications: [
               {
                 parameter: "Коллекторный двигатель мощностью:",
@@ -745,17 +740,17 @@ const angleGrindersInfo = {
               },
               {
                 parameter: "Плавный пуск",
-                value: "",
+                value: "Да",
                 _id: "ag_jga2800_param9",
               },
               {
                 parameter: "Фиксатор выключателя",
-                value: "",
+                value: "Да",
                 _id: "ag_jga2800_param10",
               },
               {
                 parameter: "Защита от случайного пуска",
-                value: "",
+                value: "Да",
                 _id: "ag_jga2800_param11",
               },
 

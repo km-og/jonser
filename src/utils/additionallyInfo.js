@@ -13,7 +13,6 @@ import fcw085cBig from "../images/additionally/fcw085C@2x.png";
 
 const additionallyInfo = {
   title: "Дополнительно",
-  description: "",
   collections: [
     {
       _id: "chain",
@@ -41,7 +40,6 @@ const additionallyInfo = {
           detailed: {
             imgBig: chain3850Big,
             fullNameModel: "Цепь для пилы Jonser 3/8 - 50",
-            description: "",
             specifications: [
               {
                 parameter: "Материал:",
@@ -89,7 +87,6 @@ const additionallyInfo = {
           detailed: {
             imgBig: chain3850Big,
             fullNameModel: "Цепь для пилы Jonser 3/8 - 56",
-            description: "",
             specifications: [
               {
                 parameter: "Материал:",
@@ -137,7 +134,6 @@ const additionallyInfo = {
           detailed: {
             imgBig: chain3850Big,
             fullNameModel: "Цепь для пилы Jonser 3/8 - 57",
-            description: "",
             specifications: [
               {
                 parameter: "Материал:",
@@ -185,7 +181,6 @@ const additionallyInfo = {
           detailed: {
             imgBig: chain3850Big,
             fullNameModel: "Цепь для пилы Jonser 0.325 - 64",
-            description: "",
             specifications: [
               {
                 parameter: "Материал:",
@@ -233,7 +228,6 @@ const additionallyInfo = {
           detailed: {
             imgBig: chain3850Big,
             fullNameModel: "Цепь для пилы Jonser 0.325 - 72",
-            description: "",
             specifications: [
               {
                 parameter: "Материал:",
@@ -289,7 +283,6 @@ const additionallyInfo = {
           detailed: {
             imgBig: chain3850Big,
             fullNameModel: "Цепь для пилы Jonser 3/8 - 50s",
-            description: "",
             specifications: [
               {
                 parameter: "Материал:",
@@ -337,7 +330,6 @@ const additionallyInfo = {
           detailed: {
             imgBig: chain3850Big,
             fullNameModel: "Цепь для пилы Jonser 3/8 - 56s",
-            description: "",
             specifications: [
               {
                 parameter: "Материал:",
@@ -385,7 +377,6 @@ const additionallyInfo = {
           detailed: {
             imgBig: chain3850Big,
             fullNameModel: "Цепь для пилы Jonser 3/8 - 57",
-            description: "",
             specifications: [
               {
                 parameter: "Материал:",
@@ -433,7 +424,6 @@ const additionallyInfo = {
           detailed: {
             imgBig: chain3850Big,
             fullNameModel: "Цепь для пилы Jonser 0.325 - 64s",
-            description: "",
             specifications: [
               {
                 parameter: "Материал:",
@@ -481,7 +471,6 @@ const additionallyInfo = {
           detailed: {
             imgBig: chain3850Big,
             fullNameModel: "Цепь для пилы Jonser 0.325 - 72s",
-            description: "",
             specifications: [
               {
                 parameter: "Материал:",
@@ -538,7 +527,6 @@ const additionallyInfo = {
             imgBig: fcw081Big,
             fullNameModel:
               "Сварочная проволока флюсовая порошковая Jonser FCW 0,8 - 1",
-            description: "",
             specifications: [
               {
                 parameter: "Тип сварки:",
@@ -582,7 +570,6 @@ const additionallyInfo = {
             imgBig: fcw101Big,
             fullNameModel:
               "Сварочная проволока флюсовая порошковая Jonser FCW 1,0 - 1",
-            description: "",
             specifications: [
               {
                 parameter: "Тип сварки:",
@@ -625,7 +612,6 @@ const additionallyInfo = {
           detailed: {
             imgBig: fcw085Big,
             fullNameModel: "Сварочная проволока Jonser FCW 0,8 - 5",
-            description: "",
             specifications: [
               {
                 parameter: "Тип сварки:",
@@ -668,7 +654,6 @@ const additionallyInfo = {
           detailed: {
             imgBig: fcw085cBig,
             fullNameModel: "Сварочная проволока омеднённая Jonser FCW 0,8 - 5",
-            description: "",
             specifications: [
               {
                 parameter: "Тип сварки:",

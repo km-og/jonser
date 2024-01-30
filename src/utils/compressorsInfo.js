@@ -31,7 +31,6 @@ const compressorsInfo = {
         //     // imgBig: jac100_2400ssBig,
         //     fullNameModel:
         //       "Компрессор воздушный масляный Jonser JAC-100/2400SS",
-        //     description: "",
         //     specifications: [
         //       {
         //         parameter: "Асинхронный двигатель мощностью:",
@@ -40,12 +39,12 @@ const compressorsInfo = {
         //       },
         //       {
         //         parameter: "Три цилиндра",
-        //         value: "",
+        //         value: "Да",
         //         _id: "compr_jac100_2400ss_param2",
         //       },
         //       {
         //         parameter: "Два ремня",
-        //         value: "",
+        //         value: "Да",
         //         _id: "compr_jac100_2400ss_param3",
         //       },
         //       {
@@ -132,7 +131,6 @@ const compressorsInfo = {
           detailed: {
             imgBig: jac50_2000ssBig,
             fullNameModel: "Компрессор воздушный масляный Jonser JAC-50/2000SS",
-            description: "",
             specifications: [
               {
                 parameter: "Асинхронный двигатель мощностью:",
@@ -141,7 +139,7 @@ const compressorsInfo = {
               },
               {
                 parameter: "Один цилиндр",
-                value: "",
+                value: "Да",
                 _id: "compr_jac50_2000ss_param2",
               },
               {

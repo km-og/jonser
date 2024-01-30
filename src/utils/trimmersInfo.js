@@ -3,12 +3,12 @@ import trimGas_es4200 from "../images/trimmers/ES-4200.png";
 import trimGas_es4200Big from "../images/trimmers/ES-4200@2x.png";
 import trimGas_es4200el from "../images/trimmers/ES-4200.png";
 import trimGas_es4200elBig from "../images/trimmers/ES-4200@2x.png";
-import es5500 from "../images/trimmers/es5500.png";
-import es5500Big from "../images/trimmers/es5500@2x.png";
+// import es5500 from "../images/trimmers/es5500.png";
+// import es5500Big from "../images/trimmers/es5500@2x.png";
 import trimBatt_gt12jn from "../images/trimmers/gt-12jn.png";
 import trimBatt_gt12jnBig from "../images/trimmers/gt-12jn.png";
-import trimBatt_gt18jn from "../images/trimmers/trimBatt_gt18jn.png";
-import trimBatt_gt18jnBig from "../images/trimmers/trimBatt_gt18jn@2x.png";
+// import trimBatt_gt18jn from "../images/trimmers/trimBatt_gt18jn.png";
+// import trimBatt_gt18jnBig from "../images/trimmers/trimBatt_gt18jn@2x.png";
 
 const trimmersInfo = {
   title: "Триммеры",
@@ -50,11 +50,10 @@ const trimmersInfo = {
           detailed: {
             imgBig: trimGas_es4200Big,
             fullNameModel: "Триммер бензиновый Jonser ES-4200",
-            description: "",
             specifications: [
               {
                 parameter: "2-тактный двигатель",
-                value: "",
+                value: "Да",
                 _id: "trimGas_es4200_param1",
               },
               {
@@ -84,7 +83,7 @@ const trimmersInfo = {
               },
               {
                 parameter: "Усиленное крепление руля",
-                value: "",
+                value: "Да",
                 _id: "trimGas_es4200_param7",
               },
               {
@@ -94,7 +93,7 @@ const trimmersInfo = {
               },
               {
                 parameter: "Ручной стартер",
-                value: "",
+                value: "Да",
                 _id: "trimGas_es4200_param10",
               },
               {
@@ -109,7 +108,7 @@ const trimmersInfo = {
               },
               {
                 parameter: "Воздушное охлаждение",
-                value: "",
+                value: "Да",
                 _id: "trimGas_es4200_param13",
               },
               {
@@ -222,11 +221,10 @@ const trimmersInfo = {
             imgBig: trimGas_es4200elBig,
             fullNameModel:
               "Триммер бензиновый с электростартером Jonser ES-4200 Electric",
-            description: "",
             specifications: [
               {
                 parameter: "2-тактный двигатель",
-                value: "",
+                value: "Да",
                 _id: "trimGas_es4200el_param1",
               },
               {
@@ -256,12 +254,12 @@ const trimmersInfo = {
               },
               {
                 parameter: "Усиленное крепление руля",
-                value: "",
+                value: "Да",
                 _id: "trimGas_es4200el_param7",
               },
               {
                 parameter: "Заводится  с кнопки и вручную",
-                value: "",
+                value: "Да",
                 _id: "trimGas_es4200el_param8",
               },
               {
@@ -271,7 +269,7 @@ const trimmersInfo = {
               },
               {
                 parameter: "Ручной стартер",
-                value: "",
+                value: "Да",
                 _id: "trimGas_es4200el_param10",
               },
               {
@@ -286,7 +284,7 @@ const trimmersInfo = {
               },
               {
                 parameter: "Воздушное охлаждение",
-                value: "",
+                value: "Да",
                 _id: "trimGas_es4200el_param13",
               },
               {
@@ -394,11 +392,10 @@ const trimmersInfo = {
         //   detailed: {
         //     imgBig: es5500Big,
         //     fullNameModel: "Триммер бензиновый Jonser ES-5500 (4Т)",
-        //     description: "",
         //     specifications: [
         //       {
         //         parameter: "4-тактный двигатель",
-        //         value: "",
+        //         value: "Да",
         //         _id: "trimGas_es5500_param1",
         //       },
         //       {
@@ -428,17 +425,17 @@ const trimmersInfo = {
         //       },
         //       {
         //         parameter: "Усиленное крепление руля",
-        //         value: "",
+        //         value: "Да",
         //         _id: "trimGas_es5500_param7",
         //       },
         //       {
         //         parameter: "Круиз контроль",
-        //         value: "",
+        //         value: "Да",
         //         _id: "trimGas_es5500_param8",
         //       },
         //       {
         //         parameter: "Ручной стартер",
-        //         value: "",
+        //         value: "Да",
         //         _id: "trimGas_es5500_param10",
         //       },
         //       {
@@ -448,12 +445,12 @@ const trimmersInfo = {
         //       },
         //       {
         //         parameter: "Воздушное охлаждение",
-        //         value: "",
+        //         value: "Да",
         //         _id: "trimGas_es5500_param13",
         //       },
         //       {
         //         parameter: "Масло заливается отдельно",
-        //         value: "",
+        //         value: "Да",
         //         _id: "trimGas_es5500_param13_1",
         //       },
         //       {
@@ -563,11 +560,10 @@ const trimmersInfo = {
           detailed: {
             imgBig: trimBatt_gt12jnBig,
             fullNameModel: "Триммер аккумуляторный Jonser GT-12JN",
-            description: "",
             specifications: [
               {
                 parameter: "12 В двигатель",
-                value: "",
+                value: "Да",
                 _id: "trimBatt_gt12jn_param1",
               },
               {
@@ -607,7 +603,7 @@ const trimmersInfo = {
               },
               {
                 parameter: "АКБ подойдет на шуруповерты многих производителей",
-                value: "",
+                value: "Да",
                 _id: "trimBatt_gt12jn_param9",
               },
               {
@@ -712,11 +708,10 @@ const trimmersInfo = {
         //   detailed: {
         //     imgBig: trimBatt_gt18jnBig,
         //     fullNameModel: "Триммер аккумуляторный Jonser GT-18JN",
-        //     description: "",
         //     specifications: [
         //       {
         //         parameter: "18 В двигатель",
-        //         value: "",
+        //         value: "Да",
         //         _id: "trimBatt_gt18jn_param1",
         //       },
         //       {
@@ -757,7 +752,7 @@ const trimmersInfo = {
         //       {
         //         parameter:
         //           "АКБ системы слайдер, подойдет на шуруповерты многих производителей",
-        //         value: "",
+        //         value: "Да",
         //         _id: "trimBatt_gt18jn_param9",
         //       },
         //       {

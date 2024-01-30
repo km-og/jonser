@@ -6,8 +6,8 @@ import es4200 from "../images/сhainsaws/ES-4200.png";
 import es4200Big from "../images/сhainsaws/ES-4200@2x.png";
 import es43300 from "../images/сhainsaws/ES-43300.png";
 import es43300Big from "../images/сhainsaws/ES-43300@2x.png";
-import es4300s from "../images/сhainsaws/ES-43300.png";
-import es4300sBig from "../images/сhainsaws/ES-43300@2x.png";
+import es4300s from "../images/сhainsaws/ES-4300S.png";
+import es4300sBig from "../images/сhainsaws/ES-4300S@2x.png";
 import jac186s from "../images/сhainsaws/battery/JAC-186S.png";
 import jac186sBig from "../images/сhainsaws/battery/JAC-186S@2x.png";
 // import bs4500 from "../images/сhainsaws/bs4500.png";
@@ -52,7 +52,6 @@ const сhainsawsInfo = {
         //   detailed: {
         //     imgBig: bs4500Big,
         //     fullNameModel: "Бензопила цепная Jonser BS-4500",
-        //     description: "",
         //     specifications: [
         //       {
         //         parameter: "Мощность:",
@@ -96,7 +95,7 @@ const сhainsawsInfo = {
         //       },
         //       {
         //         parameter: "Ручной стартер",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gs_bs4500_param9",
         //       },
         //       {
@@ -111,7 +110,7 @@ const сhainsawsInfo = {
         //       },
         //       {
         //         parameter: "Воздушное охлаждение",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gs_bs4500_param12",
         //       },
         //       {
@@ -219,7 +218,6 @@ const сhainsawsInfo = {
         //   detailed: {
         //     // imgBig: bs5500Big,
         //     fullNameModel: "Бензопила цепная Jonser BS-5500",
-        //     description: "",
         //     specifications: [
         //       {
         //         parameter: "Мощность:",
@@ -263,7 +261,7 @@ const сhainsawsInfo = {
         //       },
         //       {
         //         parameter: "Ручной стартер",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gs_bs5500_param9",
         //       },
         //       {
@@ -278,7 +276,7 @@ const сhainsawsInfo = {
         //       },
         //       {
         //         parameter: "Воздушное охлаждение",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gs_bs5500_param12",
         //       },
         //       {
@@ -392,14 +390,13 @@ const сhainsawsInfo = {
             },
             {
               param: "длина шины:",
-              value: "12 дм",
+              value: "12дм / 30см",
               _id: "gs_es4100_tp2",
             },
           ],
           detailed: {
             imgBig: es4100Big,
             fullNameModel: "Бензопила цепная Jonser ES-4100",
-            description: "",
             specifications: [
               {
                 parameter: "Мощность:",
@@ -407,8 +404,8 @@ const сhainsawsInfo = {
                 _id: "gs_es4100_param1",
               },
               {
-                parameter: "Длина шины:",
-                value: "12 дм",
+                parameter: "1 шина / 1 цепь:",
+                value: "12дм / 30см",
                 _id: "gs_es4100_param2",
               },
               {
@@ -438,7 +435,7 @@ const сhainsawsInfo = {
               },
               {
                 parameter: "Ручной стартер",
-                value: "",
+                value: "Да",
                 _id: "gs_es4100_param9",
               },
               {
@@ -453,7 +450,7 @@ const сhainsawsInfo = {
               },
               {
                 parameter: "Воздушное охлаждение",
-                value: "",
+                value: "Да",
                 _id: "gs_es4100_param12",
               },
               {
@@ -485,7 +482,7 @@ const сhainsawsInfo = {
               },
               {
                 parameter: "Цепи 12 дюймов – 30 см (45зв):",
-                value: "2 шт",
+                value: "1 шт",
                 _id: "gs_es4100_eq3",
               },
               {
@@ -589,7 +586,6 @@ const сhainsawsInfo = {
           detailed: {
             imgBig: es4200Big,
             fullNameModel: "Бензопила цепная Jonser ES-4200",
-            description: "",
             specifications: [
               {
                 parameter: "Мощность:",
@@ -597,13 +593,13 @@ const сhainsawsInfo = {
                 _id: "gs_es4200_param1",
               },
               {
-                parameter: "Длина шины (2шт):",
+                parameter: "2 шины / 2 цепи:",
                 value: "16дм / 14дм",
                 _id: "gs_es4200_param2",
               },
               {
                 parameter: "Количество звеньев (2 цепи):",
-                value: "50шт/57шт",
+                value: "50шт / 57шт",
                 _id: "gs_es4200_param3",
               },
               {
@@ -633,7 +629,7 @@ const сhainsawsInfo = {
               },
               {
                 parameter: "Ручной стартер",
-                value: "",
+                value: "Да",
                 _id: "gs_es4200_param9",
               },
               {
@@ -648,7 +644,7 @@ const сhainsawsInfo = {
               },
               {
                 parameter: "Воздушное охлаждение",
-                value: "",
+                value: "Да",
                 _id: "gs_es4200_param12",
               },
               {
@@ -794,15 +790,14 @@ const сhainsawsInfo = {
               _id: "gs_es43300_tp1",
             },
             {
-              param: "длина шины (2шт.):",
-              value: "18дм / 45см",
+              param: "длина шины:",
+              value: "45см",
               _id: "gs_es43300_tp2",
             },
           ],
           detailed: {
             imgBig: es43300Big,
             fullNameModel: "Бензопила цепная Jonser ES-43300",
-            description: "",
             specifications: [
               {
                 parameter: "Мощность:",
@@ -810,7 +805,7 @@ const сhainsawsInfo = {
                 _id: "gs_es43300_param1",
               },
               {
-                parameter: "Длина шины:",
+                parameter: "1 шина / 1 цепь:",
                 value: "18дм / 45см",
                 _id: "gs_es43300_param2",
               },
@@ -846,7 +841,7 @@ const сhainsawsInfo = {
               },
               {
                 parameter: "Ручной стартер",
-                value: "",
+                value: "Да",
                 _id: "gs_es43300_param9",
               },
               {
@@ -861,12 +856,12 @@ const сhainsawsInfo = {
               },
               {
                 parameter: "Воздушное охлаждение",
-                value: "",
+                value: "Да",
                 _id: "gs_es43300_param12",
               },
               {
                 parameter: "Вес без шины и без цепи / брутто:",
-                value: "5,6 кг / 8,65 кг",
+                value: "5,5 кг / 8,65 кг",
                 _id: "gs_es43300_param13",
               },
               {
@@ -989,15 +984,14 @@ const сhainsawsInfo = {
               _id: "gs_es4300s_tp1",
             },
             {
-              param: "длина шины (2шт.):",
-              value: "18дм / 45см",
+              param: "длина шины:",
+              value: "45см",
               _id: "gs_es4300s_tp2",
             },
           ],
           detailed: {
             imgBig: es4300sBig,
             fullNameModel: "Бензопила цепная Jonser ES-4300S",
-            description: "",
             specifications: [
               {
                 parameter: "Мощность:",
@@ -1005,7 +999,7 @@ const сhainsawsInfo = {
                 _id: "gs_es4300s_param1",
               },
               {
-                parameter: "Длина шины:",
+                parameter: "1 шина / 1 цепь:",
                 value: "18дм / 45см",
                 _id: "gs_es4300s_param2",
               },
@@ -1041,7 +1035,7 @@ const сhainsawsInfo = {
               },
               {
                 parameter: "Ручной стартер",
-                value: "",
+                value: "Да",
                 _id: "gs_es4300s_param9",
               },
               {
@@ -1056,7 +1050,7 @@ const сhainsawsInfo = {
               },
               {
                 parameter: "Воздушное охлаждение",
-                value: "",
+                value: "Да",
                 _id: "gs_es4300s_param12",
               },
               {
@@ -1180,7 +1174,6 @@ const сhainsawsInfo = {
     {
       _id: "bs",
       subtitle: "Аккумуляторные пилы",
-      // subtitle: "Электрические пилы",
       premium: false,
       isHorizontal: true,
       models: [
@@ -1191,7 +1184,6 @@ const сhainsawsInfo = {
         //   detailed: {
         //     // imgBig: es2300Big,
         //     fullNameModel: "Электропила Jonser ES-2300",
-        //     description: "",
         //     specifications: [
         //       {
         //         parameter: "Мощность:",
@@ -1215,7 +1207,7 @@ const сhainsawsInfo = {
         //       },
         //       {
         //         parameter: "Коллекторный электродвигатель",
-        //         value: "",
+        //         value: "Да",
         //         _id: "bs_es2300_param5",
         //       },
         //       {
@@ -1226,7 +1218,7 @@ const сhainsawsInfo = {
 
         //       {
         //         parameter: "Автоматическая подача масла",
-        //         value: "",
+        //         value: "Да",
         //         _id: "bs_es2300_param12",
         //       },
         //       {
@@ -1311,7 +1303,6 @@ const сhainsawsInfo = {
           detailed: {
             imgBig: jac186sBig,
             fullNameModel: "Аккумуляторная цепная мини-пила Jonser JAC-186S",
-            description: "",
             specifications: [
               {
                 parameter: "Напряжение аккумулятора:",
@@ -1340,7 +1331,7 @@ const сhainsawsInfo = {
               },
               {
                 parameter: "Размер пильной шины:",
-                value: '15,24 см./ 6"',
+                value: '15,24 см/ 6"',
                 _id: "bs_jac186s_param5",
               },
               {
@@ -1350,42 +1341,37 @@ const сhainsawsInfo = {
               },
               {
                 parameter: "Коллекторный двигатель",
-                value: "",
+                value: "Да",
                 _id: "bs_jac186s_param7",
               },
               {
                 parameter: "Прорезиненная рукоятка",
-                value: "",
+                value: "Да",
                 _id: "bs_jac186s_param8",
               },
               {
                 parameter: "Защита от случайного пуска",
-                value: "",
+                value: "Да",
                 _id: "bs_jac186s_param9",
               },
               {
                 parameter: "Защита от перегрева",
-                value: "",
+                value: "Да",
                 _id: "bs_jac186s_param10",
               },
               {
                 parameter: "Защита от короткого замыкания",
-                value: "",
+                value: "Да",
                 _id: "bs_jac186s_param11",
               },
               {
-                parameter: "Защита от случайного пуска",
-                value: "",
-                _id: "bs_jac186s_param12",
-              },
-              {
                 parameter: "Защитный кожух",
-                value: "",
+                value: "Да",
                 _id: "bs_jac186s_param13",
               },
               {
                 parameter: "Рабочий упор",
-                value: "",
+                value: "Да",
                 _id: "bs_jac186s_param14",
               },
               {
@@ -1447,10 +1433,6 @@ const сhainsawsInfo = {
               },
             ],
             advantages: [
-              {
-                parameter: "Автоматическая смазка цепи",
-                _id: "gs_jac186s_ad1",
-              },
               {
                 parameter: "Блокировка от случайного включения",
                 _id: "gs_jac186s_ad2",
