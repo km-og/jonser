@@ -1,15 +1,21 @@
 //Цепи
-import chain3850 from "../images/additionally/chain3850.png";
-import chain3850Big from "../images/additionally/chain3850@2x.png";
+// chain3850
+import chain3850 from "../images/additionally/chain3850/0.webp";
+import chain3850_1 from "../images/additionally/chain3850/1.webp";
+
 //Проволока
-import fcw081 from "../images/additionally/fcw081.png";
-import fcw081Big from "../images/additionally/fcw081@2x.png";
-import fcw101 from "../images/additionally/fcw101.png";
-import fcw101Big from "../images/additionally/fcw101@2x.png";
-import fcw085 from "../images/additionally/fcw085.png";
-import fcw085Big from "../images/additionally/fcw085@2x.png";
-import fcw085c from "../images/additionally/fcw085C.png";
-import fcw085cBig from "../images/additionally/fcw085C@2x.png";
+// fcw081
+import fcw081 from "../images/additionally/fcw081/0.webp";
+import fcw081_1 from "../images/additionally/fcw081/1.webp";
+// fcw101
+import fcw101 from "../images/additionally/fcw081/0.webp";
+import fcw101_1 from "../images/additionally/fcw081/1.webp";
+// fcw085
+import fcw085 from "../images/additionally/fcw085/0.webp";
+import fcw085_1 from "../images/additionally/fcw085/1.webp";
+// fcw085c
+import fcw085c from "../images/additionally/fcw085c/0.webp";
+import fcw085c_1 from "../images/additionally/fcw085c/1.webp";
 
 const additionallyInfo = {
   title: "Дополнительно",
@@ -38,7 +44,12 @@ const additionallyInfo = {
             },
           ],
           detailed: {
-            imgBig: chain3850Big,
+            images: [
+              {
+                link: chain3850_1,
+                _id: "chain3850_1",
+              },
+            ],
             fullNameModel: "Цепь для пилы Jonser 3/8 - 50",
             specifications: [
               {
@@ -85,7 +96,12 @@ const additionallyInfo = {
             },
           ],
           detailed: {
-            imgBig: chain3850Big,
+            images: [
+              {
+                link: chain3850_1,
+                _id: "chain3850_1",
+              },
+            ],
             fullNameModel: "Цепь для пилы Jonser 3/8 - 56",
             specifications: [
               {
@@ -132,7 +148,12 @@ const additionallyInfo = {
             },
           ],
           detailed: {
-            imgBig: chain3850Big,
+            images: [
+              {
+                link: chain3850_1,
+                _id: "chain3850_1",
+              },
+            ],
             fullNameModel: "Цепь для пилы Jonser 3/8 - 57",
             specifications: [
               {
@@ -179,7 +200,12 @@ const additionallyInfo = {
             },
           ],
           detailed: {
-            imgBig: chain3850Big,
+            images: [
+              {
+                link: chain3850_1,
+                _id: "chain3850_1",
+              },
+            ],
             fullNameModel: "Цепь для пилы Jonser 0.325 - 64",
             specifications: [
               {
@@ -226,7 +252,12 @@ const additionallyInfo = {
             },
           ],
           detailed: {
-            imgBig: chain3850Big,
+            images: [
+              {
+                link: chain3850_1,
+                _id: "chain3850_1",
+              },
+            ],
             fullNameModel: "Цепь для пилы Jonser 0.325 - 72",
             specifications: [
               {
@@ -281,7 +312,12 @@ const additionallyInfo = {
             },
           ],
           detailed: {
-            imgBig: chain3850Big,
+            images: [
+              {
+                link: chain3850_1,
+                _id: "chain3850_1",
+              },
+            ],
             fullNameModel: "Цепь для пилы Jonser 3/8 - 50s",
             specifications: [
               {
@@ -328,7 +364,12 @@ const additionallyInfo = {
             },
           ],
           detailed: {
-            imgBig: chain3850Big,
+            images: [
+              {
+                link: chain3850_1,
+                _id: "chain3850_1",
+              },
+            ],
             fullNameModel: "Цепь для пилы Jonser 3/8 - 56s",
             specifications: [
               {
@@ -375,7 +416,12 @@ const additionallyInfo = {
             },
           ],
           detailed: {
-            imgBig: chain3850Big,
+            images: [
+              {
+                link: chain3850_1,
+                _id: "chain3850_1",
+              },
+            ],
             fullNameModel: "Цепь для пилы Jonser 3/8 - 57",
             specifications: [
               {
@@ -422,7 +468,12 @@ const additionallyInfo = {
             },
           ],
           detailed: {
-            imgBig: chain3850Big,
+            images: [
+              {
+                link: chain3850_1,
+                _id: "chain3850_1",
+              },
+            ],
             fullNameModel: "Цепь для пилы Jonser 0.325 - 64s",
             specifications: [
               {
@@ -469,7 +520,12 @@ const additionallyInfo = {
             },
           ],
           detailed: {
-            imgBig: chain3850Big,
+            images: [
+              {
+                link: chain3850_1,
+                _id: "chain3850_1",
+              },
+            ],
             fullNameModel: "Цепь для пилы Jonser 0.325 - 72s",
             specifications: [
               {
@@ -503,8 +559,6 @@ const additionallyInfo = {
     {
       _id: "wire",
       subtitle: "Проволока",
-      premium: false,
-      isHorizontal: false,
       models: [
         {
           _id: "wire_fcw081",
@@ -524,7 +578,12 @@ const additionallyInfo = {
             },
           ],
           detailed: {
-            imgBig: fcw081Big,
+            images: [
+              {
+                link: fcw081_1,
+                _id: "fcw081_1",
+              },
+            ],
             fullNameModel:
               "Сварочная проволока флюсовая порошковая Jonser FCW 0,8 - 1",
             specifications: [
@@ -567,7 +626,12 @@ const additionallyInfo = {
             },
           ],
           detailed: {
-            imgBig: fcw101Big,
+            images: [
+              {
+                link: fcw101_1,
+                _id: "fcw101_1",
+              },
+            ],
             fullNameModel:
               "Сварочная проволока флюсовая порошковая Jonser FCW 1,0 - 1",
             specifications: [
@@ -610,7 +674,12 @@ const additionallyInfo = {
             },
           ],
           detailed: {
-            imgBig: fcw085Big,
+            images: [
+              {
+                link: fcw085_1,
+                _id: "fcw085_1",
+              },
+            ],
             fullNameModel: "Сварочная проволока Jonser FCW 0,8 - 5",
             specifications: [
               {
@@ -652,7 +721,12 @@ const additionallyInfo = {
             },
           ],
           detailed: {
-            imgBig: fcw085cBig,
+            images: [
+              {
+                link: fcw085c_1,
+                _id: "fcw085c_1",
+              },
+            ],
             fullNameModel: "Сварочная проволока омеднённая Jonser FCW 0,8 - 5",
             specifications: [
               {

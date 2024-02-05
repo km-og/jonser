@@ -1,15 +1,40 @@
 //Бензиновые пилы
-import es4100 from "../images/сhainsaws/ES-4100.png";
-// import es4100Big from "../images/сhainsaws/Capture00196_pixian_ai_pixian_ai_pixian_ai.png";
-import es4100Big from "../images/сhainsaws/ES-4100@2x.png";
-import es4200 from "../images/сhainsaws/ES-4200.png";
-import es4200Big from "../images/сhainsaws/ES-4200@2x.png";
-import es43300 from "../images/сhainsaws/ES-43300.png";
-import es43300Big from "../images/сhainsaws/ES-43300@2x.png";
-import es4300s from "../images/сhainsaws/ES-4300S.png";
-import es4300sBig from "../images/сhainsaws/ES-4300S@2x.png";
-import jac186s from "../images/сhainsaws/battery/JAC-186S.png";
-import jac186sBig from "../images/сhainsaws/battery/JAC-186S@2x.png";
+// es4100
+import es4100 from "../images/сhainsaws/es4100/0.webp";
+import es4100_1 from "../images/сhainsaws/es4100/1.webp";
+import es4100_2 from "../images/сhainsaws/es4100/2.webp";
+import es4100_3 from "../images/сhainsaws/es4100/3.webp";
+import es4100_4 from "../images/сhainsaws/es4100/4.webp";
+import es4100_5 from "../images/сhainsaws/es4100/5.webp";
+// es4200
+import es4200 from "../images/сhainsaws/es4200/0.webp";
+import es4200_1 from "../images/сhainsaws/es4200/1.webp";
+import es4200_2 from "../images/сhainsaws/es4200/2.webp";
+import es4200_3 from "../images/сhainsaws/es4200/3.webp";
+import es4200_4 from "../images/сhainsaws/es4200/4.webp";
+import es4200_5 from "../images/сhainsaws/es4200/5.webp";
+// es43300
+import es43300 from "../images/сhainsaws/es43300/0.webp";
+import es43300_1 from "../images/сhainsaws/es43300/1.webp";
+import es43300_2 from "../images/сhainsaws/es43300/2.webp";
+import es43300_3 from "../images/сhainsaws/es43300/3.webp";
+import es43300_4 from "../images/сhainsaws/es43300/4.webp";
+import es43300_5 from "../images/сhainsaws/es43300/5.webp";
+// es4300s
+import es4300s from "../images/сhainsaws/es4300s/0.webp";
+import es4300s_1 from "../images/сhainsaws/es4300s/1.webp";
+import es4300s_2 from "../images/сhainsaws/es4300s/2.webp";
+import es4300s_3 from "../images/сhainsaws/es4300s/3.webp";
+import es4300s_4 from "../images/сhainsaws/es4300s/4.webp";
+import es4300s_5 from "../images/сhainsaws/es4300s/5.webp";
+// jac186s
+import jac186s from "../images/сhainsaws/battery/jac186s/0.webp";
+import jac186s_1 from "../images/сhainsaws/battery/jac186s/1.webp";
+import jac186s_2 from "../images/сhainsaws/battery/jac186s/2.webp";
+import jac186s_3 from "../images/сhainsaws/battery/jac186s/3.webp";
+import jac186s_4 from "../images/сhainsaws/battery/jac186s/4.webp";
+import jac186s_5 from "../images/сhainsaws/battery/jac186s/5.webp";
+
 // import bs4500 from "../images/сhainsaws/bs4500.png";
 // import bs4500Big from "../images/сhainsaws/bs4500@2x.png";
 // import bs5500 from "../images/сhainsaws/battery";
@@ -50,7 +75,28 @@ const сhainsawsInfo = {
         //     },
         //   ],
         //   detailed: {
-        //     imgBig: bs4500Big,
+        //     images: [
+        //   {
+        //     link: j190qx_1,
+        //     _id: "j190qx_1",
+        //   },
+        //   {
+        //     link: j190qx_2,
+        //     _id: "j190qx_2",
+        //   },
+        //   {
+        //     link: j190qx_3,
+        //     _id: "j190qx_3",
+        //   },
+        //   {
+        //     link: j190qx_4,
+        //     _id: "j190qx_4",
+        //   },
+        //   {
+        //     link: j190qx_5,
+        //     _id: "j190qx_5",
+        //   },
+        // ],
         //     fullNameModel: "Бензопила цепная Jonser BS-4500",
         //     specifications: [
         //       {
@@ -216,7 +262,28 @@ const сhainsawsInfo = {
         //   nameModel: "BS-5500",
         //   // img: bs5500,
         //   detailed: {
-        //     // imgBig: bs5500Big,
+        //     // images: [
+        //   {
+        //     link: j190qx_1,
+        //     _id: "j190qx_1",
+        //   },
+        //   {
+        //     link: j190qx_2,
+        //     _id: "j190qx_2",
+        //   },
+        //   {
+        //     link: j190qx_3,
+        //     _id: "j190qx_3",
+        //   },
+        //   {
+        //     link: j190qx_4,
+        //     _id: "j190qx_4",
+        //   },
+        //   {
+        //     link: j190qx_5,
+        //     _id: "j190qx_5",
+        //   },
+        // ],
         //     fullNameModel: "Бензопила цепная Jonser BS-5500",
         //     specifications: [
         //       {
@@ -390,12 +457,33 @@ const сhainsawsInfo = {
             },
             {
               param: "длина шины:",
-              value: "12дм / 30см",
+              value: "30см",
               _id: "gs_es4100_tp2",
             },
           ],
           detailed: {
-            imgBig: es4100Big,
+            images: [
+              {
+                link: es4100_1,
+                _id: "es4100_1",
+              },
+              {
+                link: es4100_2,
+                _id: "es4100_2",
+              },
+              {
+                link: es4100_3,
+                _id: "es4100_3",
+              },
+              {
+                link: es4100_4,
+                _id: "es4100_4",
+              },
+              {
+                link: es4100_5,
+                _id: "es4100_5",
+              },
+            ],
             fullNameModel: "Бензопила цепная Jonser ES-4100",
             specifications: [
               {
@@ -405,7 +493,7 @@ const сhainsawsInfo = {
               },
               {
                 parameter: "1 шина / 1 цепь:",
-                value: "12дм / 30см",
+                value: "30см",
                 _id: "gs_es4100_param2",
               },
               {
@@ -579,12 +667,33 @@ const сhainsawsInfo = {
             },
             {
               param: "длина шины (2шт.):",
-              value: "16дм / 14дм",
+              value: "35см / 40см",
               _id: "gs_es4200_tp2",
             },
           ],
           detailed: {
-            imgBig: es4200Big,
+            images: [
+              {
+                link: es4200_1,
+                _id: "es4200_1",
+              },
+              {
+                link: es4200_2,
+                _id: "es4200_2",
+              },
+              {
+                link: es4200_3,
+                _id: "es4200_3",
+              },
+              {
+                link: es4200_4,
+                _id: "es4200_4",
+              },
+              {
+                link: es4200_5,
+                _id: "es4200_5",
+              },
+            ],
             fullNameModel: "Бензопила цепная Jonser ES-4200",
             specifications: [
               {
@@ -594,7 +703,7 @@ const сhainsawsInfo = {
               },
               {
                 parameter: "2 шины / 2 цепи:",
-                value: "16дм / 14дм",
+                value: "40см",
                 _id: "gs_es4200_param2",
               },
               {
@@ -796,7 +905,28 @@ const сhainsawsInfo = {
             },
           ],
           detailed: {
-            imgBig: es43300Big,
+            images: [
+              {
+                link: es43300_1,
+                _id: "es43300_1",
+              },
+              {
+                link: es43300_2,
+                _id: "es43300_2",
+              },
+              {
+                link: es43300_3,
+                _id: "es43300_3",
+              },
+              {
+                link: es43300_4,
+                _id: "es43300_4",
+              },
+              {
+                link: es43300_5,
+                _id: "es43300_5",
+              },
+            ],
             fullNameModel: "Бензопила цепная Jonser ES-43300",
             specifications: [
               {
@@ -806,7 +936,7 @@ const сhainsawsInfo = {
               },
               {
                 parameter: "1 шина / 1 цепь:",
-                value: "18дм / 45см",
+                value: "45см",
                 _id: "gs_es43300_param2",
               },
               {
@@ -990,7 +1120,28 @@ const сhainsawsInfo = {
             },
           ],
           detailed: {
-            imgBig: es4300sBig,
+            images: [
+              {
+                link: es4300s_1,
+                _id: "es4300s_1",
+              },
+              {
+                link: es4300s_2,
+                _id: "es4300s_2",
+              },
+              {
+                link: es4300s_3,
+                _id: "es4300s_3",
+              },
+              {
+                link: es4300s_4,
+                _id: "es4300s_4",
+              },
+              {
+                link: es4300s_5,
+                _id: "es4300s_5",
+              },
+            ],
             fullNameModel: "Бензопила цепная Jonser ES-4300S",
             specifications: [
               {
@@ -1000,7 +1151,7 @@ const сhainsawsInfo = {
               },
               {
                 parameter: "1 шина / 1 цепь:",
-                value: "18дм / 45см",
+                value: "45см",
                 _id: "gs_es4300s_param2",
               },
               {
@@ -1182,7 +1333,28 @@ const сhainsawsInfo = {
         //   nameModel: "ES-2300",
         //   // img: es2300,
         //   detailed: {
-        //     // imgBig: es2300Big,
+        //     // images: [
+        //   {
+        //     link: j190qx_1,
+        //     _id: "j190qx_1",
+        //   },
+        //   {
+        //     link: j190qx_2,
+        //     _id: "j190qx_2",
+        //   },
+        //   {
+        //     link: j190qx_3,
+        //     _id: "j190qx_3",
+        //   },
+        //   {
+        //     link: j190qx_4,
+        //     _id: "j190qx_4",
+        //   },
+        //   {
+        //     link: j190qx_5,
+        //     _id: "j190qx_5",
+        //   },
+        // ],
         //     fullNameModel: "Электропила Jonser ES-2300",
         //     specifications: [
         //       {
@@ -1301,7 +1473,28 @@ const сhainsawsInfo = {
             },
           ],
           detailed: {
-            imgBig: jac186sBig,
+            images: [
+              {
+                link: jac186s_1,
+                _id: "jac186s_1",
+              },
+              {
+                link: jac186s_2,
+                _id: "jac186s_2",
+              },
+              {
+                link: jac186s_3,
+                _id: "jac186s_3",
+              },
+              {
+                link: jac186s_4,
+                _id: "jac186s_4",
+              },
+              {
+                link: jac186s_5,
+                _id: "jac186s_5",
+              },
+            ],
             fullNameModel: "Аккумуляторная цепная мини-пила Jonser JAC-186S",
             specifications: [
               {
@@ -1312,7 +1505,7 @@ const сhainsawsInfo = {
               {
                 parameter: "Мощность:",
                 value: "600 Вт",
-                _id: "bs_jac186s_param1",
+                _id: "bs_jac186s_param1_2",
               },
               {
                 parameter: "Скорость хода цепи:",

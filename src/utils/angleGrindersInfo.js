@@ -1,14 +1,39 @@
 //УШМ
-import jga1200iq from "../images/angleGrinders/jga-1200iq.png";
-import jga1200iqBig from "../images/angleGrinders/jga-1200iq@2x.png";
-import jga1300i from "../images/angleGrinders/jga-1300i.png";
-import jga1300iBig from "../images/angleGrinders/jga-1300i@2x.png";
-import jga1800i from "../images/angleGrinders/jga-1800i.png";
-import jga1800iBig from "../images/angleGrinders/jga-1800i@2x.png";
-import jga2300iq from "../images/angleGrinders/jga-2300iq.png";
-import jga2300iqBig from "../images/angleGrinders/jga-2300iq@2x.png";
-import jga2800 from "../images/angleGrinders/jga-2800.png";
-import jga2800Big from "../images/angleGrinders/jga-2800@2x.png";
+// jga1200iq
+import jga1200iq from "../images/angleGrinders/jga1200iq/0.webp";
+import jga1200iq_1 from "../images/angleGrinders/jga1200iq/1.webp";
+import jga1200iq_2 from "../images/angleGrinders/jga1200iq/2.webp";
+import jga1200iq_3 from "../images/angleGrinders/jga1200iq/3.webp";
+import jga1200iq_4 from "../images/angleGrinders/jga1200iq/4.webp";
+import jga1200iq_5 from "../images/angleGrinders/jga1200iq/5.webp";
+// jga1300i
+import jga1300i from "../images/angleGrinders/jga1300i/0.webp";
+import jga1300i_1 from "../images/angleGrinders/jga1300i/1.webp";
+import jga1300i_2 from "../images/angleGrinders/jga1300i/2.webp";
+import jga1300i_3 from "../images/angleGrinders/jga1300i/3.webp";
+import jga1300i_4 from "../images/angleGrinders/jga1300i/4.webp";
+import jga1300i_5 from "../images/angleGrinders/jga1300i/5.webp";
+// jga1800i
+import jga1800i from "../images/angleGrinders/jga1800i/0.webp";
+import jga1800i_1 from "../images/angleGrinders/jga1800i/1.webp";
+import jga1800i_2 from "../images/angleGrinders/jga1800i/2.webp";
+import jga1800i_3 from "../images/angleGrinders/jga1800i/3.webp";
+import jga1800i_4 from "../images/angleGrinders/jga1800i/4.webp";
+import jga1800i_5 from "../images/angleGrinders/jga1800i/5.webp";
+// jga2300iq
+import jga2300iq from "../images/angleGrinders/jga2300iq/0.webp";
+import jga2300iq_1 from "../images/angleGrinders/jga2300iq/1.webp";
+import jga2300iq_2 from "../images/angleGrinders/jga2300iq/2.webp";
+import jga2300iq_3 from "../images/angleGrinders/jga2300iq/3.webp";
+import jga2300iq_4 from "../images/angleGrinders/jga2300iq/4.webp";
+import jga2300iq_5 from "../images/angleGrinders/jga2300iq/5.webp";
+// jga2800
+import jga2800 from "../images/angleGrinders/jga2800/0.webp";
+import jga2800_1 from "../images/angleGrinders/jga2800/1.webp";
+import jga2800_2 from "../images/angleGrinders/jga2800/2.webp";
+import jga2800_3 from "../images/angleGrinders/jga2800/3.webp";
+import jga2800_4 from "../images/angleGrinders/jga2800/4.webp";
+import jga2800_5 from "../images/angleGrinders/jga2800/5.webp";
 
 const angleGrindersInfo = {
   title: "Болгарки и шлифмашины",
@@ -44,7 +69,28 @@ const angleGrindersInfo = {
             },
           ],
           detailed: {
-            imgBig: jga1200iqBig,
+            images: [
+              {
+                link: jga1200iq_1,
+                _id: "jga1200iq_1",
+              },
+              {
+                link: jga1200iq_2,
+                _id: "jga1200iq_2",
+              },
+              {
+                link: jga1200iq_3,
+                _id: "jga1200iq_3",
+              },
+              {
+                link: jga1200iq_4,
+                _id: "jga1200iq_4",
+              },
+              {
+                link: jga1200iq_5,
+                _id: "jga1200iq_5",
+              },
+            ],
             fullNameModel: "Машина углошлифовальная Jonser JGA-1200IQ",
             specifications: [
               {
@@ -142,7 +188,7 @@ const angleGrindersInfo = {
                 _id: "ag_jga1200iq_ad1",
               },
               {
-                parameter: "Бесступенчатая регулировка частоты вращения",
+                parameter: "Регулировка оборотов",
                 _id: "ag_jga1200iq_ad2",
               },
               {
@@ -205,7 +251,28 @@ const angleGrindersInfo = {
             },
           ],
           detailed: {
-            imgBig: jga1300iBig,
+            images: [
+              {
+                link: jga1300i_1,
+                _id: "jga1300i_1",
+              },
+              {
+                link: jga1300i_2,
+                _id: "jga1300i_2",
+              },
+              {
+                link: jga1300i_3,
+                _id: "jga1300i_3",
+              },
+              {
+                link: jga1300i_4,
+                _id: "jga1300i_4",
+              },
+              {
+                link: jga1300i_5,
+                _id: "jga1300i_5",
+              },
+            ],
             fullNameModel: "Машина углошлифовальная Jonser JGA-1300I",
             specifications: [
               {
@@ -308,7 +375,7 @@ const angleGrindersInfo = {
                 _id: "ag_jga1300i_ad1",
               },
               {
-                parameter: "Бесступенчатая регулировка частоты вращения",
+                parameter: "Регулировка оборотов",
                 _id: "ag_jga1300i_ad2",
               },
               {
@@ -363,7 +430,28 @@ const angleGrindersInfo = {
             },
           ],
           detailed: {
-            imgBig: jga1800iBig,
+            images: [
+              {
+                link: jga1800i_1,
+                _id: "jga1800i_1",
+              },
+              {
+                link: jga1800i_2,
+                _id: "jga1800i_2",
+              },
+              {
+                link: jga1800i_3,
+                _id: "jga1800i_3",
+              },
+              {
+                link: jga1800i_4,
+                _id: "jga1800i_4",
+              },
+              {
+                link: jga1800i_5,
+                _id: "jga1800i_5",
+              },
+            ],
             fullNameModel:
               "Машина шлифовальная угловая болгарка Jonser JGA-1800I",
             specifications: [
@@ -467,7 +555,7 @@ const angleGrindersInfo = {
                 _id: "ag_jga1800i_ad1",
               },
               {
-                parameter: "Бесступенчатая регулировка частоты вращения",
+                parameter: "Регулировка оборотов",
                 _id: "ag_jga1800i_ad2",
               },
               {
@@ -522,7 +610,28 @@ const angleGrindersInfo = {
             },
           ],
           detailed: {
-            imgBig: jga2300iqBig,
+            images: [
+              {
+                link: jga2300iq_1,
+                _id: "jga2300iq_1",
+              },
+              {
+                link: jga2300iq_2,
+                _id: "jga2300iq_2",
+              },
+              {
+                link: jga2300iq_3,
+                _id: "jga2300iq_3",
+              },
+              {
+                link: jga2300iq_4,
+                _id: "jga2300iq_4",
+              },
+              {
+                link: jga2300iq_5,
+                _id: "jga2300iq_5",
+              },
+            ],
             fullNameModel:
               "Машина шлифовальная угловая болгарка Jonser JGA-2300IQ",
             specifications: [
@@ -631,7 +740,7 @@ const angleGrindersInfo = {
                 _id: "ag_jga2300iq_ad1",
               },
               {
-                parameter: "Бесступенчатая регулировка частоты вращения",
+                parameter: "Регулировка оборотов",
                 _id: "ag_jga2300iq_ad2",
               },
               {
@@ -694,7 +803,28 @@ const angleGrindersInfo = {
             },
           ],
           detailed: {
-            imgBig: jga2800Big,
+            images: [
+              {
+                link: jga2800_1,
+                _id: "jga2800_1",
+              },
+              {
+                link: jga2800_2,
+                _id: "jga2800_2",
+              },
+              {
+                link: jga2800_3,
+                _id: "jga2800_3",
+              },
+              {
+                link: jga2800_4,
+                _id: "jga2800_4",
+              },
+              {
+                link: jga2800_5,
+                _id: "jga2800_5",
+              },
+            ],
             fullNameModel:
               "Машина шлифовальная угловая болгарка Jonser JGA-2800",
             specifications: [

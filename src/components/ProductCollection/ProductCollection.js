@@ -21,7 +21,7 @@ function ProductCollection({ subtitle, premium, isHorizontal, models }) {
             premium ? "collection__list_type_premium" : ""
           } ${isHorizontal ? "collection__list_type_horizontal" : ""}`}
         >
-          {models.map((model) => (
+          {models.map((model, ind) => (
             <ItemFromProductCollection
               nameModel={model.nameModel}
               nameProduct={model.nameProduct}

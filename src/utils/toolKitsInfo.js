@@ -1,16 +1,22 @@
 //Наборы инструментов
-import jbr12 from "../images/toolKits/jbr12.png";
-import jbr12Big from "../images/toolKits/jbr12@2x.png";
-import jbr24 from "../images/toolKits/jbr24.png";
-import jbr24Big from "../images/toolKits/jbr24@2x.png";
-import jbr32pro from "../images/toolKits/jbr32pro.png";
-import jbr32proBig from "../images/toolKits/jbr32pro@2x.png";
-import jbr82pro from "../images/toolKits/jbr82pro.png";
-import jbr82proBig from "../images/toolKits/jbr82pro@2x.png";
-import jbr94pro from "../images/toolKits/jbr94pro.png";
-import jbr94proBig from "../images/toolKits/jbr94pro@2x.png";
-import jbr108pro from "../images/toolKits/jbr108pro.png";
-import jbr108proBig from "../images/toolKits/jbr108pro@2x.png";
+// jbr12
+import jbr12 from "../images/toolKits/jbr12/0.webp";
+import jbr12_1 from "../images/toolKits/jbr12/1.webp";
+//jbr24
+import jbr24 from "../images/toolKits/jbr24/0.webp";
+import jbr24_1 from "../images/toolKits/jbr24/1.webp";
+//jbr32
+import jbr32pro from "../images/toolKits/jbr32/0.webp";
+import jbr32pro_1 from "../images/toolKits/jbr32/1.webp";
+//jbr82
+import jbr82pro from "../images/toolKits/jbr82/0.webp";
+import jbr82pro_1 from "../images/toolKits/jbr82/1.webp";
+//jbr94
+import jbr94pro from "../images/toolKits/jbr94/0.webp";
+import jbr94pro_1 from "../images/toolKits/jbr94/1.webp";
+//jbr108
+import jbr108pro from "../images/toolKits/jbr108/0.webp";
+import jbr108pro_1 from "../images/toolKits/jbr108/1.webp";
 
 const toolKitsInfo = {
   title: "Наборы",
@@ -40,7 +46,12 @@ const toolKitsInfo = {
             },
           ],
           detailed: {
-            imgBig: jbr12Big,
+            images: [
+              {
+                link: jbr12_1,
+                _id: "jbr12_1",
+              },
+            ],
             fullNameModel: "Набор инструментов Jonser JBR 12",
             description:
               ". Универсальный набор на 12 предметов, состоящий из наиболее нужных инструментов поможет справиться на отлично с ремонтом автомобиля и др. транспортных средств. Пригодится в домашнем ремонте при для затяжке болтов и гаек, при сборке мебели. Набор упакован в прочный металлический кейс. Компактный - занимает очень мало места. Замок на кейсе надежный и в тоже время прост в отстегивании. Все инструменты изготовлены из высококачественных материалов (хромованадиевая сталь).",
@@ -137,7 +148,12 @@ const toolKitsInfo = {
             },
           ],
           detailed: {
-            imgBig: jbr24Big,
+            images: [
+              {
+                link: jbr24_1,
+                _id: "jbr24_1",
+              },
+            ],
             fullNameModel: "Набор инструментов Jonser JBR 24",
             description:
               ". Универсальный набор на 24 предмета, состоящий из наиболее нужных инструментов поможет справиться на отлично с ремонтом автомобиля и др. транспортных средств. Пригодится в домашнем ремонте при для затяжке болтов и гаек, при сборке мебели. Набор упакован в прочный металлический кейс. Компактный - занимает очень мало места. Замок на кейсе надежный и в тоже время прост в отстегивании. Все инструменты изготовлены из высококачественных материалов (хромованадиевая сталь).",
@@ -234,7 +250,12 @@ const toolKitsInfo = {
             },
           ],
           detailed: {
-            imgBig: jbr32proBig,
+            images: [
+              {
+                link: jbr32pro_1,
+                _id: "jbr32pro_1",
+              },
+            ],
             fullNameModel: "Набор инструментов Jonser JBR 32 PRO",
             description:
               ". Универсальный набор на 32 предмета, состоящий из наиболее нужных инструментов поможет справиться на отлично с ремонтом автомобиля и др. транспортных средств. Пригодится в домашнем ремонте при для затяжке болтов и гаек, при сборке мебели. Набор упакован в прочный металлический кейс. Компактный - занимает очень мало места. Замок на кейсе надежный и в тоже время прост в отстегивании. Все инструменты изготовлены из высококачественных материалов (хромованадиевая сталь).",
@@ -331,7 +352,12 @@ const toolKitsInfo = {
             },
           ],
           detailed: {
-            imgBig: jbr82proBig,
+            images: [
+              {
+                link: jbr82pro_1,
+                _id: "jbr82pro_1",
+              },
+            ],
             fullNameModel: "Набор инструментов Jonser JBR 82 PRO",
             description:
               ". Универсальный набор на 82 предмета, состоящий из наиболее нужных инструментов поможет справиться на отлично с ремонтом автомобиля и др. транспортных средств. Пригодится в домашнем ремонте при для затяжке болтов и гаек, при сборке мебели. Набор упакован в прочный металлический кейс. Компактный - занимает очень мало места. Замок на кейсе надежный и в тоже время прост в отстегивании. Все инструменты изготовлены из высококачественных материалов (хромованадиевая сталь).",
@@ -455,7 +481,12 @@ const toolKitsInfo = {
             },
           ],
           detailed: {
-            imgBig: jbr94proBig,
+            images: [
+              {
+                link: jbr94pro_1,
+                _id: "jbr94pro_1",
+              },
+            ],
             fullNameModel: "Набор инструментов Jonser JBR 94 PRO",
             description:
               "Набор инструментов торцевых головок Jonser JBR-94-Pro является профессиональным инструментом для работы с крепежными элементами. Он включает в себя головки различных размеров и типов, а также удобный кейс для хранения и переноски. Каждая головка выполнена из высококачественной стали, что обеспечивает прочность и долговечность инструмента.",
@@ -580,7 +611,12 @@ const toolKitsInfo = {
             },
           ],
           detailed: {
-            imgBig: jbr108proBig,
+            images: [
+              {
+                link: jbr108pro_1,
+                _id: "jbr108pro_1",
+              },
+            ],
             fullNameModel: "Набор инструментов Jonser JBR 108 PRO",
             description:
               "Универсальный набор на 108 предметов, состоящий из наиболее нужных инструментов поможет справиться на отлично с ремонтом автомобиля и др. транспортных средств. Пригодится в домашнем ремонте при для затяжке болтов и гаек, при сборке мебели. Набор упакован в прочный металлический кейс. Компактный - занимает очень мало места. Замок на кейсе надежный и в тоже время прост в отстегивании. Все инструменты изготовлены из высококачественных материалов (хромованадиевая сталь).",

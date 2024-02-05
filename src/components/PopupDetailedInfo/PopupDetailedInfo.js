@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import "./PopupDetailedInfo.css";
 import { Link } from "react-router-dom";
+import Slider from "../Slider/Slider";
 
 function PopupDetailedInfo({
   title,
-  imgBig,
+  // imgBig,
+  images,
   fullNameModel,
   description,
   movieLink,
@@ -70,12 +72,7 @@ function PopupDetailedInfo({
           className="popup__btn cursor"
           onClick={onClick}
         ></button>
-        <img
-          className="popup__img"
-          src={imgBig}
-          alt={`Модель ${title}`}
-          loading="lazy"
-        />
+        <Slider images={images} title={title} />
         <div className="popup__description">
           <h2 className="popup__title">jonser {title}</h2>
           <p className="popup__text">
@@ -203,7 +200,7 @@ function PopupDetailedInfo({
               <p className="popup__new-price">{newPrice}</p>
               <p className="popup__old-price">{oldPrice}</p>
             </div>
-            <Link to="/#feedback" className="popup__btn-buy link cursor">
+            <Link to="/#feedback" className="popup__btn-buy button_color_light">
               заказать
             </Link>
           </div>

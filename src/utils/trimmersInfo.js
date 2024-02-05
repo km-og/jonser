@@ -1,12 +1,25 @@
 //Триммеры
-import trimGas_es4200 from "../images/trimmers/ES-4200.png";
-import trimGas_es4200Big from "../images/trimmers/ES-4200@2x.png";
-import trimGas_es4200el from "../images/trimmers/ES-4200.png";
-import trimGas_es4200elBig from "../images/trimmers/ES-4200@2x.png";
+// es4200
+import es4200 from "../images/trimmers/es4200/0.webp";
+import es4200_1 from "../images/trimmers/es4200/1.webp";
+import es4200_2 from "../images/trimmers/es4200/2.webp";
+
+// es4200el
+import es4200el from "../images/trimmers/es4200el/0.webp";
+import es4200el_1 from "../images/trimmers/es4200el/1.webp";
+import es4200el_2 from "../images/trimmers/es4200el/2.webp";
+
+// gt12jn
+import gt12jn from "../images/trimmers/gt12jn/0.webp";
+import gt12jn_1 from "../images/trimmers/gt12jn/1.webp";
+import gt12jn_2 from "../images/trimmers/gt12jn/2.webp";
+import gt12jn_3 from "../images/trimmers/gt12jn/3.webp";
+import gt12jn_4 from "../images/trimmers/gt12jn/4.webp";
+import gt12jn_5 from "../images/trimmers/gt12jn/5.webp";
+// es5500
 // import es5500 from "../images/trimmers/es5500.png";
 // import es5500Big from "../images/trimmers/es5500@2x.png";
-import trimBatt_gt12jn from "../images/trimmers/gt-12jn.png";
-import trimBatt_gt12jnBig from "../images/trimmers/gt-12jn.png";
+// gt18jn
 // import trimBatt_gt18jn from "../images/trimmers/trimBatt_gt18jn.png";
 // import trimBatt_gt18jnBig from "../images/trimmers/trimBatt_gt18jn@2x.png";
 
@@ -33,7 +46,7 @@ const trimmersInfo = {
         {
           _id: "trimGas_es4200",
           nameModel: "es-4200",
-          img: trimGas_es4200,
+          img: es4200,
           nameProduct: "бензиновый триммер",
           titleParams: [
             {
@@ -48,7 +61,16 @@ const trimmersInfo = {
             },
           ],
           detailed: {
-            imgBig: trimGas_es4200Big,
+            images: [
+              {
+                link: es4200_1,
+                _id: "es4200_1",
+              },
+              {
+                link: es4200_2,
+                _id: "es4200_2",
+              },
+            ],
             fullNameModel: "Триммер бензиновый Jonser ES-4200",
             specifications: [
               {
@@ -203,7 +225,7 @@ const trimmersInfo = {
         {
           _id: "trimGas_es4200el",
           nameModel: "es-4200 Electric",
-          img: trimGas_es4200el,
+          img: es4200el,
           nameProduct: "бензиновый триммер",
           titleParams: [
             {
@@ -218,7 +240,16 @@ const trimmersInfo = {
             },
           ],
           detailed: {
-            imgBig: trimGas_es4200elBig,
+            images: [
+              {
+                link: es4200el_1,
+                _id: "es4200el_1",
+              },
+              {
+                link: es4200el_2,
+                _id: "es4200el_2",
+              },
+            ],
             fullNameModel:
               "Триммер бензиновый с электростартером Jonser ES-4200 Electric",
             specifications: [
@@ -390,7 +421,28 @@ const trimmersInfo = {
         //   nameModel: "ES-5500 (4Т)",
         //   img: es5500,
         //   detailed: {
-        //     imgBig: es5500Big,
+        //     images: [
+        //   {
+        //     link: j190qx_1,
+        //     _id: "j190qx_1",
+        //   },
+        //   {
+        //     link: j190qx_2,
+        //     _id: "j190qx_2",
+        //   },
+        //   {
+        //     link: j190qx_3,
+        //     _id: "j190qx_3",
+        //   },
+        //   {
+        //     link: j190qx_4,
+        //     _id: "j190qx_4",
+        //   },
+        //   {
+        //     link: j190qx_5,
+        //     _id: "j190qx_5",
+        //   },
+        // ],: es5500Big,
         //     fullNameModel: "Триммер бензиновый Jonser ES-5500 (4Т)",
         //     specifications: [
         //       {
@@ -543,7 +595,7 @@ const trimmersInfo = {
         {
           _id: "trimBatt_gt12jn",
           nameModel: "gt-12jn",
-          img: trimBatt_gt12jn,
+          img: gt12jn,
           nameProduct: "Аккумуляторный триммер",
           titleParams: [
             {
@@ -558,7 +610,28 @@ const trimmersInfo = {
             },
           ],
           detailed: {
-            imgBig: trimBatt_gt12jnBig,
+            images: [
+              {
+                link: gt12jn_1,
+                _id: "gt12jn_1",
+              },
+              {
+                link: gt12jn_2,
+                _id: "gt12jn_2",
+              },
+              {
+                link: gt12jn_3,
+                _id: "gt12jn_3",
+              },
+              {
+                link: gt12jn_4,
+                _id: "gt12jn_4",
+              },
+              {
+                link: gt12jn_5,
+                _id: "gt12jn_5",
+              },
+            ],
             fullNameModel: "Триммер аккумуляторный Jonser GT-12JN",
             specifications: [
               {
@@ -706,7 +779,28 @@ const trimmersInfo = {
         //   nameModel: "gt-18jn",
         //   img: trimBatt_gt18jn,
         //   detailed: {
-        //     imgBig: trimBatt_gt18jnBig,
+        //     images: [
+        //   {
+        //     link: j190qx_1,
+        //     _id: "j190qx_1",
+        //   },
+        //   {
+        //     link: j190qx_2,
+        //     _id: "j190qx_2",
+        //   },
+        //   {
+        //     link: j190qx_3,
+        //     _id: "j190qx_3",
+        //   },
+        //   {
+        //     link: j190qx_4,
+        //     _id: "j190qx_4",
+        //   },
+        //   {
+        //     link: j190qx_5,
+        //     _id: "j190qx_5",
+        //   },
+        // ],
         //     fullNameModel: "Триммер аккумуляторный Jonser GT-18JN",
         //     specifications: [
         //       {

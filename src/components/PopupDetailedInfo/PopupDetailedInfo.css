@@ -17,8 +17,8 @@
   position: relative;
   padding: 70px 50px 80px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
+  grid-template-columns: 540px 1fr;
+  gap: 30px;
   border-radius: 5px;
   box-sizing: border-box;
   overflow: auto;
@@ -32,15 +32,6 @@
   top: 27px;
   right: 27px;
   position: absolute;
-}
-
-.popup__img {
-  width: 100%;
-  max-width: 545px;
-  height: auto;
-  max-height: calc(80vh - 150px);
-  align-self: start;
-  object-fit: contain;
 }
 
 .popup__description {
@@ -96,9 +87,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.popup__item {
 }
 
 .popup__subtitle {
@@ -196,15 +184,13 @@
 .popup__new-price {
   margin: 0;
   font-size: 35px;
-
   line-height: 1;
   color: var(--dark-color);
 }
 
 .popup__old-price {
   margin: 0;
-  font-size: 20px;
-
+  font-size: 22px;
   line-height: 1;
   color: var(--old-text);
   text-decoration: line-through;
@@ -212,25 +198,22 @@
 
 .popup__btn-buy {
   width: 50%;
-  border: none;
+  /* border: none; */
   border-radius: 5px;
   padding: 20px 0;
-  background-color: var(--bg-btn-color);
+  /* background-color: var(--bg-btn-color); */
   text-transform: uppercase;
   text-align: center;
+  text-decoration: none;
   color: var(--dark-color);
   font-size: 24px;
   font-weight: 500;
   line-height: 1.2;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1120px) {
   .popup__container {
     grid-template-columns: repeat(1, 1fr);
-  }
-
-  .popup__img {
-    margin: 0 auto;
   }
 
   .popup__text,
@@ -290,5 +273,11 @@
   .popup__link::before {
     width: 20px;
     height: 20px;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .popup__container {
+    padding: 40px 10px;
   }
 }

@@ -79,7 +79,7 @@
 
 .collection__old-price {
   color: var(--old-text);
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1;
   text-decoration: line-through;
@@ -89,9 +89,8 @@
 .collection__btn {
   width: 100%;
   max-width: 175px;
-  border: none;
+  border-radius: 10px;
   padding: 6px;
-  background-color: var(--bg-btn-color);
   color: var(--dark-color);
   text-transform: uppercase;
   text-align: start;
@@ -104,13 +103,9 @@
   margin: 5px 0 0 10px;
 }
 
-.collection__btn::after {
-  content: "";
-  display: block;
-  background: url("../../icons/arrow-right.svg") no-repeat center;
-  width: 14px;
-  height: 10px;
-  text-align: end;
+.collection__btn:hover .collection__svg {
+  stroke: #fff;
+  transition: stroke 0.6s ease;
 }
 
 .collection__btn_type_premium {
@@ -165,7 +160,7 @@
     margin-left: 5px;
   }
 
-  .collection__btn::after {
+  .collection__btn svg {
     display: none;
   }
 }

@@ -7,13 +7,14 @@ function Catalog() {
   return (
     <div className="catalog" id={"catalog"}>
       <ul className="catalog__list">
-        {itemsFromCatalog.map((item) => (
+        {itemsFromCatalog.map((item, ind) => (
           <ItemFromCatalog
             name={item.name}
             alt={item.alt}
             preview={item.img}
             route={item.route}
-            key={item._id}
+            key={`itemsFromCatalog-${ind}`}
+            // key={item._id}
           />
         ))}
       </ul>

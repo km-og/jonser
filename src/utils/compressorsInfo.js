@@ -1,6 +1,10 @@
 //Компрессоры
-import jac50_2000ss from "../images/Compressors/jac50_2000ss.png";
-import jac50_2000ssBig from "../images/Compressors/jac50_2000ss@2x.png";
+import jac50_2000ss from "../images/Compressors/jac50_2000ss/0.webp";
+import jac50_2000ss_1 from "../images/Compressors/jac50_2000ss/1.webp";
+import jac50_2000ss_2 from "../images/Compressors/jac50_2000ss/2.webp";
+import jac50_2000ss_3 from "../images/Compressors/jac50_2000ss/3.webp";
+import jac50_2000ss_4 from "../images/Compressors/jac50_2000ss/4.webp";
+import jac50_2000ss_5 from "../images/Compressors/jac50_2000ss/5.webp";
 // import jac100_2400ss from "../images/Compressors/jac100_2400ss.png";
 // import jac100_2400ssBig from "../images/Compressors/jac100_2400ss@2x.png";
 
@@ -20,97 +24,7 @@ const compressorsInfo = {
     {
       _id: "compr",
       subtitle: "Компрессор воздушный",
-      premium: false,
-      isHorizontal: false,
       models: [
-        // {
-        //   _id: "compr_jac100_2400ss",
-        //   nameModel: "JAC-100/2400SS",
-        //   // img: jac100_2400ss,
-        //   detailed: {
-        //     // imgBig: jac100_2400ssBig,
-        //     fullNameModel:
-        //       "Компрессор воздушный масляный Jonser JAC-100/2400SS",
-        //     specifications: [
-        //       {
-        //         parameter: "Асинхронный двигатель мощностью:",
-        //         value: "2400 Вт",
-        //         _id: "compr_jac100_2400ss_param1",
-        //       },
-        //       {
-        //         parameter: "Три цилиндра",
-        //         value: "Да",
-        //         _id: "compr_jac100_2400ss_param2",
-        //       },
-        //       {
-        //         parameter: "Два ремня",
-        //         value: "Да",
-        //         _id: "compr_jac100_2400ss_param3",
-        //       },
-        //       {
-        //         parameter: "Производительность:",
-        //         value: "500л/мин",
-        //         _id: "compr_jac100_2400ss_param4",
-        //       },
-        //       {
-        //         parameter: "Входное напряжение:",
-        //         value: "220В +/- 10%",
-        //         _id: "compr_jac100_2400ss_param5",
-        //       },
-        //       {
-        //         parameter: "Рабочее давление:",
-        //         value: "8 бар",
-        //         _id: "compr_jac100_2400ss_param6",
-        //       },
-        //       {
-        //         parameter: "Объем рессивера:",
-        //         value: "100 л",
-        //         _id: "compr_jac100_2400ss_param7",
-        //       },
-        //       {
-        //         parameter: "Вес брутто:",
-        //         value: "75кг",
-        //         _id: "compr_jac100_2400ss_param8",
-        //       },
-        //       {
-        //         parameter: "Габариты:",
-        //         value: "116 / 45 / 78 см",
-        //         _id: "compr_jac100_2400ss_param9",
-        //       },
-        //       {
-        //         parameter: "Гарантия:",
-        //         value: "2 года",
-        //         _id: "compr_jac100_2400ss_param10",
-        //       },
-        //     ],
-        //     equipment: [
-        //       {
-        //         parameter: "Компрессор:",
-        //         value: "1 шт",
-        //         _id: "compr_jac100_2400ss_eq1",
-        //       },
-        //       {
-        //         parameter: "Колеса:",
-        //         value: "4 шт",
-        //         _id: "compr_jac100_2400ss_eq2",
-        //       },
-        //       {
-        //         parameter: "Воздушный фильтр:",
-        //         value: "3 шт",
-        //         _id: "compr_jac100_2400ss_eq3",
-        //       },
-        //       {
-        //         parameter: "Комплект крепежа колес:",
-        //         value: "1 шт",
-        //         _id: "compr_jac100_2400ss_eq4",
-        //       },
-        //     ],
-
-        //     sale: "-10%",
-        //     newPrice: "86 290 ₽",
-        //     oldPrice: "95 990 ₽",
-        //   },
-        // },
         {
           _id: "compr_jac50_2000ss",
           nameModel: "jac-50/2000ss",
@@ -129,7 +43,28 @@ const compressorsInfo = {
             },
           ],
           detailed: {
-            imgBig: jac50_2000ssBig,
+            images: [
+              {
+                link: jac50_2000ss_1,
+                _id: "jac50_2000ss_1",
+              },
+              {
+                link: jac50_2000ss_2,
+                _id: "jac50_2000ss_2",
+              },
+              {
+                link: jac50_2000ss_3,
+                _id: "jac50_2000ss_3",
+              },
+              {
+                link: jac50_2000ss_4,
+                _id: "jac50_2000ss_4",
+              },
+              {
+                link: jac50_2000ss_5,
+                _id: "jac50_2000ss_5",
+              },
+            ],
             fullNameModel: "Компрессор воздушный масляный Jonser JAC-50/2000SS",
             specifications: [
               {
@@ -241,6 +176,94 @@ const compressorsInfo = {
             oldPrice: "49 990 ₽",
           },
         },
+        // {
+        //   _id: "compr_jac100_2400ss",
+        //   nameModel: "JAC-100/2400SS",
+        //   // img: jac100_2400ss,
+        //   detailed: {
+        //     // imgBig: jac100_2400ssBig,
+        //     fullNameModel:
+        //       "Компрессор воздушный масляный Jonser JAC-100/2400SS",
+        //     specifications: [
+        //       {
+        //         parameter: "Асинхронный двигатель мощностью:",
+        //         value: "2400 Вт",
+        //         _id: "compr_jac100_2400ss_param1",
+        //       },
+        //       {
+        //         parameter: "Три цилиндра",
+        //         value: "Да",
+        //         _id: "compr_jac100_2400ss_param2",
+        //       },
+        //       {
+        //         parameter: "Два ремня",
+        //         value: "Да",
+        //         _id: "compr_jac100_2400ss_param3",
+        //       },
+        //       {
+        //         parameter: "Производительность:",
+        //         value: "500л/мин",
+        //         _id: "compr_jac100_2400ss_param4",
+        //       },
+        //       {
+        //         parameter: "Входное напряжение:",
+        //         value: "220В +/- 10%",
+        //         _id: "compr_jac100_2400ss_param5",
+        //       },
+        //       {
+        //         parameter: "Рабочее давление:",
+        //         value: "8 бар",
+        //         _id: "compr_jac100_2400ss_param6",
+        //       },
+        //       {
+        //         parameter: "Объем рессивера:",
+        //         value: "100 л",
+        //         _id: "compr_jac100_2400ss_param7",
+        //       },
+        //       {
+        //         parameter: "Вес брутто:",
+        //         value: "75кг",
+        //         _id: "compr_jac100_2400ss_param8",
+        //       },
+        //       {
+        //         parameter: "Габариты:",
+        //         value: "116 / 45 / 78 см",
+        //         _id: "compr_jac100_2400ss_param9",
+        //       },
+        //       {
+        //         parameter: "Гарантия:",
+        //         value: "2 года",
+        //         _id: "compr_jac100_2400ss_param10",
+        //       },
+        //     ],
+        //     equipment: [
+        //       {
+        //         parameter: "Компрессор:",
+        //         value: "1 шт",
+        //         _id: "compr_jac100_2400ss_eq1",
+        //       },
+        //       {
+        //         parameter: "Колеса:",
+        //         value: "4 шт",
+        //         _id: "compr_jac100_2400ss_eq2",
+        //       },
+        //       {
+        //         parameter: "Воздушный фильтр:",
+        //         value: "3 шт",
+        //         _id: "compr_jac100_2400ss_eq3",
+        //       },
+        //       {
+        //         parameter: "Комплект крепежа колес:",
+        //         value: "1 шт",
+        //         _id: "compr_jac100_2400ss_eq4",
+        //       },
+        //     ],
+
+        //     sale: "-10%",
+        //     newPrice: "86 290 ₽",
+        //     oldPrice: "95 990 ₽",
+        //   },
+        // },
       ],
     },
   ],

@@ -1,33 +1,97 @@
 //Сварочные полуавтоматы
-import jonser180dqx from "../images/Semi_automatic_welding_machines/180DQX.png";
-// import jonser180dqxBig from "../images/Semi_automatic_welding_machines/IMG_7216_pixian_ai.png";
-import jonser180dqxBig from "../images/Semi_automatic_welding_machines/180DQX@2x.png";
-import jonser1805dqx from "../images/Semi_automatic_welding_machines/1805dqx.png";
-import jonser1805dqxBig from "../images/Semi_automatic_welding_machines/1805dqx@2x.png";
-import jonser1805mxg from "../images/Semi_automatic_welding_machines/1805mxg.png";
-import jonser1805mxgBig from "../images/Semi_automatic_welding_machines/1805mxg@2x.png";
-import jonser185qx from "../images/Semi_automatic_welding_machines/185qx.png";
-import jonser185qxBig from "../images/Semi_automatic_welding_machines/185qx@2x.png";
-import jonser190qx from "../images/Semi_automatic_welding_machines/190qx.png";
-import jonser190qxBig from "../images/Semi_automatic_welding_machines/190qx@2x.png";
-import jonser200qx from "../images/Semi_automatic_welding_machines/200qx.png";
-import jonser200qxBig from "../images/Semi_automatic_welding_machines/200qx@2x.png";
-import jonser220qx from "../images/Semi_automatic_welding_machines/220qx.png";
-import jonser220qxBig from "../images/Semi_automatic_welding_machines/220qx@2x.png";
-import jonser300qx from "../images/Semi_automatic_welding_machines/300qx.png";
-import jonser300qxBig from "../images/Semi_automatic_welding_machines/300qx@2x.png";
+// 180dqx
+import j180dqx from "../images/sawm/180dqx/0.webp";
+import j180dqx_1 from "../images/sawm/180dqx/1.webp";
+import j180dqx_2 from "../images/sawm/180dqx/2.webp";
+import j180dqx_3 from "../images/sawm/180dqx/3.webp";
+import j180dqx_4 from "../images/sawm/180dqx/4.webp";
+import j180dqx_5 from "../images/sawm/180dqx/5.webp";
+// 1805dqx
+import j1805dqx from "../images/sawm/1805dqx/0.webp";
+import j1805dqx_1 from "../images/sawm/1805dqx/1.webp";
+import j1805dqx_2 from "../images/sawm/1805dqx/2.webp";
+import j1805dqx_3 from "../images/sawm/1805dqx/3.webp";
+import j1805dqx_4 from "../images/sawm/1805dqx/4.webp";
+import j1805dqx_5 from "../images/sawm/1805dqx/5.webp";
+// 185qx
+import j185qx from "../images/sawm/185qx/0.webp";
+import j185qx_1 from "../images/sawm/185qx/1.webp";
+import j185qx_2 from "../images/sawm/185qx/2.webp";
+import j185qx_3 from "../images/sawm/185qx/3.webp";
+import j185qx_4 from "../images/sawm/185qx/4.webp";
+import j185qx_5 from "../images/sawm/185qx/5.webp";
+// 190qx
+import j190qx from "../images/sawm/190qx/0.webp";
+import j190qx_1 from "../images/sawm/190qx/1.webp";
+import j190qx_2 from "../images/sawm/190qx/2.webp";
+import j190qx_3 from "../images/sawm/190qx/3.webp";
+import j190qx_4 from "../images/sawm/190qx/4.webp";
+import j190qx_5 from "../images/sawm/190qx/5.webp";
+// 180/5mxg
+import j1805mxg from "../images/sawm/1805mxg/0.webp";
+import j1805mxg_1 from "../images/sawm/1805mxg/1.webp";
+import j1805mxg_2 from "../images/sawm/1805mxg/2.webp";
+import j1805mxg_3 from "../images/sawm/1805mxg/3.webp";
+import j1805mxg_4 from "../images/sawm/1805mxg/4.webp";
+import j1805mxg_5 from "../images/sawm/1805mxg/5.webp";
+// 200qx
+import j200qx from "../images/sawm/200qx/0.webp";
+import j200qx_1 from "../images/sawm/200qx/1.webp";
+import j200qx_2 from "../images/sawm/200qx/2.webp";
+import j200qx_3 from "../images/sawm/200qx/3.webp";
+import j200qx_4 from "../images/sawm/200qx/4.webp";
+import j200qx_5 from "../images/sawm/200qx/5.webp";
+// 220qx
+import j220qx from "../images/sawm/220qx/0.webp";
+import j220qx_1 from "../images/sawm/220qx/1.webp";
+import j220qx_2 from "../images/sawm/220qx/2.webp";
+import j220qx_3 from "../images/sawm/220qx/3.webp";
+import j220qx_4 from "../images/sawm/220qx/4.webp";
+import j220qx_5 from "../images/sawm/220qx/5.webp";
+// 300qx
+import j300qx from "../images/sawm/300qx/0.webp";
+import j300qx_1 from "../images/sawm/300qx/1.webp";
+import j300qx_2 from "../images/sawm/300qx/2.webp";
+import j300qx_3 from "../images/sawm/300qx/3.webp";
+import j300qx_4 from "../images/sawm/300qx/4.webp";
+import j300qx_5 from "../images/sawm/300qx/5.webp";
 //Сварочные полуавтоматы premium
-import jonser_gt220 from "../images/Semi_automatic_welding_machines/premium/gt220.png";
-import jonser_gt220Big from "../images/Semi_automatic_welding_machines/premium/gt220@2x.png";
-import jonser_gt250 from "../images/Semi_automatic_welding_machines/premium/gt250.png";
-import jonser_gt250Big from "../images/Semi_automatic_welding_machines/premium/gt250@2x.png";
-import jonser_gt270pmi from "../images/Semi_automatic_welding_machines/premium/gt-270pmi.png";
-import jonser_gt270pmiBig from "../images/Semi_automatic_welding_machines/premium/gt-270pmi@2x.png";
-import jonser_gt300 from "../images/Semi_automatic_welding_machines/premium/gt300.png";
-import jonser_gt300Big from "../images/Semi_automatic_welding_machines/premium/gt300@2x.png";
+// gt220
+import gt220 from "../images/sawm/premium/gt220/0.webp";
+import gt220_1 from "../images/sawm/premium/gt220/1.webp";
+import gt220_2 from "../images/sawm/premium/gt220/2.webp";
+import gt220_3 from "../images/sawm/premium/gt220/3.webp";
+import gt220_4 from "../images/sawm/premium/gt220/4.webp";
+import gt220_5 from "../images/sawm/premium/gt220/5.webp";
+// gt250
+import gt250 from "../images/sawm/premium/gt250/0.webp";
+import gt250_1 from "../images/sawm/premium/gt250/1.webp";
+import gt250_2 from "../images/sawm/premium/gt250/2.webp";
+import gt250_3 from "../images/sawm/premium/gt250/3.webp";
+import gt250_4 from "../images/sawm/premium/gt250/4.webp";
+import gt250_5 from "../images/sawm/premium/gt250/5.webp";
+// gt270pmi
+import gt270pmi from "../images/sawm/premium/gt270pmi/0.webp";
+import gt270pmi_1 from "../images/sawm/premium/gt270pmi/1.webp";
+import gt270pmi_2 from "../images/sawm/premium/gt270pmi/2.webp";
+import gt270pmi_3 from "../images/sawm/premium/gt270pmi/3.webp";
+import gt270pmi_4 from "../images/sawm/premium/gt270pmi/4.webp";
+import gt270pmi_5 from "../images/sawm/premium/gt270pmi/5.webp";
+// gt300
+import gt300 from "../images/sawm/premium/gt300/0.webp";
+import gt300_1 from "../images/sawm/premium/gt300/1.webp";
+import gt300_2 from "../images/sawm/premium/gt300/2.webp";
+import gt300_3 from "../images/sawm/premium/gt300/3.webp";
+import gt300_4 from "../images/sawm/premium/gt300/4.webp";
+import gt300_5 from "../images/sawm/premium/gt300/5.webp";
 //Сварочные полуавтоматы plasma
-import jonsergtr40kmcut from "../images/Semi_automatic_welding_machines/plasma/GTR-40KMCUT.png";
-import jonsergtr40kmcutBig from "../images/Semi_automatic_welding_machines/plasma/GTR-40KMCUT@2x.png";
+// jgtr40kmcut
+import gtr40kmcut from "../images/sawm/plasma/jgtr40kmcut/0.webp";
+import gtr40kmcut_1 from "../images/sawm/plasma/jgtr40kmcut/1.webp";
+import gtr40kmcut_2 from "../images/sawm/plasma/jgtr40kmcut/2.webp";
+import gtr40kmcut_3 from "../images/sawm/plasma/jgtr40kmcut/3.webp";
+import gtr40kmcut_4 from "../images/sawm/plasma/jgtr40kmcut/4.webp";
+import gtr40kmcut_5 from "../images/sawm/plasma/jgtr40kmcut/5.webp";
 
 const semiAutomaticWeldingMachinesInfo = {
   title: "Сварочные полуавтоматы",
@@ -48,7 +112,7 @@ const semiAutomaticWeldingMachinesInfo = {
           _id: "sawmiClassic_180dqx",
           nameModel: "180dqx",
           nameProduct: "Сварочный полуавтомат",
-          img: jonser180dqx,
+          img: j180dqx,
           titleParams: [
             {
               param: "ампераж:",
@@ -62,7 +126,28 @@ const semiAutomaticWeldingMachinesInfo = {
             },
           ],
           detailed: {
-            imgBig: jonser180dqxBig,
+            images: [
+              {
+                link: j180dqx_1,
+                _id: "j180dqx_1",
+              },
+              {
+                link: j180dqx_2,
+                _id: "j180dqx_2",
+              },
+              {
+                link: j180dqx_3,
+                _id: "j180dqx_3",
+              },
+              {
+                link: j180dqx_4,
+                _id: "j180dqx_4",
+              },
+              {
+                link: j180dqx_5,
+                _id: "j180dqx_5",
+              },
+            ],
             fullNameModel: "Сварочный полуавтомат Jonser 180DQX",
             movieLink: "https://youtu.be/TA91V6B9Edw?si=INbzND-d-FQhz5WU",
             specifications: [
@@ -212,7 +297,7 @@ const semiAutomaticWeldingMachinesInfo = {
           _id: "sawmiClassic_1805dqx",
           nameModel: "180/5dqx",
           nameProduct: "Сварочный полуавтомат",
-          img: jonser1805dqx,
+          img: j1805dqx,
           titleParams: [
             {
               param: "ампераж:",
@@ -226,7 +311,28 @@ const semiAutomaticWeldingMachinesInfo = {
             },
           ],
           detailed: {
-            imgBig: jonser1805dqxBig,
+            images: [
+              {
+                link: j1805dqx_1,
+                _id: "j1805dqx_1",
+              },
+              {
+                link: j1805dqx_2,
+                _id: "j1805dqx_2",
+              },
+              {
+                link: j1805dqx_3,
+                _id: "j1805dqx_3",
+              },
+              {
+                link: j1805dqx_4,
+                _id: "j1805dqx_4",
+              },
+              {
+                link: j1805dqx_5,
+                _id: "j1805dqx_5",
+              },
+            ],
             fullNameModel: "Сварочный полуавтомат Jonser 180/5DQX",
             specifications: [
               {
@@ -375,7 +481,7 @@ const semiAutomaticWeldingMachinesInfo = {
           _id: "sawmiClassic_185qx",
           nameModel: "185qx",
           nameProduct: "Сварочный полуавтомат",
-          img: jonser185qx,
+          img: j185qx,
           titleParams: [
             {
               param: "ампераж:",
@@ -389,7 +495,28 @@ const semiAutomaticWeldingMachinesInfo = {
             },
           ],
           detailed: {
-            imgBig: jonser185qxBig,
+            images: [
+              {
+                link: j185qx_1,
+                _id: "j185qx_1",
+              },
+              {
+                link: j185qx_2,
+                _id: "j185qx_2",
+              },
+              {
+                link: j185qx_3,
+                _id: "j185qx_3",
+              },
+              {
+                link: j185qx_4,
+                _id: "j185qx_4",
+              },
+              {
+                link: j185qx_5,
+                _id: "j185qx_5",
+              },
+            ],
             fullNameModel: "Сварочный полуавтомат Jonser 185QX",
             movieLink: "https://www.youtube.com/watch?v=3v0hN26XYJc",
             specifications: [
@@ -544,21 +671,42 @@ const semiAutomaticWeldingMachinesInfo = {
           _id: "sawmiClassic_190qx",
           nameModel: "190qx",
           nameProduct: "Сварочный полуавтомат",
-          img: jonser190qx,
+          img: j190qx,
           titleParams: [
             {
               param: "ампераж:",
               value: "190А",
-              _id: "sawmi_190dqx_tp1",
+              _id: "sawmi_190qx_tp1",
             },
             {
               param: "вместимость катушки:",
               value: "до 1 кг",
-              _id: "sawmi_190dqx_tp2",
+              _id: "sawmi_190qx_tp2",
             },
           ],
           detailed: {
-            imgBig: jonser190qxBig,
+            images: [
+              {
+                link: j190qx_1,
+                _id: "j190qx_1",
+              },
+              {
+                link: j190qx_2,
+                _id: "j190qx_2",
+              },
+              {
+                link: j190qx_3,
+                _id: "j190qx_3",
+              },
+              {
+                link: j190qx_4,
+                _id: "j190qx_4",
+              },
+              {
+                link: j190qx_5,
+                _id: "j190qx_5",
+              },
+            ],
             fullNameModel: "Сварочный полуавтомат Jonser 190QX",
             movieLink: "https://www.youtube.com/watch?v=JIJMoJ9O2us",
             specifications: [
@@ -721,7 +869,7 @@ const semiAutomaticWeldingMachinesInfo = {
           _id: "sawmiClassic_1805mxg",
           nameModel: "180/5mxg",
           nameProduct: "Сварочный полуавтомат",
-          img: jonser1805mxg,
+          img: j1805mxg,
           titleParams: [
             {
               param: "ампераж:",
@@ -735,9 +883,29 @@ const semiAutomaticWeldingMachinesInfo = {
             },
           ],
           detailed: {
-            imgBig: jonser1805mxgBig,
+            images: [
+              {
+                link: j1805mxg_1,
+                _id: "j1805mxg_1",
+              },
+              {
+                link: j1805mxg_2,
+                _id: "j1805mxg_2",
+              },
+              {
+                link: j1805mxg_3,
+                _id: "j1805mxg_3",
+              },
+              {
+                link: j1805mxg_4,
+                _id: "j1805mxg_4",
+              },
+              {
+                link: j1805mxg_5,
+                _id: "j1805mxg_5",
+              },
+            ],
             fullNameModel: "Сварочный полуавтомат Jonser 180/5MXG",
-
             specifications: [
               {
                 parameter: "Выходной ток:",
@@ -886,7 +1054,7 @@ const semiAutomaticWeldingMachinesInfo = {
           _id: "sawmiClassic_200qx",
           nameModel: "200qx",
           nameProduct: "Сварочный полуавтомат",
-          img: jonser200qx,
+          img: j200qx,
           titleParams: [
             {
               param: "ампераж:",
@@ -900,9 +1068,29 @@ const semiAutomaticWeldingMachinesInfo = {
             },
           ],
           detailed: {
-            imgBig: jonser200qxBig,
+            images: [
+              {
+                link: j200qx_1,
+                _id: "j200qx_1",
+              },
+              {
+                link: j200qx_2,
+                _id: "j200qx_2",
+              },
+              {
+                link: j200qx_3,
+                _id: "j200qx_3",
+              },
+              {
+                link: j200qx_4,
+                _id: "j200qx_4",
+              },
+              {
+                link: j200qx_5,
+                _id: "j200qx_5",
+              },
+            ],
             fullNameModel: "Сварочный полуавтомат Jonser 200QX",
-
             specifications: [
               {
                 parameter: "Выходной ток:",
@@ -1081,7 +1269,7 @@ const semiAutomaticWeldingMachinesInfo = {
           _id: "sawmiClassic_220qx",
           nameModel: "220qx",
           nameProduct: "Сварочный полуавтомат",
-          img: jonser220qx,
+          img: j220qx,
           titleParams: [
             {
               param: "ампераж:",
@@ -1095,9 +1283,29 @@ const semiAutomaticWeldingMachinesInfo = {
             },
           ],
           detailed: {
-            imgBig: jonser220qxBig,
+            images: [
+              {
+                link: j220qx_1,
+                _id: "j220qx_1",
+              },
+              {
+                link: j220qx_2,
+                _id: "j220qx_2",
+              },
+              {
+                link: j220qx_3,
+                _id: "j220qx_3",
+              },
+              {
+                link: j220qx_4,
+                _id: "j220qx_4",
+              },
+              {
+                link: j220qx_5,
+                _id: "j220qx_5",
+              },
+            ],
             fullNameModel: "Сварочный полуавтомат Jonser 220QX",
-
             specifications: [
               {
                 parameter: "Выходной ток:",
@@ -1280,7 +1488,7 @@ const semiAutomaticWeldingMachinesInfo = {
           _id: "sawmiClassic_300qx",
           nameModel: "300qx",
           nameProduct: "Сварочный полуавтомат",
-          img: jonser300qx,
+          img: j300qx,
           titleParams: [
             {
               param: "ампераж:",
@@ -1294,9 +1502,29 @@ const semiAutomaticWeldingMachinesInfo = {
             },
           ],
           detailed: {
-            imgBig: jonser300qxBig,
+            images: [
+              {
+                link: j300qx_1,
+                _id: "j300qx_1",
+              },
+              {
+                link: j300qx_2,
+                _id: "j300qx_2",
+              },
+              {
+                link: j300qx_3,
+                _id: "j300qx_3",
+              },
+              {
+                link: j300qx_4,
+                _id: "j300qx_4",
+              },
+              {
+                link: j300qx_5,
+                _id: "j300qx_5",
+              },
+            ],
             fullNameModel: "Сварочный полуавтомат Jonser 300QX",
-
             specifications: [
               {
                 parameter: "Выходной ток:",
@@ -1472,7 +1700,7 @@ const semiAutomaticWeldingMachinesInfo = {
           _id: "sawmiPremium_gt220",
           nameModel: "gt220",
           nameProduct: "Сварочный полуавтомат",
-          img: jonser_gt220,
+          img: gt220,
           titleParams: [
             {
               param: "ампераж:",
@@ -1486,7 +1714,28 @@ const semiAutomaticWeldingMachinesInfo = {
             },
           ],
           detailed: {
-            imgBig: jonser_gt220Big,
+            images: [
+              {
+                link: gt220_1,
+                _id: "gt220_1",
+              },
+              {
+                link: gt220_2,
+                _id: "gt220_2",
+              },
+              {
+                link: gt220_3,
+                _id: "gt220_3",
+              },
+              {
+                link: gt220_4,
+                _id: "gt220_4",
+              },
+              {
+                link: gt220_5,
+                _id: "gt220_5",
+              },
+            ],
             fullNameModel: "Сварочный полуавтомат Jonser GT220",
             movieLink: "https://youtu.be/zd9hptUJJS0?si=OEWz-rYtbRu_FznV",
             specifications: [
@@ -1675,7 +1924,7 @@ const semiAutomaticWeldingMachinesInfo = {
           _id: "sawmiPremium_gt250",
           nameModel: "gt250",
           nameProduct: "Сварочный полуавтомат",
-          img: jonser_gt250,
+          img: gt250,
           titleParams: [
             {
               param: "ампераж:",
@@ -1689,9 +1938,29 @@ const semiAutomaticWeldingMachinesInfo = {
             },
           ],
           detailed: {
-            imgBig: jonser_gt250Big,
+            images: [
+              {
+                link: gt250_1,
+                _id: "gt250_1",
+              },
+              {
+                link: gt250_2,
+                _id: "gt250_2",
+              },
+              {
+                link: gt250_3,
+                _id: "gt250_3",
+              },
+              {
+                link: gt250_4,
+                _id: "gt250_4",
+              },
+              {
+                link: gt250_5,
+                _id: "gt250_5",
+              },
+            ],
             fullNameModel: "Сварочный полуавтомат Jonser GT250",
-
             specifications: [
               {
                 parameter: "Выходной ток:",
@@ -1868,7 +2137,7 @@ const semiAutomaticWeldingMachinesInfo = {
           _id: "sawmiPremium_gt270pmi",
           nameModel: "gt-270pmi",
           nameProduct: "Сварочный полуавтомат",
-          img: jonser_gt270pmi,
+          img: gt270pmi,
           titleParams: [
             {
               param: "ампераж:",
@@ -1882,7 +2151,28 @@ const semiAutomaticWeldingMachinesInfo = {
             },
           ],
           detailed: {
-            imgBig: jonser_gt270pmiBig,
+            images: [
+              {
+                link: gt270pmi_1,
+                _id: "gt270pmi_1",
+              },
+              {
+                link: gt270pmi_2,
+                _id: "gt270pmi_2",
+              },
+              {
+                link: gt270pmi_3,
+                _id: "gt270pmi_3",
+              },
+              {
+                link: gt270pmi_4,
+                _id: "gt270pmi_4",
+              },
+              {
+                link: gt270pmi_5,
+                _id: "gt270pmi_5",
+              },
+            ],
             fullNameModel: "Сварочный полуавтомат Jonser GT-270PMI",
             movieLink: "https://www.youtube.com/watch?v=h9K5NuNUDZs",
             specifications: [
@@ -2098,7 +2388,7 @@ const semiAutomaticWeldingMachinesInfo = {
           _id: "sawmiPremium_gt300",
           nameModel: "gt300",
           nameProduct: "Сварочный полуавтомат",
-          img: jonser_gt300,
+          img: gt300,
           titleParams: [
             {
               param: "ампераж:",
@@ -2112,7 +2402,28 @@ const semiAutomaticWeldingMachinesInfo = {
             },
           ],
           detailed: {
-            imgBig: jonser_gt300Big,
+            images: [
+              {
+                link: gt300_1,
+                _id: "gt300_1",
+              },
+              {
+                link: gt300_2,
+                _id: "gt300_2",
+              },
+              {
+                link: gt300_3,
+                _id: "gt300_3",
+              },
+              {
+                link: gt300_4,
+                _id: "gt300_4",
+              },
+              {
+                link: gt300_5,
+                _id: "gt300_5",
+              },
+            ],
             fullNameModel: "Сварочный полуавтомат Jonser GT300",
 
             specifications: [
@@ -2294,7 +2605,7 @@ const semiAutomaticWeldingMachinesInfo = {
           _id: "sawmiPlasma_gtr40kmcut",
           nameModel: "gTR-40KM cut",
           nameProduct: "Сварочный плазморез",
-          img: jonsergtr40kmcut,
+          img: gtr40kmcut,
           titleParams: [
             {
               param: "ампераж:",
@@ -2308,7 +2619,28 @@ const semiAutomaticWeldingMachinesInfo = {
             },
           ],
           detailed: {
-            imgBig: jonsergtr40kmcutBig,
+            images: [
+              {
+                link: gtr40kmcut_1,
+                _id: "gtr40kmcut_1",
+              },
+              {
+                link: gtr40kmcut_2,
+                _id: "gtr40kmcut_2",
+              },
+              {
+                link: gtr40kmcut_3,
+                _id: "gtr40kmcut_3",
+              },
+              {
+                link: gtr40kmcut_4,
+                _id: "gtr40kmcut_4",
+              },
+              {
+                link: gtr40kmcut_5,
+                _id: "gtr40kmcut_5",
+              },
+            ],
             fullNameModel: "Плазморез Jonser GTR-40KM CUT",
             movieLink: "https://www.youtube.com/watch?v=xHvIl9Xa9Uo",
             specifications: [

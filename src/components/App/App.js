@@ -18,6 +18,7 @@ import Privacy from "../Privacy/Privacy";
 import Delivery from "../Delivery/Delivery";
 import PageNotFound from "../PageNotFound/PageNotFound";
 import oilsInfo from "../../utils/oilsInfo";
+import { powerToolsInfo } from "../../utils/powerToolsInfo";
 
 function App() {
   const [isDarkLinks, setIsDarkLinks] = useState(true);
@@ -115,6 +116,10 @@ function App() {
           <Route
             path="/additionally"
             element={<ProductPage infoPage={additionallyInfo} />}
+          />
+          <Route
+            path="/powerTools"
+            element={<ProductPage infoPage={powerToolsInfo} />}
           />
           <Route path="/delivery" element={<Delivery />} />
           <Route path="/privacy" element={<Privacy />} />

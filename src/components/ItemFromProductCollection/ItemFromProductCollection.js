@@ -24,7 +24,8 @@ function ItemFromProductCollection({
         src={img}
         alt={detailed.fullNameModel}
         loading="lazy"
-        className="collection__model-img"
+        className="collection__model-img cursor"
+        onClick={handlePopupShow}
       />
       <p className="collection__model-name">
         <span className="collection__model-name_type_accent">
@@ -50,15 +51,25 @@ function ItemFromProductCollection({
       </div>
       <button
         type="button"
-        className="collection__btn cursor"
+        className="collection__btn button_color_light"
         onClick={handlePopupShow}
       >
         Подробнее
+        <svg
+          width="16"
+          height="12"
+          viewBox="0 0 16 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M1 11L7 6L1 1" stroke="black" className="collection__svg" />
+          <path d="M9 11L15 6L9 1" stroke="black" className="collection__svg" />
+        </svg>
       </button>
       {isClickOnMoreBtn ? (
         <PopupDetailedInfo
           title={nameModel}
-          imgBig={detailed.imgBig}
+          images={detailed.images}
           fullNameModel={detailed.fullNameModel}
           description={detailed.description}
           movieLink={detailed.movieLink}
