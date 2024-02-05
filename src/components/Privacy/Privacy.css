@@ -95,6 +95,6 @@
 .privacy__table,
 td {
   padding: 7px;
-  border: 1px solid gray;
+  border: 1px solid var(--border-bottom);
   border-collapse: collapse;
 }

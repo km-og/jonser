@@ -1,21 +1,20 @@
-import { useEffect } from "react";
 import ProductCollection from "../ProductCollection/ProductCollection";
 import ScrollToTopOnMount from "../ScrollToTopOnMount/ScrollToTopOnMount";
 import "./ProductPage.css";
 
-function ProductPage({ infoPage, installingColorLinks }) {
-  useEffect(() => {
-    installingColorLinks();
-  });
-
+function ProductPage({ infoPage }) {
   return (
     <section className="products">
       <ScrollToTopOnMount />
       <div className="products__wrapper">
         <h2 className="products__title">{infoPage.title}</h2>
         {infoPage.description
-          ? infoPage.description.map((item) => (
-              <p className="products__description" key={item._id}>
+          ? infoPage.description.map((item, ind) => (
+              <p
+                className="products__description"
+                // key={item._id}
+                key={`products-description-${ind}`}
+              >
                 {item.text}
               </p>
             ))
@@ -32,7 +31,7 @@ function ProductPage({ infoPage, installingColorLinks }) {
         ) : (
           ""
         )}
-        {infoPage.collections.map((collection) => (
+        {infoPage.collections.map((collection, ind) => (
           <ProductCollection
             subtitle={collection.subtitle}
             subdescription={collection.subdescription}
@@ -42,7 +41,8 @@ function ProductPage({ infoPage, installingColorLinks }) {
             alignImageRight={collection.alignImageRight}
             alignImageTop={collection.alignImageTop}
             models={collection.models}
-            key={collection._id}
+            // key={collection._id}
+            key={`collection-${ind}`}
           />
         ))}
       </div>

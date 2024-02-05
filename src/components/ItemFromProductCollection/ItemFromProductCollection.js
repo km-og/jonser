@@ -4,12 +4,10 @@ import "./ItemFromProductCollection.css";
 
 function ItemFromProductCollection({
   nameModel,
+  nameProduct,
   img,
-  premium,
+  titleParams,
   detailed,
-  isHorizontal,
-  alignImageRight,
-  alignImageTop,
 }) {
   const [isClickOnMoreBtn, setIsClickOnMoreBtn] = useState(false);
 
@@ -22,39 +20,56 @@ function ItemFromProductCollection({
   }
   return (
     <li className="collection__item">
-      <div
-        className={`collection__wrap cursor ${
-          premium ? "collection__wrap_type_premium" : ""
-        }`}
+      <img
+        src={img}
+        alt={detailed.fullNameModel}
+        loading="lazy"
+        className="collection__model-img cursor"
         onClick={handlePopupShow}
-      >
-        <p className="collection__model-name">
-          <span className="collection__model-name_type_accent">jonser</span>{" "}
-          {nameModel}
-        </p>
-        <img
-          src={img}
-          alt={nameModel}
-          loading="lazy"
-          className={`collection__model-img ${
-            isHorizontal ? "collection__model-img_type_horizontal" : ""
-          } ${alignImageRight ? "collection__model-img_type_align-right" : ""}
-          ${alignImageTop ? "collection__model-img_type_align-top" : ""}`}
-        />
+      />
+      <p className="collection__model-name">
+        <span className="collection__model-name_type_accent">
+          {nameProduct}
+          <br />
+        </span>
+        jonser {nameModel}
+      </p>
+      <div className="collection__params">
+        {titleParams
+          ? titleParams.map((item) => (
+              <p className="collection__param" key={item._id}>
+                <span className="collection__param-name">{item.param}</span>{" "}
+                {item.value}
+              </p>
+            ))
+          : ""}
+      </div>
+      <div className="collection__prices">
+        <p className="collection__sale">{detailed.sale}</p>
+        <p className="collection__new-price">{detailed.newPrice}</p>
+        <p className="collection__old-price">{detailed.oldPrice}</p>
       </div>
       <button
         type="button"
-        className={`collection__btn cursor ${
-          premium ? "collection__btn_type_premium" : ""
-        }`}
+        className="collection__btn button_color_light"
         onClick={handlePopupShow}
       >
         Подробнее
+        <svg
+          width="16"
+          height="12"
+          viewBox="0 0 16 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M1 11L7 6L1 1" stroke="black" className="collection__svg" />
+          <path d="M9 11L15 6L9 1" stroke="black" className="collection__svg" />
+        </svg>
       </button>
       {isClickOnMoreBtn ? (
         <PopupDetailedInfo
           title={nameModel}
-          imgBig={detailed.imgBig}
+          images={detailed.images}
           fullNameModel={detailed.fullNameModel}
           description={detailed.description}
           movieLink={detailed.movieLink}

@@ -49,8 +49,8 @@
   font-size: 22px;
   line-height: 1.2;
   padding: 0;
-  color: #1e1e1e;
-  border-bottom: 1px solid #1e1e1e;
+  color: var(--dark-color);
+  border-bottom: 1px solid var(--dark-color);
   padding: 0 0 5px;
 }
 
@@ -66,8 +66,8 @@
   font-weight: 300;
   font-size: 20px;
   line-height: 1.4;
-  color: #1e1e1e;
-  border-bottom: 1px solid #1e1e1e;
+  color: var(--dark-color);
+  border-bottom: 1px solid var(--dark-color);
 }
 
 .delivery__container > .delivery__text:last-of-type {

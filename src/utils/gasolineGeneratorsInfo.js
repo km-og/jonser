@@ -1,8 +1,19 @@
 //Бензиновые генераторы
-import gg3000 from "../images/gasolineGenerators/gg-3000.png";
-import gg3000Big from "../images/gasolineGenerators/gg-3000@2x.png";
-import gg3500 from "../images/gasolineGenerators/gg-3500.png";
-import gg3500Big from "../images/gasolineGenerators/gg-3500@2x.png";
+// gg3000
+import gg3000 from "../images/gasolineGenerators/gg3000/0.webp";
+import gg3000_1 from "../images/gasolineGenerators/gg3000/1.webp";
+import gg3000_2 from "../images/gasolineGenerators/gg3000/2.webp";
+import gg3000_3 from "../images/gasolineGenerators/gg3000/3.webp";
+import gg3000_4 from "../images/gasolineGenerators/gg3000/4.webp";
+import gg3000_5 from "../images/gasolineGenerators/gg3000/5.webp";
+// gg3500
+import gg3500 from "../images/gasolineGenerators/gg3500/0.webp";
+import gg3500_1 from "../images/gasolineGenerators/gg3500/1.webp";
+import gg3500_2 from "../images/gasolineGenerators/gg3500/2.webp";
+import gg3500_3 from "../images/gasolineGenerators/gg3500/3.webp";
+import gg3500_4 from "../images/gasolineGenerators/gg3500/4.webp";
+import gg3500_5 from "../images/gasolineGenerators/gg3500/5.webp";
+
 // import gg4000 from "../images/gasolineGenerators/";
 // import gg400Big from "../images/gasolineGenerators/";
 // import gg8000 from "../images/gasolineGenerators/";
@@ -28,14 +39,47 @@ const gasolineGeneratorsInfo = {
           _id: "gg_gg3000",
           nameModel: "gg-3000",
           img: gg3000,
+          nameProduct: "бензиновый генератор",
+          titleParams: [
+            {
+              param: "мощность:",
+              value: "3000Вт",
+              _id: "gg_gg3000_tp1",
+            },
+            {
+              param: "Объем бака:",
+              value: "15л",
+              _id: "gg_gg3000_tp2",
+            },
+          ],
           detailed: {
-            imgBig: gg3000Big,
+            images: [
+              {
+                link: gg3000_1,
+                _id: "gg3000_1",
+              },
+              {
+                link: gg3000_2,
+                _id: "gg3000_2",
+              },
+              {
+                link: gg3000_3,
+                _id: "gg3000_3",
+              },
+              {
+                link: gg3000_4,
+                _id: "gg3000_4",
+              },
+              {
+                link: gg3000_5,
+                _id: "gg3000_5",
+              },
+            ],
             fullNameModel: "Электрогенератор бензиновый Jonser GG-3000",
-            description: "",
             specifications: [
               {
                 parameter: "4-тактный 1-цилиндровый двигатель",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3000_param1",
               },
               {
@@ -80,58 +124,58 @@ const gasolineGeneratorsInfo = {
               },
               {
                 parameter: "2 розетки 220В",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3000_param10",
               },
               {
                 parameter: "Выход на 12В",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3000_param11",
               },
               {
                 parameter: "Автомат сетевой",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3000_param12",
               },
               {
                 parameter: "Датчик уровня масла",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3000_param13",
               },
 
               {
                 parameter: "Индикатор уровня топлива",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3000_param15",
               },
               {
                 parameter: "Медная обмотка",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3000_param16",
               },
               {
                 parameter: "AVR - автоматическая регулировка напряжения",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3000_param17",
               },
               {
                 parameter: "Стабилизация +/- 5%",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3000_param18",
               },
               {
                 parameter: "Усиленные антивибро подушки",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3000_param19",
               },
               {
                 parameter: "Ручной стартер",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3000_param20",
               },
               {
                 parameter: "Воздушное принудительное охлаждение",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3000_param21",
               },
               {
@@ -187,14 +231,47 @@ const gasolineGeneratorsInfo = {
           _id: "gg_gg3500",
           nameModel: "gg-3500",
           img: gg3500,
+          nameProduct: "бензиновый генератор",
+          titleParams: [
+            {
+              param: "мощность:",
+              value: "3500Вт",
+              _id: "gg_gg3500_tp1",
+            },
+            {
+              param: "Объем бака:",
+              value: "15л",
+              _id: "gg_gg3500_tp2",
+            },
+          ],
           detailed: {
-            imgBig: gg3500Big,
+            images: [
+              {
+                link: gg3500_1,
+                _id: "gg3500_1",
+              },
+              {
+                link: gg3500_2,
+                _id: "gg3500_2",
+              },
+              {
+                link: gg3500_3,
+                _id: "gg3500_3",
+              },
+              {
+                link: gg3500_4,
+                _id: "gg3500_4",
+              },
+              {
+                link: gg3500_5,
+                _id: "gg3500_5",
+              },
+            ],
             fullNameModel: "Электрогенератор бензиновый Jonser GG-3500",
-            description: "",
             specifications: [
               {
                 parameter: "4-тактный 1-цилиндровый двигатель",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3500_param1",
               },
               {
@@ -239,58 +316,58 @@ const gasolineGeneratorsInfo = {
               },
               {
                 parameter: "2 розетки 220В",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3500_param10",
               },
               {
                 parameter: "Выход на 12В",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3500_param11",
               },
               {
                 parameter: "Автомат сетевой",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3500_param12",
               },
               {
                 parameter: "Датчик уровня масла",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3500_param13",
               },
 
               {
                 parameter: "Индикатор уровня топлива",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3500_param15",
               },
               {
                 parameter: "Медная обмотка",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3500_param16",
               },
               {
                 parameter: "AVR - автоматическая регулировка напряжения",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3500_param17",
               },
               {
                 parameter: "Стабилизация +/- 5%",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3500_param18",
               },
               {
                 parameter: "Усиленные антивибро подушки",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3500_param19",
               },
               {
                 parameter: "Ручной стартер",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3500_param20",
               },
               {
                 parameter: "Воздушное принудительное охлаждение",
-                value: "",
+                value: "Да",
                 _id: "gg_gg3500_param21",
               },
               {
@@ -347,13 +424,33 @@ const gasolineGeneratorsInfo = {
         //   nameModel: "gg-4000",
         //   // img: gg4000,
         //   detailed: {
-        //     // imgBig: gg4000Big,
+        //     // images: [
+        //   {
+        //     link: j190qx_1,
+        //     _id: "j190qx_1",
+        //   },
+        //   {
+        //     link: j190qx_2,
+        //     _id: "j190qx_2",
+        //   },
+        //   {
+        //     link: j190qx_3,
+        //     _id: "j190qx_3",
+        //   },
+        //   {
+        //     link: j190qx_4,
+        //     _id: "j190qx_4",
+        //   },
+        //   {
+        //     link: j190qx_5,
+        //     _id: "j190qx_5",
+        //   },
+        // ],
         //     fullNameModel: "Электрогенератор бензиновый Jonser GG-4000",
-        //     description: "",
         //     specifications: [
         //       {
         //         parameter: "4-тактный 1-цилиндровый двигатель",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg4000_param1",
         //       },
         //       {
@@ -398,58 +495,58 @@ const gasolineGeneratorsInfo = {
         //       },
         //       {
         //         parameter: "2 розетки 220В",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg4000_param10",
         //       },
         //       {
         //         parameter: "Выход на 12В",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg4000_param11",
         //       },
         //       {
         //         parameter: "Автомат сетевой",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg4000_param12",
         //       },
         //       {
         //         parameter: "Датчик уровня масла",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg4000_param13",
         //       },
 
         //       {
         //         parameter: "Индикатор уровня топлива",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg4000_param15",
         //       },
         //       {
         //         parameter: "Медная обмотка",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg4000_param16",
         //       },
         //       {
         //         parameter: "AVR - автоматическая регулировка напряжения",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg4000_param17",
         //       },
         //       {
         //         parameter: "Стабилизация +/- 5%",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg4000_param18",
         //       },
         //       {
         //         parameter: "Усиленные антивибро подушки",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg4000_param19",
         //       },
         //       {
         //         parameter: "Ручной стартер",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg4000_param20",
         //       },
         //       {
         //         parameter: "Воздушное принудительное охлаждение",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg4000_param21",
         //       },
         //       {
@@ -506,13 +603,33 @@ const gasolineGeneratorsInfo = {
         //   nameModel: "gg-8000",
         //   // img: gg8000,
         //   detailed: {
-        //     // imgBig: gg8000Big,
+        //     // images: [
+        //   {
+        //     link: j190qx_1,
+        //     _id: "j190qx_1",
+        //   },
+        //   {
+        //     link: j190qx_2,
+        //     _id: "j190qx_2",
+        //   },
+        //   {
+        //     link: j190qx_3,
+        //     _id: "j190qx_3",
+        //   },
+        //   {
+        //     link: j190qx_4,
+        //     _id: "j190qx_4",
+        //   },
+        //   {
+        //     link: j190qx_5,
+        //     _id: "j190qx_5",
+        //   },
+        // ],
         //     fullNameModel: "Электрогенератор бензиновый Jonser GG-8000",
-        //     description: "",
         //     specifications: [
         //       {
         //         parameter: "4-тактный 1-цилиндровый двигатель",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg8000_param1",
         //       },
         //       {
@@ -557,67 +674,67 @@ const gasolineGeneratorsInfo = {
         //       },
         //       {
         //         parameter: "2 розетки 220В",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg8000_param10",
         //       },
         //       {
         //         parameter: "Выход на 12В",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg8000_param11",
         //       },
         //       {
         //         parameter: "Автомат сетевой",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg8000_param12",
         //       },
         //       {
         //         parameter: "Датчик уровня масла",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg8000_param13",
         //       },
         //       {
         //         parameter: "Индикатор уровня топлива",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg8000_param15",
         //       },
         //       {
         //         parameter: "Медная обмотка",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg8000_param16",
         //       },
         //       {
         //         parameter: "AVR - автоматическая регулировка напряжения",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg8000_param17",
         //       },
         //       {
         //         parameter: "Стабилизация +/- 5%",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg8000_param18",
         //       },
         //       {
         //         parameter: "Усиленные антивибро подушки",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg8000_param19",
         //       },
         //       {
         //         parameter: "Ручной стартер",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg8000_param20",
         //       },
         //       {
         //         parameter: "Электростартер",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg8000_param20_1",
         //       },
         //       {
         //         parameter: "Воздушное принудительное охлаждение",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg8000_param21",
         //       },
         //       {
         //         parameter: "Подогрев карбюратора",
-        //         value: "",
+        //         value: "Да",
         //         _id: "gg_gg8000_param21_1",
         //       },
         //       {

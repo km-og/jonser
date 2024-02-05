@@ -1,13 +1,15 @@
 //Превью в каталоге на главной странице
-import semiAutomaticWeldingMachines from "../images/Semi_automatic_welding_machines/preview.png";
-import compressors from "../images/Compressors/preview.png";
-import gasolineGenerators from "../images/gasolineGenerators/preview.png";
-import angleGrinders from "../images/angleGrinders/preview.png";
-import drillsAndScrewdrivers from "../images/drillsAndScrewdrivers/preview.png";
-import сhainsaws from "../images/сhainsaws/preview.png";
-import trimmers from "../images/trimmers/preview.png";
-import toolKits from "../images/toolKits/preview.png";
-import additionally from "../images/additionally/preview.png";
+import semiAutomaticWeldingMachines from "../images/sawm/preview.webp";
+import compressors from "../images/Compressors/preview.webp";
+import gasolineGenerators from "../images/gasolineGenerators/preview.webp";
+import angleGrinders from "../images/angleGrinders/preview.webp";
+import drillsAndScrewdrivers from "../images/drillsAndScrewdrivers/preview.webp";
+import сhainsaws from "../images/сhainsaws/preview.webp";
+import trimmers from "../images/trimmers/preview.webp";
+import toolKits from "../images/toolKits/preview.webp";
+import additionally from "../images/additionally/preview.webp";
+import oils from "../images/oils/preview.webp";
+import powerTools from "../images/powerTools/preview.webp";
 
 const itemsFromCatalog = [
   {
@@ -25,17 +27,17 @@ const itemsFromCatalog = [
     _id: 2,
   },
   {
-    name: "Бензогенераторы",
-    alt: "Бензогенераторы",
-    img: gasolineGenerators,
-    route: "/gasolineGenerators",
+    name: "Наборы инструментов",
+    alt: "Наборы инструментов",
+    img: toolKits,
+    route: "/toolKits",
     _id: 3,
   },
   {
-    name: "Угловые шлифовальные машины (УШМ)",
-    alt: "Угловые шлифовальные машины (УШМ)",
-    img: angleGrinders,
-    route: "/angleGrinders",
+    name: "Масло",
+    alt: "Наборы инструментов",
+    img: oils,
+    route: "/oils",
     _id: 4,
   },
   {
@@ -46,32 +48,46 @@ const itemsFromCatalog = [
     _id: 5,
   },
   {
+    name: "Бензиновые генераторы",
+    alt: "Бензиновые генераторы",
+    img: gasolineGenerators,
+    route: "/gasolineGenerators",
+    _id: 6,
+  },
+  {
     name: "Бензопилы",
     alt: "Бензопилы",
     img: сhainsaws,
     route: "/chainsaws",
-    _id: 6,
+    _id: 7,
   },
   {
     name: "Триммеры",
     alt: "Триммеры",
     img: trimmers,
     route: "/trimmers",
-    _id: 7,
-  },
-  {
-    name: "Наборы инструментов",
-    nalt: "Наборы инструментов",
-    img: toolKits,
-    route: "/toolKits",
     _id: 8,
   },
   {
-    name: "Оснастка",
-    namalt: "Оснастка",
+    name: "Угловые шлифовальные машины (УШМ)",
+    alt: "Угловые шлифовальные машины (УШМ)",
+    img: angleGrinders,
+    route: "/angleGrinders",
+    _id: 9,
+  },
+  {
+    name: "Дополнительно",
+    alt: "Дополнительно",
     img: additionally,
     route: "/additionally",
-    _id: 9,
+    _id: 10,
+  },
+  {
+    name: "Электро-инструменты",
+    alt: "Электроинструменты",
+    img: powerTools,
+    route: "/powerTools",
+    _id: 11,
   },
 ];
 

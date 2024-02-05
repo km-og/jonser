@@ -27,7 +27,7 @@
   font-size: 28px;
   line-height: 1.2;
   margin: 0 0 40px;
-  color: #d9d9d9;
+  color: var(--main-color);
 }
 
 .feedback__text {
@@ -35,14 +35,14 @@
   font-size: 20px;
   line-height: 1.4;
   margin: 0;
-  color: #d9d9d9;
+  color: var(--main-color);
 }
 
 .feedback__form {
   max-width: 734px;
   width: 100%;
   margin: 50px 0;
-  color: #d9d9d9;
+  color: var(--main-color);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -55,9 +55,9 @@
 .feedback__input {
   background-color: rgba(0, 0, 0, 0);
   border: none;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid var(--main-color);
   padding: 10px 5px;
-  color: #d9d9d9;
+  color: var(--main-color);
   width: 100%;
   box-sizing: border-box;
 }
@@ -65,16 +65,16 @@
 .feedback__input:focus {
   border-radius: 5px;
   outline: none;
-  border: 2px solid #d9d9d9;
+  border: 2px solid var(--main-color);
 }
 
 .feedback__input::placeholder {
-  color: #d9d9d9;
+  color: var(--main-color);
 }
 
 .feedback__input-error {
   font-size: 12px;
-  color: #ee3434;
+  color: var(--error-color);
   margin: 0;
   transform: translateY(-100%);
 }
@@ -104,7 +104,7 @@
 .feedback__btn_type_disabled:hover {
   cursor: default;
   background-color: rgba(0, 0, 0, 0);
-  color: #fff;
+  color: var(--main-color);
 }
 
 .feedback__label_type_bottom {
@@ -127,8 +127,8 @@
 }
 
 .feedback__link {
-  color: #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
   padding: 0 0 1px 0;
 }
 

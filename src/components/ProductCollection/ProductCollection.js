@@ -1,63 +1,39 @@
 import ItemFromProductCollection from "../ItemFromProductCollection/ItemFromProductCollection";
 import "./ProductCollection.css";
 
-function ProductCollection({
-  subtitle,
-  subdescription,
-  videoReview,
-  premium,
-  isHorizontal,
-  alignImageRight,
-  alignImageTop,
-  models,
-}) {
+function ProductCollection({ subtitle, premium, isHorizontal, models }) {
   return (
-    <div className="collection">
-      <h3 className="collection__subtitle">{subtitle}</h3>
-      {subdescription ? (
-        <p className="collection__subdescription">{subdescription}</p>
-      ) : (
-        ""
-      )}
-      {premium ? (
-        <div className="collection__container collection__container_type_premium">
-          <ul
-            className={`collection__list ${
-              premium ? "collection__list_type_premium" : ""
-            } `}
-          >
-            {models.map((model) => (
-              <ItemFromProductCollection
-                nameModel={model.nameModel}
-                img={model.img}
-                detailed={model.detailed}
-                key={model._id}
-                premium={premium}
-              />
-            ))}
-          </ul>
-        </div>
-      ) : (
+    <section className="collection">
+      <div
+        className={`collection__wrapper ${
+          premium ? "collection__wrapper_type_premium" : ""
+        }`}
+      >
+        <h3
+          className={`collection__subtitle  ${
+            premium ? "collection__subtitle_type_premium" : ""
+          }`}
+        >
+          {subtitle}
+        </h3>
         <ul
           className={`collection__list ${
             premium ? "collection__list_type_premium" : ""
           } ${isHorizontal ? "collection__list_type_horizontal" : ""}`}
         >
-          {models.map((model) => (
+          {models.map((model, ind) => (
             <ItemFromProductCollection
               nameModel={model.nameModel}
+              nameProduct={model.nameProduct}
               img={model.img}
+              titleParams={model.titleParams}
               detailed={model.detailed}
               key={model._id}
-              premium={premium}
-              isHorizontal={isHorizontal}
-              alignImageRight={alignImageRight}
-              alignImageTop={alignImageTop}
             />
           ))}
         </ul>
-      )}
-    </div>
+      </div>
+    </section>
   );
 }
 

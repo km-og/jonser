@@ -1,11 +1,6 @@
 import "./Privacy.css";
-import { useEffect } from "react";
 
-function Privacy({ switchFixedMenu }) {
-  useEffect(() => {
-    switchFixedMenu();
-  }, []);
-
+function Privacy() {
   return (
     <section className="privacy">
       <h2 className="privacy__title">
