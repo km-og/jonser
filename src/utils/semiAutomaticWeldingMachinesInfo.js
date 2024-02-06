@@ -106,7 +106,6 @@ const semiAutomaticWeldingMachinesInfo = {
       _id: "sawmiClassic",
       subtitle: "Классическая серия без газа",
       premium: false,
-      isHorizontal: false,
       models: [
         {
           _id: "sawmiClassic_180dqx",
@@ -863,7 +862,6 @@ const semiAutomaticWeldingMachinesInfo = {
       _id: "sawmiClassicGaz",
       subtitle: "Классическая серия с газом и без",
       premium: false,
-      isHorizontal: false,
       models: [
         {
           _id: "sawmiClassic_1805mxg",
@@ -1694,7 +1692,6 @@ const semiAutomaticWeldingMachinesInfo = {
       _id: "sawmiPremium",
       subtitle: "Премиум серия с газом и без",
       premium: true,
-      isHorizontal: false,
       models: [
         {
           _id: "sawmiPremium_gt220",
@@ -2599,7 +2596,6 @@ const semiAutomaticWeldingMachinesInfo = {
       _id: "sawmiPlasma",
       subtitle: "Сварочные плазморезы",
       premium: false,
-      isHorizontal: false,
       models: [
         {
           _id: "sawmiPlasma_gtr40kmcut",
