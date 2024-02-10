@@ -21,11 +21,11 @@ function Footer({ scrollToTop }) {
         <div className="footer__container">
           <a href="tel:+78003025534" className="footer__tel link">
             +7 800 302 55 34
-            <span className="footer__department">Отдел продаж</span>
+            <span className="footer__department">отдел продаж</span>
           </a>
           <a href="tel:+79091596689" className="footer__tel link">
             +7 909 159 66 89
-            <span className="footer__department">Сервис</span>
+            <span className="footer__department">сервис</span>
           </a>
           <ul className="footer__list">
             <li className="footer__item">
