@@ -3,9 +3,6 @@ import "./Navigation.css";
 import { Link, NavLink } from "react-router-dom";
 
 function Navigation({ handleClick }) {
-  function onClick() {
-    handleClick();
-  }
   return (
     <div className="navigation">
       <ScrollToTopOnMount />
@@ -13,12 +10,16 @@ function Navigation({ handleClick }) {
         type="button"
         aria-label="Закрыть"
         className="navigation__btn cursor"
-        onClick={onClick}
+        onClick={handleClick}
       ></button>
       <nav>
         <ul className="navigation__list">
           <li className="navigation__item">
-            <NavLink to="/" className="navigation__link link" onClick={onClick}>
+            <NavLink
+              to="/"
+              className="navigation__link link"
+              onClick={handleClick}
+            >
               Главная
             </NavLink>
           </li>
@@ -28,7 +29,7 @@ function Navigation({ handleClick }) {
                 pathname: "/#about",
               }}
               className="navigation__link link"
-              onClick={onClick}
+              onClick={handleClick}
             >
               О нас
             </Link>
@@ -39,7 +40,7 @@ function Navigation({ handleClick }) {
                 pathname: "/#catalog",
               }}
               className="navigation__link link"
-              onClick={onClick}
+              onClick={handleClick}
             >
               Каталог
             </Link>
@@ -50,7 +51,7 @@ function Navigation({ handleClick }) {
                 pathname: "/delivery",
               }}
               className="navigation__link link"
-              onClick={onClick}
+              onClick={handleClick}
             >
               Доставка
             </Link>
@@ -62,7 +63,7 @@ function Navigation({ handleClick }) {
                 // pathname: "/#feedback",
               }}
               className="navigation__link link"
-              onClick={onClick}
+              onClick={handleClick}
             >
               Контакты
             </Link>
