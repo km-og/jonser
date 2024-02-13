@@ -27,6 +27,17 @@ import j190qx_2 from "../images/sawm/190qx/2.webp";
 import j190qx_3 from "../images/sawm/190qx/3.webp";
 import j190qx_4 from "../images/sawm/190qx/4.webp";
 import j190qx_5 from "../images/sawm/190qx/5.webp";
+// Классическая серия с газом и без
+// 180qxg
+import j180qxg from "../images/sawm/180qxg/0.webp";
+import j180qxg_1 from "../images/sawm/180qxg/1.webp";
+// 180mqx
+import j180mqx from "../images/sawm/180mqx/0.webp";
+import j180mqx_1 from "../images/sawm/180mqx/1.webp";
+import j180mqx_2 from "../images/sawm/180mqx/2.webp";
+import j180mqx_3 from "../images/sawm/180mqx/3.webp";
+import j180mqx_4 from "../images/sawm/180mqx/4.webp";
+import j180mqx_5 from "../images/sawm/180mqx/5.webp";
 // 180/5mxg
 import j1805mxg from "../images/sawm/1805mxg/0.webp";
 import j1805mxg_1 from "../images/sawm/1805mxg/1.webp";
@@ -34,6 +45,9 @@ import j1805mxg_2 from "../images/sawm/1805mxg/2.webp";
 import j1805mxg_3 from "../images/sawm/1805mxg/3.webp";
 import j1805mxg_4 from "../images/sawm/1805mxg/4.webp";
 import j1805mxg_5 from "../images/sawm/1805mxg/5.webp";
+// 180/5mqx
+import j1805mqx from "../images/sawm/1805mqx/0.webp";
+import j1805mqx_1 from "../images/sawm/1805mqx/1.webp";
 // 200qx
 import j200qx from "../images/sawm/200qx/0.webp";
 import j200qx_1 from "../images/sawm/200qx/1.webp";
@@ -864,6 +878,324 @@ const semiAutomaticWeldingMachinesInfo = {
       premium: false,
       models: [
         {
+          _id: "sawmiClassic_180qxg",
+          nameModel: "180QXG",
+          nameProduct: "Сварочный полуавтомат",
+          img: j180qxg,
+          titleParams: [
+            {
+              param: "ампераж:",
+              value: "180А",
+              _id: "sawmi_180qxg_tp1",
+            },
+            {
+              param: "охлаждение:",
+              value: "2 вентилятора",
+              _id: "sawmi_180qxg_tp2",
+            },
+          ],
+          detailed: {
+            images: [
+              {
+                link: j180qxg_1,
+                _id: "j180qxg_1",
+              },
+              // {
+              //   link: j180qxg_2,
+              //   _id: "j180qxg_2",
+              // },
+              // {
+              //   link: j180qxg_3,
+              //   _id: "j180qxg_3",
+              // },
+              // {
+              //   link: j180qxg_4,
+              //   _id: "j180qxg_4",
+              // },
+              // {
+              //   link: j180qxg_5,
+              //   _id: "j180qxg_5",
+              // },
+            ],
+            fullNameModel: "Сварочный полуавтомат Jonser 180QXG",
+            specifications: [
+              {
+                parameter: "Выходной ток:",
+                value: "ММА 20-180, MIG 30-180",
+                _id: "sawmiClassic_180qxg_param1",
+              },
+              {
+                parameter: "Входное напряжение:",
+                value: "220 В",
+                _id: "sawmiClassic_180qxg_param2",
+              },
+              {
+                parameter: "Напряжение холостого хода:",
+                value: "55 В",
+                _id: "sawmiClassic_180qxg_param3",
+              },
+              {
+                parameter: "Макс. потребляемый ток:",
+                value: "37 А",
+                _id: "sawmiClassic_180qxg_param4",
+              },
+              {
+                parameter: "Количество фаз электростанции:",
+                value: "Одна",
+                _id: "sawmiClassic_180qxg_param5",
+              },
+              {
+                parameter: "Класс защиты:",
+                value: "IP 21S",
+                _id: "sawmiClassic_180qxg_param6",
+              },
+              {
+                parameter: "Макс. диаметр электрода, мм:",
+                value: "4",
+                _id: "sawmiClassic_180qxg_param7",
+              },
+              {
+                parameter: "Класс изоляции:",
+                value: "F (155°)",
+                _id: "sawmiClassic_180qxg_param9",
+              },
+              {
+                parameter: "Вес с упаковкой:",
+                value: "4,906 кг",
+                _id: "sawmiClassic_180qxg_param12",
+              },
+              {
+                parameter: "Гарантия:",
+                value: "2 года",
+                _id: "sawmiClassic_180qxg_param14",
+              },
+            ],
+            equipment: [
+              {
+                parameter: "Сварочный полуавтомат 3 в 1:",
+                value: "1 шт",
+                _id: "sawmiClassic_180qxg_eq1",
+              },
+              {
+                parameter: "Сварочная горелка:",
+                value: "1 шт",
+                _id: "sawmiClassic_180qxg_eq2",
+              },
+              {
+                parameter: "Кабель массы:",
+                value: "1 шт",
+                _id: "sawmiClassic_180qxg_eq3",
+              },
+              {
+                parameter: "Кабель электрододержатель:",
+                value: "1 шт",
+                _id: "sawmiClassic_180qxg_eq4",
+              },
+              {
+                parameter: "Инструкция:",
+                value: "1 шт",
+                _id: "sawmiClassic_180qxg_eq6",
+              },
+            ],
+            advantages: [
+              {
+                parameter: "Автоматическая стабилизация напряжения",
+                _id: "sawmiClassic_180qxg_ad1",
+              },
+              {
+                parameter: "Антизалипание электрода",
+                _id: "sawmiClassic_180qxg_ad2",
+              },
+              {
+                parameter: "Горячий старт",
+                _id: "sawmiClassic_180qxg_ad3",
+              },
+              {
+                parameter: "Защита от перегрева",
+                _id: "sawmiClassic_180qxg_ad4",
+              },
+              {
+                parameter: "Защита от перегрузок",
+                _id: "sawmiClassic_180qxg_ad5",
+              },
+              {
+                parameter: "Инверторный",
+                _id: "sawmiClassic_180qxg_ad6",
+              },
+              {
+                parameter: "Рукоятка для переноски",
+                _id: "sawmiClassic_180qxg_ad7",
+              },
+              {
+                parameter: "Форсаж дуги",
+                _id: "sawmiClassic_180qxg_ad8",
+              },
+            ],
+            sale: "-7%",
+            newPrice: "23 990 ₽",
+            oldPrice: "25 990 ₽",
+          },
+        },
+        {
+          _id: "sawmiClassic_180mqx",
+          nameModel: "180MQX",
+          nameProduct: "Сварочный полуавтомат",
+          img: j180mqx,
+          titleParams: [
+            {
+              param: "ампераж:",
+              value: "180А",
+              _id: "sawmi_180mqx_tp1",
+            },
+            {
+              param: "охлаждение:",
+              value: "2 вентилятора + подсветка",
+              _id: "sawmi_180mqx_tp2",
+            },
+          ],
+          detailed: {
+            images: [
+              {
+                link: j180mqx_1,
+                _id: "j180mqx_1",
+              },
+              {
+                link: j180mqx_2,
+                _id: "j180mqx_2",
+              },
+              {
+                link: j180mqx_3,
+                _id: "j180mqx_3",
+              },
+              {
+                link: j180mqx_4,
+                _id: "j180mqx_4",
+              },
+              {
+                link: j180mqx_5,
+                _id: "j180mqx_5",
+              },
+            ],
+            fullNameModel: "Сварочный полуавтомат Jonser 180MQX",
+            specifications: [
+              {
+                parameter: "Выходной ток:",
+                value: "ММА 20-180, MIG 30-180",
+                _id: "sawmiClassic_180mqx_param1",
+              },
+              {
+                parameter: "Входное напряжение:",
+                value: "220 В",
+                _id: "sawmiClassic_180mqx_param2",
+              },
+              {
+                parameter: "Напряжение холостого хода:",
+                value: "55 В",
+                _id: "sawmiClassic_180mqx_param3",
+              },
+              {
+                parameter: "Макс. потребляемый ток:",
+                value: "37 А",
+                _id: "sawmiClassic_180mqx_param4",
+              },
+              {
+                parameter: "Количество фаз электростанции:",
+                value: "Одна",
+                _id: "sawmiClassic_180mqx_param5",
+              },
+              {
+                parameter: "Класс защиты:",
+                value: "IP 21S",
+                _id: "sawmiClassic_180mqx_param6",
+              },
+              {
+                parameter: "Макс. диаметр электрода, мм:",
+                value: "4",
+                _id: "sawmiClassic_180mqx_param7",
+              },
+              {
+                parameter: "Класс изоляции:",
+                value: "F (155°)",
+                _id: "sawmiClassic_180mqx_param9",
+              },
+              {
+                parameter: "Вес с упаковкой:",
+                value: "4,906 кг",
+                _id: "sawmiClassic_180mqx_param12",
+              },
+              {
+                parameter: "Гарантия:",
+                value: "2 года",
+                _id: "sawmiClassic_180mqx_param14",
+              },
+            ],
+            equipment: [
+              {
+                parameter: "Сварочный полуавтомат 3 в 1:",
+                value: "1 шт",
+                _id: "sawmiClassic_180mqx_eq1",
+              },
+              {
+                parameter: "Сварочная горелка:",
+                value: "1 шт",
+                _id: "sawmiClassic_180mqx_eq2",
+              },
+              {
+                parameter: "Кабель массы:",
+                value: "1 шт",
+                _id: "sawmiClassic_180mqx_eq3",
+              },
+              {
+                parameter: "Кабель электрододержатель:",
+                value: "1 шт",
+                _id: "sawmiClassic_180mqx_eq4",
+              },
+              {
+                parameter: "Инструкция:",
+                value: "1 шт",
+                _id: "sawmiClassic_180mqx_eq6",
+              },
+            ],
+            advantages: [
+              {
+                parameter: "Автоматическая стабилизация напряжения",
+                _id: "sawmiClassic_180mqx_ad1",
+              },
+              {
+                parameter: "Антизалипание электрода",
+                _id: "sawmiClassic_180mqx_ad2",
+              },
+              {
+                parameter: "Горячий старт",
+                _id: "sawmiClassic_180mqx_ad3",
+              },
+              {
+                parameter: "Защита от перегрева",
+                _id: "sawmiClassic_180mqx_ad4",
+              },
+              {
+                parameter: "Защита от перегрузок",
+                _id: "sawmiClassic_180mqx_ad5",
+              },
+              {
+                parameter: "Инверторный",
+                _id: "sawmiClassic_180mqx_ad6",
+              },
+              {
+                parameter: "Рукоятка для переноски",
+                _id: "sawmiClassic_180mqx_ad7",
+              },
+              {
+                parameter: "Форсаж дуги",
+                _id: "sawmiClassic_180mqx_ad8",
+              },
+            ],
+            sale: "-7%",
+            newPrice: "24 990 ₽",
+            oldPrice: "26 990 ₽",
+          },
+        },
+        {
           _id: "sawmiClassic_1805mxg",
           nameModel: "180/5mxg",
           nameProduct: "Сварочный полуавтомат",
@@ -878,6 +1210,11 @@ const semiAutomaticWeldingMachinesInfo = {
               param: "вместимость катушки:",
               value: "от 1 до 5 кг",
               _id: "sawmi_1805mxg_tp2",
+            },
+            {
+              param: "охлаждение:",
+              value: "2 вентилятора",
+              _id: "sawmi_1805mxg_tp3",
             },
           ],
           detailed: {
@@ -1046,6 +1383,171 @@ const semiAutomaticWeldingMachinesInfo = {
             sale: "-7%",
             newPrice: "24 990 ₽",
             oldPrice: "26 990 ₽",
+          },
+        },
+        {
+          _id: "sawmiClassic_1805mqx",
+          nameModel: "180/5MQX",
+          nameProduct: "Сварочный полуавтомат",
+          img: j1805mqx,
+          titleParams: [
+            {
+              param: "ампераж:",
+              value: "180А",
+              _id: "sawmi_1805mqx_tp1",
+            },
+            {
+              param: "вместимость катушки:",
+              value: "от 1 до 5 кг",
+              _id: "sawmi_1805mqx_tp2",
+            },
+            {
+              param: "охлаждение:",
+              value: "2 вентилятора + подсветка",
+              _id: "sawmi_1805mqx_tp3",
+            },
+          ],
+          detailed: {
+            images: [
+              {
+                link: j1805mqx_1,
+                _id: "j1805mqx_1",
+              },
+              // {
+              //   link: j1805mqx_2,
+              //   _id: "j1805mqx_2",
+              // },
+              // {
+              //   link: j1805mqx_3,
+              //   _id: "j1805mqx_3",
+              // },
+              // {
+              //   link: j1805mqx_4,
+              //   _id: "j1805mqx_4",
+              // },
+              // {
+              //   link: j1805mqx_5,
+              //   _id: "j1805mqx_5",
+              // },
+            ],
+            fullNameModel: "Сварочный полуавтомат Jonser 180/5MQX",
+            specifications: [
+              {
+                parameter: "Выходной ток:",
+                value: "ММА 20-180, MIG 30-180",
+                _id: "sawmiClassic_1805mqx_param1",
+              },
+
+              {
+                parameter: "Входное напряжение:",
+                value: "220 В",
+                _id: "sawmiClassic_1805mqx_param2",
+              },
+              {
+                parameter: "Напряжение холостого хода:",
+                value: "55 В",
+                _id: "sawmiClassic_1805mqx_param3",
+              },
+              {
+                parameter: "Макс. потребляемый ток:",
+                value: "37 А",
+                _id: "sawmiClassic_1805mqx_param4",
+              },
+              {
+                parameter: "Количество фаз электростанции:",
+                value: "Одна",
+                _id: "sawmiClassic_1805mqx_param5",
+              },
+              {
+                parameter: "Класс защиты:",
+                value: "IP 21S",
+                _id: "sawmiClassic_1805mqx_param6",
+              },
+              {
+                parameter: "Макс. диаметр электрода, мм:",
+                value: "4",
+                _id: "sawmiClassic_1805mqx_param7",
+              },
+              {
+                parameter: "Класс изоляции:",
+                value: "F (155°)",
+                _id: "sawmiClassic_1805mqx_param8",
+              },
+              {
+                parameter: "Вес с упаковкой:",
+                value: "4,906 кг",
+                _id: "sawmiClassic_1805mqx_param12",
+              },
+              {
+                parameter: "Гарантия:",
+                value: "2 года",
+                _id: "sawmiClassic_1805mqx_param14",
+              },
+            ],
+            equipment: [
+              {
+                parameter: "Сварочный полуавтомат:",
+                value: "1 шт",
+                _id: "sawmiClassic_1805mqx_eq1",
+              },
+              {
+                parameter: "Сварочная горелка:",
+                value: "1 шт",
+                _id: "sawmiClassic_1805mqx_eq2",
+              },
+              {
+                parameter: "Кабель массы:",
+                value: "1 шт",
+                _id: "sawmiClassic_1805mqx_eq3",
+              },
+              {
+                parameter: "Кабель электрододержатель:",
+                value: "1 шт",
+                _id: "sawmiClassic_1805mqx_eq4",
+              },
+              {
+                parameter: "Инструкция:",
+                value: "1 шт",
+                _id: "sawmiClassic_1805mqx_eq5",
+              },
+            ],
+            advantages: [
+              {
+                parameter: "Автоматическая стабилизация напряжения",
+                _id: "sawmiClassic_1805mqx_ad1",
+              },
+              {
+                parameter: "Антизалипание электрода",
+                _id: "sawmiClassic_1805mqx_ad2",
+              },
+              {
+                parameter: "Горячий старт",
+                _id: "sawmiClassic_1805mqx_ad3",
+              },
+              {
+                parameter: "Защита от перегрева",
+                _id: "sawmiClassic_1805mqx_ad4",
+              },
+              {
+                parameter: "Защита от перегрузок",
+                _id: "sawmiClassic_1805mqx_ad5",
+              },
+              {
+                parameter: "Инверторный",
+                _id: "sawmiClassic_1805mqx_ad6",
+              },
+              {
+                parameter: "Рукоятка для переноски",
+                _id: "sawmiClassic_1805mqx_ad7",
+              },
+              {
+                parameter: "Форсаж дуги",
+                _id: "sawmiClassic_1805mqx_ad8",
+              },
+            ],
+            sale: "-7%",
+            newPrice: "25 990 ₽",
+            oldPrice: "27 990 ₽",
           },
         },
         {
