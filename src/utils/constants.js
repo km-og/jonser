@@ -35,7 +35,7 @@ const itemsFromCatalog = [
   },
   {
     name: "Масло",
-    alt: "Наборы инструментов",
+    alt: "Масло",
     img: oils,
     route: "/oils",
     _id: 4,

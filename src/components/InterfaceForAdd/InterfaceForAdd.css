@@ -1,0 +1,40 @@
+.interface {
+  padding: 150px 0;
+  margin: 0 auto;
+  background-color: var(--dark-color);
+  color: var(--main-color);
+  opacity: 0.8;
+  height: 100%;
+}
+
+.interface__container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1140px;
+  width: 89%;
+}
+
+.interface__title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.interface__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 0;
+}
+
+.interface__btn {
+  padding: 10px 20px;
+  border: 1px solid var(--main-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.interface__form {
+  margin: 50px 0 0;
+}

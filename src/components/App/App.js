@@ -19,6 +19,7 @@ import Delivery from "../Delivery/Delivery";
 import PageNotFound from "../PageNotFound/PageNotFound";
 import oilsInfo from "../../utils/oilsInfo";
 import { powerToolsInfo } from "../../utils/powerToolsInfo";
+import InterfaceForAdd from "../InterfaceForAdd/InterfaceForAdd";
 
 function App() {
   const [isDarkLinks, setIsDarkLinks] = useState(true);
@@ -77,6 +78,8 @@ function App() {
       />
       <main className="content">
         <Routes>
+          {/* здесь должен быть защищенный роут */}
+          <Route path="/interfaceForAdd" element={<InterfaceForAdd />} />
           <Route exact path="/" element={<Main />} />
           <Route
             path="/semiAutomaticWeldingMachines"
