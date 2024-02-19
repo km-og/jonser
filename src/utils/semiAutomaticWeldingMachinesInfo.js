@@ -31,6 +31,10 @@ import j190qx_5 from "../images/sawm/190qx/5.webp";
 // 180qxg
 import j180qxg from "../images/sawm/180qxg/0.webp";
 import j180qxg_1 from "../images/sawm/180qxg/1.webp";
+import j180qxg_2 from "../images/sawm/180qxg/2.webp";
+import j180qxg_3 from "../images/sawm/180qxg/3.webp";
+import j180qxg_4 from "../images/sawm/180qxg/4.webp";
+import j180qxg_5 from "../images/sawm/180qxg/5.webp";
 // 180mqx
 import j180mqx from "../images/sawm/180mqx/0.webp";
 import j180mqx_1 from "../images/sawm/180mqx/1.webp";
@@ -48,6 +52,10 @@ import j1805mxg_5 from "../images/sawm/1805mxg/5.webp";
 // 180/5mqx
 import j1805mqx from "../images/sawm/1805mqx/0.webp";
 import j1805mqx_1 from "../images/sawm/1805mqx/1.webp";
+import j1805mqx_2 from "../images/sawm/1805mqx/2.webp";
+import j1805mqx_3 from "../images/sawm/1805mqx/3.webp";
+import j1805mqx_4 from "../images/sawm/1805mqx/4.webp";
+import j1805mqx_5 from "../images/sawm/1805mqx/5.webp";
 // 200qx
 import j200qx from "../images/sawm/200qx/0.webp";
 import j200qx_1 from "../images/sawm/200qx/1.webp";
@@ -900,22 +908,22 @@ const semiAutomaticWeldingMachinesInfo = {
                 link: j180qxg_1,
                 _id: "j180qxg_1",
               },
-              // {
-              //   link: j180qxg_2,
-              //   _id: "j180qxg_2",
-              // },
-              // {
-              //   link: j180qxg_3,
-              //   _id: "j180qxg_3",
-              // },
-              // {
-              //   link: j180qxg_4,
-              //   _id: "j180qxg_4",
-              // },
-              // {
-              //   link: j180qxg_5,
-              //   _id: "j180qxg_5",
-              // },
+              {
+                link: j180qxg_2,
+                _id: "j180qxg_2",
+              },
+              {
+                link: j180qxg_3,
+                _id: "j180qxg_3",
+              },
+              {
+                link: j180qxg_4,
+                _id: "j180qxg_4",
+              },
+              {
+                link: j180qxg_5,
+                _id: "j180qxg_5",
+              },
             ],
             fullNameModel: "Сварочный полуавтомат Jonser 180QXG",
             specifications: [
@@ -1216,6 +1224,11 @@ const semiAutomaticWeldingMachinesInfo = {
               value: "2 вентилятора",
               _id: "sawmi_1805mxg_tp3",
             },
+            {
+              param: "охлаждение:",
+              value: "2 вентилятора",
+              _id: "sawmi_1805mxg_tp3",
+            },
           ],
           detailed: {
             images: [
@@ -1413,22 +1426,22 @@ const semiAutomaticWeldingMachinesInfo = {
                 link: j1805mqx_1,
                 _id: "j1805mqx_1",
               },
-              // {
-              //   link: j1805mqx_2,
-              //   _id: "j1805mqx_2",
-              // },
-              // {
-              //   link: j1805mqx_3,
-              //   _id: "j1805mqx_3",
-              // },
-              // {
-              //   link: j1805mqx_4,
-              //   _id: "j1805mqx_4",
-              // },
-              // {
-              //   link: j1805mqx_5,
-              //   _id: "j1805mqx_5",
-              // },
+              {
+                link: j1805mqx_2,
+                _id: "j1805mqx_2",
+              },
+              {
+                link: j1805mqx_3,
+                _id: "j1805mqx_3",
+              },
+              {
+                link: j1805mqx_4,
+                _id: "j1805mqx_4",
+              },
+              {
+                link: j1805mqx_5,
+                _id: "j1805mqx_5",
+              },
             ],
             fullNameModel: "Сварочный полуавтомат Jonser 180/5MQX",
             specifications: [

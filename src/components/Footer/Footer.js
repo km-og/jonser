@@ -27,6 +27,19 @@ function Footer({ scrollToTop }) {
             +7 909 159 66 89
             <span className="footer__department">сервис</span>
           </a>
+          <a href="tel:+79656890863" className="footer__tel link">
+            +7 965 689 08 63
+            <span className="footer__department">оптовый отдел</span>
+          </a>
+          <a
+            href="https://yandex.ru/maps/-/CDBSnEo4"
+            target="_blank"
+            rel="noreferrer"
+            className="footer__tel link"
+          >
+            г. Москва, проектируемый проезд 185 вл.8 стр. 1
+            <span className="footer__department">Адрес склада</span>
+          </a>
           <ul className="footer__list">
             <li className="footer__item">
               <a

@@ -70,4 +70,12 @@
     align-items: flex-start;
     gap: 10px;
   }
+
+  .footer__container {
+    align-items: flex-start;
+  }
+
+  .footer__department {
+    margin: 0;
+  }
 }

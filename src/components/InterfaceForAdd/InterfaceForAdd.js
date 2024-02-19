@@ -1,8 +1,6 @@
 import { useState } from "react";
-import ScrollToTopOnMount from "../ScrollToTopOnMount/ScrollToTopOnMount";
 import "./InterfaceForAdd.css";
-// import "../AdminForm/AdminForm.css";
-import AdminForm from "../AdminForm/AdminForm";
+import AddForm from "../AddForm/AddForm";
 
 function InterfaceForAdd() {
   const [isCreateGroup, setIsCreateGroup] = useState(false);
@@ -36,7 +34,6 @@ function InterfaceForAdd() {
 
   return (
     <section className="interface">
-      {/* <ScrollToTopOnMount /> */}
       <div className="interface__container">
         <h2 className="interface__title">Интерфейс добавления товаров</h2>
         <div className="interface__buttons">
@@ -64,7 +61,7 @@ function InterfaceForAdd() {
         </div>
         <div className="interface__form">
           {isVisibleForm ? (
-            <AdminForm
+            <AddForm
               title={isSubtitle}
               groupForm={isCreateGroup}
               subgroupForm={isCreateSubgroup}
