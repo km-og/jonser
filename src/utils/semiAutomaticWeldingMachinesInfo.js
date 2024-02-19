@@ -1224,6 +1224,11 @@ const semiAutomaticWeldingMachinesInfo = {
               value: "2 вентилятора",
               _id: "sawmi_1805mxg_tp3",
             },
+            {
+              param: "охлаждение:",
+              value: "2 вентилятора",
+              _id: "sawmi_1805mxg_tp3",
+            },
           ],
           detailed: {
             images: [
