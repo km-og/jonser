@@ -1,7 +1,13 @@
 import "./App.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import { Route, Routes, useLocation } from "react-router-dom";
+import {
+  Navigate,
+  Route,
+  Routes,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
 import { useEffect, useState } from "react";
 import Main from "../Main/Main";
 import { semiAutomaticWeldingMachinesInfo } from "../../utils/semiAutomaticWeldingMachinesInfo";
@@ -20,10 +26,16 @@ import PageNotFound from "../PageNotFound/PageNotFound";
 import oilsInfo from "../../utils/oilsInfo";
 import { powerToolsInfo } from "../../utils/powerToolsInfo";
 import InterfaceForAdd from "../InterfaceForAdd/InterfaceForAdd";
-
+import ProtectedRouteElement from "../ProtectedRoute/ProtectedRoute";
+import Login from "../Login/Login";
+import * as auth from "../Auth/Auth";
 function App() {
   const [isDarkLinks, setIsDarkLinks] = useState(true);
   const [isFixedMenu, setIsFixedMenu] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(false);
+  // const [loggedIn, setLoggedIn] = useState(true);
+
+  const navigate = useNavigate();
   const heightForScroll = 350;
 
   const location = useLocation();
@@ -58,6 +70,7 @@ function App() {
       }
     }
 
+    checkPath();
     window.addEventListener("scroll", checkPath);
 
     return () => {
@@ -69,17 +82,64 @@ function App() {
     window.scrollTo(0, 0);
   }
 
+  function changeOnExit() {
+    setLoggedIn(false);
+  }
+
+  function handleSubmitForm() {
+    setLoggedIn(true);
+  }
+
+  function handleSubmitLogin({ email, password, setFormValue }) {
+    auth
+      .authorize(email, password)
+      .then((data) => {
+        console.log(data);
+        if (data) {
+          // if (data.token) {
+          //   setFormValue({ email: "", password: "" });
+          //   // onSubmitForm();
+          //   handleSubmitForm();
+          //   navigate("/");
+          navigate("/interfaceForAdd");
+        }
+      })
+      .catch((err) => console.log(err));
+  }
+
   return (
     <div className="page">
       <Header
         isDarkLinks={isDarkLinks}
         isFixedMenu={isFixedMenu}
         scrollToTop={scrollToTop}
+        loggedIn={loggedIn}
       />
       <main className="content">
         <Routes>
-          {/* здесь должен быть защищенный роут */}
-          <Route path="/interfaceForAdd" element={<InterfaceForAdd />} />
+          {/* здесь будет защищенный роут */}
+          <Route
+            path="/interfaceForAdd"
+            element={
+              <ProtectedRouteElement
+                element={InterfaceForAdd}
+                loggedIn={loggedIn}
+                // userEmail={userEmail}
+                // isChangeOnExit={changeOnExit}
+                // onSubmitForm={handleSubmitForm}
+              />
+            }
+          />
+          <Route
+            path="/sign-up"
+            element={
+              <Login
+                loggedIn={loggedIn}
+                onSubmitForm={handleSubmitForm}
+                handleSubmitLogin={handleSubmitLogin}
+              />
+            }
+          />
           <Route exact path="/" element={<Main />} />
           <Route
             path="/semiAutomaticWeldingMachines"
@@ -126,6 +186,7 @@ function App() {
           />
           <Route path="/delivery" element={<Delivery />} />
           <Route path="/privacy" element={<Privacy />} />
+
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </main>

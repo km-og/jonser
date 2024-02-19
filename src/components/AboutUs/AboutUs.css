@@ -52,26 +52,31 @@
 @media screen and (max-width: 768px) {
   .about {
     flex-direction: column;
-    gap: 60px;
+    gap: 27px;
     height: 100%;
   }
 
   .about__container:first-of-type {
-    padding: 30px 20px;
+    padding: 10px 23px;
+    margin-top: -40px;
+    max-width: 97.5%;
   }
 
   .about__container:last-of-type {
     margin: 0;
-    padding: 0 20px;
-    max-width: 630px;
+    padding: 0;
+    width: 68%;
+    align-self: flex-end;
     max-height: 460px;
   }
 
   .about__text {
-    font-size: 15px;
+    font-size: 11px;
   }
 
   .about__title {
+    font-size: 15px;
     max-width: 190px;
+    margin-bottom: 10px;
   }
 }

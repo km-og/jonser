@@ -1,5 +1,0 @@
-.card-animation:hover {
-  cursor: pointer;
-  background-color: var(--bg-active-color);
-  transition: background-color 0.5s ease;
-}

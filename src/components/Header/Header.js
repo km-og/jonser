@@ -5,7 +5,7 @@ import logo from "../../images/logo.svg";
 import Navigation from "../Navigation/Navigation";
 import ScrollToTopOnMount from "../ScrollToTopOnMount/ScrollToTopOnMount";
 
-function Header({ isDarkLinks, isFixedMenu, scrollToTop }) {
+function Header({ loggedIn, isDarkLinks, isFixedMenu, scrollToTop }) {
   const [isClickOnBurger, setIsClickOnBurger] = useState(false);
 
   function handleNavigationMenuShow() {
@@ -24,6 +24,18 @@ function Header({ isDarkLinks, isFixedMenu, scrollToTop }) {
           <img src={logo} alt="логотип" className="header__logo logo" />
         </NavLink>
         <nav className="header__menu">
+          {loggedIn ? (
+            <Link
+              to="/interfaceForAdd"
+              className={`header__link link ${
+                isDarkLinks ? "header__link_color_dark" : ""
+              }`}
+            >
+              Интерфейс
+            </Link>
+          ) : (
+            ""
+          )}
           <Link
             to={{
               pathname: "/#about",
