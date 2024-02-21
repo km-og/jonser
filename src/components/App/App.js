@@ -84,28 +84,46 @@ function App() {
 
   function changeOnExit() {
     setLoggedIn(false);
+    localStorage.removeItem("token");
   }
 
   function handleSubmitForm() {
     setLoggedIn(true);
   }
 
-  function handleSubmitLogin({ email, password, setFormValue }) {
+  function handleSubmitLogin({ login, password, setFormValue }) {
     auth
-      .authorize(email, password)
+      .authorize(login, password)
       .then((data) => {
         console.log(data);
-        if (data) {
-          // if (data.token) {
-          //   setFormValue({ email: "", password: "" });
-          //   // onSubmitForm();
-          //   handleSubmitForm();
-          //   navigate("/");
-          navigate("/interfaceForAdd");
+        if (data.token) {
+          setFormValue({ login: "", password: "" });
+          handleSubmitForm();
+          navigate("/interfaceForAdd", { replace: true });
         }
       })
       .catch((err) => console.log(err));
   }
+
+  function tokenCheck() {
+    const token = localStorage.getItem("token");
+    console.log(token);
+    if (token) {
+      auth.getContent(token).then((res) => {
+        if (res) {
+          console.log(res);
+          setLoggedIn(true);
+          navigate("/interfaceForAdd", { replace: true });
+        }
+      });
+    } else {
+      return;
+    }
+  }
+
+  useEffect(() => {
+    tokenCheck();
+  }, []);
 
   return (
     <div className="page">
@@ -114,10 +132,10 @@ function App() {
         isFixedMenu={isFixedMenu}
         scrollToTop={scrollToTop}
         loggedIn={loggedIn}
+        signOut={changeOnExit}
       />
       <main className="content">
         <Routes>
-          {/* здесь будет защищенный роут */}
           <Route
             path="/interfaceForAdd"
             element={
@@ -131,12 +149,11 @@ function App() {
             }
           />
           <Route
-            path="/sign-up"
+            path="/sign-in"
             element={
               <Login
-                loggedIn={loggedIn}
-                onSubmitForm={handleSubmitForm}
                 handleSubmitLogin={handleSubmitLogin}
+                loggedIn={loggedIn}
               />
             }
           />

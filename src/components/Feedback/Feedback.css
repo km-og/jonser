@@ -79,6 +79,11 @@
   transform: translateY(-100%);
 }
 
+.feedback__option {
+  color: var(--dark-color);
+  padding: 100px;
+}
+
 .feedback__wrapper-bottom {
   width: 100%;
   max-width: 300px;

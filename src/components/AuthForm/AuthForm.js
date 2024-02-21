@@ -3,13 +3,12 @@ import "./AuthForm.css";
 function AuthForm({
   title,
   textBtn,
-  signUp,
-  onClick,
+  // signUp,
+  // onClick,
   onSubmitForm,
   onChangeInput,
   formValue,
 }) {
-  console.log(formValue);
   return (
     <section className="auth">
       <h2 className="auth__title">{title}</h2>
@@ -19,7 +18,7 @@ function AuthForm({
           type="email"
           className="auth__input auth__input_type_email"
           name="email"
-          placeholder="Email"
+          placeholder="Логин"
           value={formValue.email || ""}
           onChange={onChangeInput}
           required
@@ -41,17 +40,17 @@ function AuthForm({
         <button
           type="submit"
           className="auth__button button_color_light"
-          onClick={onClick}
-          onSubmit={onSubmitForm}
+          // onClick={onClick}
+          // onSubmit={onSubmitForm}
         >
           {textBtn}
         </button>
       </form>
-      {signUp && (
+      {/* {signUp && (
         <a href="/sign-in" className="auth__link link">
           {signUp}
         </a>
-      )}
+      )} */}
     </section>
   );
 }

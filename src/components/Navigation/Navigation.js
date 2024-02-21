@@ -2,7 +2,7 @@ import ScrollToTopOnMount from "../ScrollToTopOnMount/ScrollToTopOnMount";
 import "./Navigation.css";
 import { Link, NavLink } from "react-router-dom";
 
-function Navigation({ handleClick }) {
+function Navigation({ handleClick, loggedIn, signOut }) {
   return (
     <div className="navigation">
       <ScrollToTopOnMount />
@@ -60,7 +60,6 @@ function Navigation({ handleClick }) {
             <Link
               to={{
                 pathname: "#contacts",
-                // pathname: "/#feedback",
               }}
               className="navigation__link link"
               onClick={handleClick}
@@ -68,6 +67,23 @@ function Navigation({ handleClick }) {
               Контакты
             </Link>
           </li>
+
+          {loggedIn ? (
+            <>
+              <Link to="/interfaceForAdd" className="navigation__link link">
+                Интерфейс
+              </Link>
+              <NavLink
+                to="/sign-in"
+                className="navigation__link link"
+                onClick={signOut}
+              >
+                Выйти
+              </NavLink>
+            </>
+          ) : (
+            ""
+          )}
         </ul>
       </nav>
     </div>

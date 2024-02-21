@@ -20,7 +20,8 @@ function Feedback() {
   const [formValue, setFormValue] = useState({
     userName: "",
     userTel: "",
-    comment: "",
+    // comment: "",
+    category: "",
   });
 
   function handlePopupHide() {
@@ -28,8 +29,10 @@ function Feedback() {
   }
 
   function sendForm({ formValue }) {
-    const { userName, userTel, comment } = formValue;
-    sendData(userName, userTel, comment)
+    const { userName, userTel, category } = formValue;
+    // const { userName, userTel, comment, category } = formValue;
+    sendData(userName, userTel, category)
+      // sendData(userName, userTel, comment, category)
       .then((res) => {
         setIsPreloader(false);
         setIsTitleFromPopupReq(res.message);
@@ -50,7 +53,8 @@ function Feedback() {
     } else {
       setIsPreloader(true);
       sendForm({ formValue });
-      setFormValue({ userName: "", userTel: "", comment: "" });
+      setFormValue({ userName: "", userTel: "", category: "" });
+      // setFormValue({ userName: "", userTel: "", comment: "", category: "" });
     }
   }
 
@@ -85,6 +89,12 @@ function Feedback() {
       : setIsValidInputAgree(false);
   }
 
+  function handleChangeSelect(evt) {
+    evt.stopPropagation();
+    console.log(evt.target.value);
+    handleChangeInputs(evt);
+  }
+
   function handleChangeInputs(e) {
     const { name, value } = e.target;
     setFormValue({ ...formValue, [name]: value });
@@ -112,11 +122,10 @@ function Feedback() {
       <div className="feedback__container">
         <div className="feedback__wrapper">
           {isPreloader ? <Preloader /> : ""}
-          <h2 className="feedback__title">Появились вопросы?</h2>
+          <h2 className="feedback__title">Заказ</h2>
           <p className="feedback__text">
-            Заполните анкету ниже, и мы свяжемся с вами в ближайшее время.
+            Заполните форму заказа, и мы перезвоним вам в ближайшее время.
           </p>
-          <p className="feedback__text">Будем рады помочь!</p>
           <form
             className="feedback__form"
             id="feedback"
@@ -151,7 +160,30 @@ function Feedback() {
               />
               <span className="feedback__input-error">{isErrorTextForTel}</span>
             </label>
-            <label className="feedback__label" htmlFor="comment">
+            <select
+              id="category"
+              name="category"
+              className="feedback__input"
+              onChange={handleChangeSelect}
+            >
+              <option className="feedback__option">Выберите категорию </option>
+              <option className="feedback__option">
+                Сварочные полуавтоматы
+              </option>
+              <option className="feedback__option">Бензопилы</option>
+              <option className="feedback__option">Дрели–шуруповерты</option>
+              <option className="feedback__option">
+                Угловые шлифовальные машины (УШМ)
+              </option>
+              <option className="feedback__option">Триммеры</option>
+              <option className="feedback__option">Электроинструменты</option>
+              <option className="feedback__option">Компрессоры</option>
+              <option className="feedback__option">
+                Бензиновые генераторы
+              </option>
+              <option className="feedback__option">Наборы инструментов</option>
+            </select>
+            {/* <label className="feedback__label" htmlFor="comment">
               <input
                 id="comment"
                 type="text"
@@ -161,7 +193,8 @@ function Feedback() {
                 placeholder="Комментарии"
                 onChange={handleChangeInputs}
               />
-            </label>
+            </label> */}
+
             <div className="feedback__wrapper-bottom">
               <button
                 type="submit"

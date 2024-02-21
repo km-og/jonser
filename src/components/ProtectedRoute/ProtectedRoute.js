@@ -4,7 +4,7 @@ import { Navigate } from "react-router-dom";
 // чтобы на него не смогли перейти неавторизованные пользователи
 
 const ProtectedRouteElement = ({ element: Component, ...props }) => {
-  return props.loggedIn ? <Component {...props} /> : <Navigate to="/sign-up" />;
+  return props.loggedIn ? <Component {...props} /> : <Navigate to="/sign-in" />;
 };
 
 export default ProtectedRouteElement;
