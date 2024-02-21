@@ -1,14 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AuthForm from "../AuthForm/AuthForm";
-import Header from "../Header/Header";
+import { useNavigate } from "react-router-dom";
 
 // компонент авторизации пользователя с необходимыми стейт-переменными.
 
-function Login({ loggedIn, onSubmitForm, handleSubmitLogin }) {
+function Login({ handleSubmitLogin, loggedIn }) {
   const [formValue, setFormValue] = useState({
-    email: "",
+    login: "",
     password: "",
   });
+  const { login, password } = formValue;
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,25 +20,26 @@ function Login({ loggedIn, onSubmitForm, handleSubmitLogin }) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    if (!formValue.email || !formValue.password) {
+    if (!formValue.login || !formValue.password) {
       return;
     }
-    handleSubmitLogin({ email, password, setFormValue });
+    handleSubmitLogin({ login, password, setFormValue });
   }
 
-  const { email, password } = formValue;
+  useEffect(() => {
+    if (loggedIn) {
+      navigate("/", { replace: true });
+    } else return;
+  }, []);
 
   return (
-    <>
-      {/* <Header textLink="Регистрация" loggedIn={loggedIn} link="/sign-up" /> */}
-      <AuthForm
-        title="Вход"
-        textBtn="Войти"
-        onSubmitForm={handleSubmit}
-        onChangeInput={handleChange}
-        formValue={formValue}
-      />
-    </>
+    <AuthForm
+      title="Вход"
+      textBtn="Войти"
+      onSubmitForm={handleSubmit}
+      onChangeInput={handleChange}
+      formValue={formValue}
+    />
   );
 }
 

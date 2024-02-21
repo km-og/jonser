@@ -5,7 +5,7 @@ import logo from "../../images/logo.svg";
 import Navigation from "../Navigation/Navigation";
 import ScrollToTopOnMount from "../ScrollToTopOnMount/ScrollToTopOnMount";
 
-function Header({ loggedIn, isDarkLinks, isFixedMenu, scrollToTop }) {
+function Header({ loggedIn, isDarkLinks, isFixedMenu, scrollToTop, signOut }) {
   const [isClickOnBurger, setIsClickOnBurger] = useState(false);
 
   function handleNavigationMenuShow() {
@@ -24,18 +24,6 @@ function Header({ loggedIn, isDarkLinks, isFixedMenu, scrollToTop }) {
           <img src={logo} alt="логотип" className="header__logo logo" />
         </NavLink>
         <nav className="header__menu">
-          {loggedIn ? (
-            <Link
-              to="/interfaceForAdd"
-              className={`header__link link ${
-                isDarkLinks ? "header__link_color_dark" : ""
-              }`}
-            >
-              Интерфейс
-            </Link>
-          ) : (
-            ""
-          )}
           <Link
             to={{
               pathname: "/#about",
@@ -73,6 +61,29 @@ function Header({ loggedIn, isDarkLinks, isFixedMenu, scrollToTop }) {
           >
             Контакты
           </Link>
+          {loggedIn ? (
+            <>
+              <Link
+                to="/interfaceForAdd"
+                className={`header__link link ${
+                  isDarkLinks ? "header__link_color_dark" : ""
+                }`}
+              >
+                Интерфейс
+              </Link>
+              <NavLink
+                to="/sign-in"
+                className={`header__link link ${
+                  isDarkLinks ? "header__link_color_dark" : ""
+                }`}
+                onClick={signOut}
+              >
+                Выйти
+              </NavLink>
+            </>
+          ) : (
+            ""
+          )}
         </nav>
 
         <div
@@ -80,7 +91,11 @@ function Header({ loggedIn, isDarkLinks, isFixedMenu, scrollToTop }) {
           onClick={handleNavigationMenuShow}
         ></div>
         {isClickOnBurger ? (
-          <Navigation handleClick={handleNavigationMenuHide} />
+          <Navigation
+            handleClick={handleNavigationMenuHide}
+            loggedIn={loggedIn}
+            signOut={signOut}
+          />
         ) : (
           ""
         )}
