@@ -26,6 +26,11 @@ function Info() {
           </p>
         </li>
       </ul>
+      <div>
+        <div className="info__keywords">
+          Jonser сварочный, jonser сварочный полуавтомат, сварочный аппарат jonser, jonser, инструменты jonser, jonser бензопила, jonser генератор, jonser купить, триммеры jonser, jonser 180, jonser 4200, сварочный аппарат полуавтомат jonser, пила jonser, jonser es 4200, купить полуавтомат jonser, jonser 220, jonser 190, jonser 300, jonser пила цепная, jonser триммер бензиновый, jonser 185, jonser проволока, jonser 4200 триммер, сварка jonser, мини пила jonser, jonser 4100, jonser сварочный в москве
+        </div>
+      </div>
     </div>
   );
 }
