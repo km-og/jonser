@@ -30,6 +30,11 @@
   width: 100%;
 }
 
+.info__keywords {
+  font-size: 11px;
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 1024px) {
   .info {
     padding-top: 100px;
