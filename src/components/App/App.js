@@ -28,12 +28,11 @@ import { powerToolsInfo } from "../../utils/powerToolsInfo";
 import InterfaceForAdd from "../InterfaceForAdd/InterfaceForAdd";
 import ProtectedRouteElement from "../ProtectedRoute/ProtectedRoute";
 import Login from "../Login/Login";
-import * as auth from "../Auth/Auth";
+import * as Auth from "../Auth/Auth";
 function App() {
   const [isDarkLinks, setIsDarkLinks] = useState(true);
   const [isFixedMenu, setIsFixedMenu] = useState(false);
   const [loggedIn, setLoggedIn] = useState(false);
-  // const [loggedIn, setLoggedIn] = useState(true);
 
   const navigate = useNavigate();
   const heightForScroll = 350;
@@ -92,8 +91,7 @@ function App() {
   }
 
   function handleSubmitLogin({ login, password, setFormValue }) {
-    auth
-      .authorize(login, password)
+    Auth.authorize(login, password)
       .then((data) => {
         console.log(data);
         if (data.token) {
@@ -106,19 +104,18 @@ function App() {
   }
 
   function tokenCheck() {
-    const token = localStorage.getItem("token");
-    console.log(token);
-    if (token) {
-      auth.getContent(token).then((res) => {
-        if (res) {
-          console.log(res);
-          setLoggedIn(true);
-          navigate("/interfaceForAdd", { replace: true });
-        }
-      });
-    } else {
-      return;
-    }
+    // const token = localStorage.getItem("token");
+    // if (token) {
+    // Auth.getContent(token).then((res) => {
+    //   if (res) {
+    //     console.log(res);
+    // setLoggedIn(true);
+    // navigate("/interfaceForAdd", { replace: true });
+    //   }
+    // });
+    // } else {
+    //   return;
+    // }
   }
 
   useEffect(() => {
@@ -142,9 +139,8 @@ function App() {
               <ProtectedRouteElement
                 element={InterfaceForAdd}
                 loggedIn={loggedIn}
-                // userEmail={userEmail}
                 // isChangeOnExit={changeOnExit}
-                // onSubmitForm={handleSubmitForm}
+                // onSubmitProductForm={handleSubmitProductForm}
               />
             }
           />

@@ -117,6 +117,7 @@ import gtr40kmcut_5 from "../images/sawm/plasma/jgtr40kmcut/5.webp";
 
 const semiAutomaticWeldingMachinesInfo = {
   title: "Сварочные полуавтоматы",
+  // description: {
   description: [
     {
       _id: "1",

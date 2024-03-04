@@ -1,12 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./AddForm.css";
+import * as ApiProduct from "../ProductApi/ProductApi";
+import Preloader from "../Preloader/Preloader";
 
 function AdminForm({ title, groupForm, subgroupForm, modelForm }) {
   const [isValidForm, setIsValidForm] = useState(false);
   const [formValue, setFormValue] = useState({});
   const [isPreloader, setIsPreloader] = useState(false);
-  const [isValidInputText, setIsValidInputText] = useState(true);
+  const [isValidInputText, setIsValidInputText] = useState(false);
+  const [isValidInputLink, setIsValidInputLink] = useState(false);
   const [isErrorTextForInput, setIsErrorTextForInput] = useState("");
+  const [isErrorTextForLink, setIsErrorTextForLink] = useState("");
 
   function renderInputs(param, value, id, quantity) {
     const inputs = [];
@@ -64,13 +68,16 @@ function AdminForm({ title, groupForm, subgroupForm, modelForm }) {
 
   function sendForm({ formValue }) {
     console.log(formValue);
+    console.log(formValue.name);
   }
 
   function handleSubmitAddForm(e) {
     e.preventDefault();
+    console.log(1);
     if (!isValidForm) {
       return;
     } else {
+      console.log(1);
       setIsPreloader(true);
       sendForm({ formValue });
     }
@@ -85,6 +92,7 @@ function AdminForm({ title, groupForm, subgroupForm, modelForm }) {
   function handleChangeInputText(e) {
     console.log(e.target);
     console.log(e.target.value);
+    console.log(e.target.validationMessage);
     const validationMessage = "Данное поле должно содержать минимум 2 символа.";
     if (/^[а-яА-ЯёЁA-Za-z\-\s\D]+$/.test(e.target.value)) {
       setIsValidInputText(true);
@@ -101,7 +109,16 @@ function AdminForm({ title, groupForm, subgroupForm, modelForm }) {
   }
 
   function handleChangeInputLink(e) {
-    console.log(e.target.value);
+    console.log(e.target.validationMessage);
+    const validationMessage = "Некорректный URL";
+    if (/https*:\/\/[w{3}.]?[\S]+#?\.[\S]+/i.test(e.target.value)) {
+      setIsValidInputLink(true);
+      setIsErrorTextForLink(e.target.validationMessage);
+      handleChangeInputs(e);
+      return;
+    }
+    setIsErrorTextForLink(validationMessage);
+    setIsValidInputText(false);
   }
 
   function handleChangeInputParam(e) {
@@ -120,6 +137,16 @@ function AdminForm({ title, groupForm, subgroupForm, modelForm }) {
     console.log(e.target.value);
   }
 
+  useEffect(() => {
+    function checkAllInputs() {
+      console.log(isValidInputText);
+      isValidInputText && isValidInputLink
+        ? setIsValidForm(true)
+        : setIsValidForm(false);
+    }
+    checkAllInputs();
+  }, [isValidInputText, isValidInputLink]);
+
   return (
     <form
       className="form form-group"
@@ -127,6 +154,7 @@ function AdminForm({ title, groupForm, subgroupForm, modelForm }) {
       noValidate
       onSubmit={handleSubmitAddForm}
     >
+      {isPreloader ? <Preloader /> : ""}
       <h3 className="form__title">{title}</h3>
       <p className="form__text">
         Поля со звездочкой обязательны к заполнению. Также, необходимо соблюдать
@@ -136,6 +164,16 @@ function AdminForm({ title, groupForm, subgroupForm, modelForm }) {
 
       {groupForm ? (
         <>
+          <p className="form__text">
+            Картинка должна быть размещена в открытом доступе, без фона, в
+            формате webp и весить не более 500КБ. Нужно выложить картинку в
+            облако, далее открыть картинку в новой вкладке и использовать
+            полученную ссылку.
+          </p>
+          <p className="form__text">
+            Требования для картинки в превью каталога: <br />- разрешение: 478 ×
+            824 px;
+          </p>
           <label className="form__label">
             <label htmlFor="title" className="form__label">
               Название новой группы товаров *
@@ -152,6 +190,20 @@ function AdminForm({ title, groupForm, subgroupForm, modelForm }) {
               placeholder="Напр., Сварочные полуавтоматы"
             />
           </label>
+          <label htmlFor="preview" className="form__label">
+            Ссылка на превью * (картинка, которая будет в каталоге).
+          </label>
+          <span className="form__error">{isErrorTextForLink}</span>
+          <input
+            type="url"
+            id="preview"
+            name="preview"
+            className="form__input"
+            required
+            minLength="2"
+            placeholder="URL"
+            onChange={(e) => handleChangeInputLink(e)}
+          />
           <label htmlFor="description" className="form__label">
             Описание новой группы товаров
           </label>
@@ -163,6 +215,7 @@ function AdminForm({ title, groupForm, subgroupForm, modelForm }) {
             rows="4"
             minLength="2"
             placeholder="Текст, который будет под заголовком. Заполнять необязательно"
+            onChange={(e) => handleChangeInputs(e)}
           ></textarea>
         </>
       ) : (
@@ -249,14 +302,14 @@ function AdminForm({ title, groupForm, subgroupForm, modelForm }) {
           </p>
           <p className="form__text">
             Требования для картинки в превью (на карточке товара): <br />
-            - разрешение: 741*606 пикселей;
+            - разрешение: 741*606 px;
             <br />- должны быть поля вокруг изображения, чтобы масштаб и
             расположение совпадали с другими изображениями на сайте.
           </p>
           <p className="form__text">
             Требования для картинок в модальном окне:
             <br />
-            - примерное разрешение: 800*800 пикселей;
+            - примерное разрешение: 800*800 px;
             <br />- поля максимально обрезаны для каждого фото.
           </p>
           <label htmlFor="title" className="form__label">
@@ -331,7 +384,7 @@ function AdminForm({ title, groupForm, subgroupForm, modelForm }) {
           <label htmlFor="movieLink" className="form__label">
             Ссылка на Youtube
           </label>
-          <span className="form__error">{isErrorTextForInput}</span>
+          <span className="form__error">{isErrorTextForLink}</span>
           <input
             type="url"
             id="movieLink"
@@ -345,7 +398,7 @@ function AdminForm({ title, groupForm, subgroupForm, modelForm }) {
           <label htmlFor="preview" className="form__label">
             Ссылка на превью * (картинка, которая будет на карточке товара).{" "}
           </label>
-          <span className="form__error">{isErrorTextForInput}</span>
+          <span className="form__error">{isErrorTextForLink}</span>
           <input
             type="url"
             id="preview"
@@ -376,7 +429,7 @@ function AdminForm({ title, groupForm, subgroupForm, modelForm }) {
             <label htmlFor="firstImg" className="form__label">
               Фото 1 *
             </label>
-            <span className="form__error">{isErrorTextForInput}</span>
+            <span className="form__error">{isErrorTextForLink}</span>
             <input
               type="url"
               id="firstImg"
@@ -515,7 +568,12 @@ function AdminForm({ title, groupForm, subgroupForm, modelForm }) {
       ) : (
         ""
       )}
-      <button type="submit" className="form__btn button">
+      <button
+        type="submit"
+        className={`form__btn button ${
+          isValidForm ? "" : "form__btn_type_disabled"
+        }`}
+      >
         Создать
       </button>
     </form>
