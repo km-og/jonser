@@ -16,8 +16,6 @@ function Header({ loggedIn, isDarkLinks, isFixedMenu, scrollToTop, signOut }) {
     setIsClickOnBurger(false);
   }
 
-  console.log(loggedIn);
-
   return (
     <header className={`header ${isFixedMenu ? "header__fixed" : ""}`}>
       <ScrollToTopOnMount />

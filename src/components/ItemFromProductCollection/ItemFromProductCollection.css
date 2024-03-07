@@ -49,6 +49,7 @@
   object-fit: contain;
   max-height: 203px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .collection__prices {

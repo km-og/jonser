@@ -21,7 +21,7 @@ const authorize = (login, password) => {
     })
     .then((data) => {
       if (data.token) {
-        localStorage.setItem("token", data.token);
+        localStorage.setItem("tokenJonser", data.token);
         return data;
       }
     });

@@ -1,4 +1,5 @@
-const baseUrl = "https://api.jonser.ru";
+// const baseUrl = "https://api.jonser.ru";
+const baseUrl = "http://localhost:3001";
 
 function checkingStatus(res) {
   if (res.ok) {
@@ -8,24 +9,41 @@ function checkingStatus(res) {
   }
 }
 
+// отправить данные на сервер
+
+function sendGroup(title, preview, route, description, order, token) {
+  return fetch(`${baseUrl}/groups`, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify({ title, preview, route, description, order }),
+  }).then((res) => {
+    return checkingStatus(res);
+  });
+}
+
 // получить данные с сервера
 
-// function getContent(token) {
-//   return fetch(`${this._url}/users/me`, {
-//     method: "GET",
-//     headers: {
-//       Accept: "application/json",
-//       "Content-Type": "application/json",
-//       Authorization: `Bearer ${token}`,
-//     },
-//   })
-//     .then((res) => {
-//       return this._checkingStatus(res);
-//     })
-//     .then((res) => {
-//       return res;
-//     });
-// }
+function getContent(token) {
+  return fetch(`${baseUrl}/groups`, {
+    method: "GET",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+  })
+    .then((res) => {
+      return checkingStatus(res);
+    })
+
+    .then((res) => {
+      return res;
+    });
+}
 
 // function getData(token) {
 //   return fetch(`${this._url}/movies`, {
@@ -36,23 +54,6 @@ function checkingStatus(res) {
 //       Authorization: `Bearer ${token}`,
 //     },
 //   }).then((res) => {
-//     return this._checkingStatus(res);
-//   });
-// }
-
-// отправить данные на сервер
-
-// function sendData(name, email, token, methodType) {
-//   return fetch(`${this._url}/users/me`, {
-//     method: methodType,
-//     headers: {
-//       Accept: "application/json",
-//       "Content-Type": "application/json",
-//       Authorization: `Bearer ${token}`,
-//     },
-//     body: JSON.stringify({ name, email }),
-//   }).then((res) => {
-//     console.log(res);
 //     return this._checkingStatus(res);
 //   });
 // }
@@ -113,4 +114,4 @@ function checkingStatus(res) {
 //   });
 // }
 
-export { baseUrl };
+export { baseUrl, sendGroup, getContent };

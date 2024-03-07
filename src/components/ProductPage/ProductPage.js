@@ -1,8 +1,16 @@
+import { useEffect } from "react";
 import ProductCollection from "../ProductCollection/ProductCollection";
 import ScrollToTopOnMount from "../ScrollToTopOnMount/ScrollToTopOnMount";
 import "./ProductPage.css";
 
 function ProductPage({ infoPage }) {
+  useEffect(() => {
+    // через апи получаются все товары,
+    // фильтруются, которые = productsName
+    // получается массив
+    // products__title = productsName
+  }, []);
+
   return (
     <section className="products">
       <ScrollToTopOnMount />

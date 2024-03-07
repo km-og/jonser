@@ -29,10 +29,13 @@ import InterfaceForAdd from "../InterfaceForAdd/InterfaceForAdd";
 import ProtectedRouteElement from "../ProtectedRoute/ProtectedRoute";
 import Login from "../Login/Login";
 import * as Auth from "../Auth/Auth";
+import * as ApiProduct from "../ProductApi/ProductApi";
+
 function App() {
   const [isDarkLinks, setIsDarkLinks] = useState(true);
   const [isFixedMenu, setIsFixedMenu] = useState(false);
   const [loggedIn, setLoggedIn] = useState(false);
+  const [isCatalogInfo, setIsCatalogInfo] = useState({});
 
   const navigate = useNavigate();
   const heightForScroll = 350;
@@ -83,20 +86,19 @@ function App() {
 
   function changeOnExit() {
     setLoggedIn(false);
-    localStorage.removeItem("token");
+    localStorage.removeItem("tokenJonser");
   }
 
-  function handleSubmitForm() {
+  function handleSubmitLoginForm() {
     setLoggedIn(true);
   }
 
   function handleSubmitLogin({ login, password, setFormValue }) {
     Auth.authorize(login, password)
       .then((data) => {
-        console.log(data);
         if (data.token) {
           setFormValue({ login: "", password: "" });
-          handleSubmitForm();
+          handleSubmitLoginForm();
           navigate("/interfaceForAdd", { replace: true });
         }
       })
@@ -104,22 +106,26 @@ function App() {
   }
 
   function tokenCheck() {
-    // const token = localStorage.getItem("token");
-    // if (token) {
-    // Auth.getContent(token).then((res) => {
-    //   if (res) {
-    //     console.log(res);
-    // setLoggedIn(true);
-    // navigate("/interfaceForAdd", { replace: true });
-    //   }
-    // });
-    // } else {
-    //   return;
-    // }
+    const token = localStorage.getItem("tokenJonser");
+    if (token) {
+      setLoggedIn(true);
+      navigate("/interfaceForAdd", { replace: true });
+    } else {
+      return;
+    }
+  }
+
+  function getCatalogInfo() {
+    ApiProduct.getContent()
+      .then((res) => {
+        setIsCatalogInfo(res.data);
+      })
+      .catch((err) => console.log(err));
   }
 
   useEffect(() => {
     tokenCheck();
+    getCatalogInfo();
   }, []);
 
   return (
@@ -153,7 +159,11 @@ function App() {
               />
             }
           />
-          <Route exact path="/" element={<Main />} />
+          <Route
+            exact
+            path="/"
+            element={<Main catalogInfo={isCatalogInfo} loggedIn={loggedIn} />}
+          />
           <Route
             path="/semiAutomaticWeldingMachines"
             element={
