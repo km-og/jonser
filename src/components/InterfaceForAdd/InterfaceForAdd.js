@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./InterfaceForAdd.css";
-import AddForm from "../AddForm/AddForm";
+import AdminForm from "../AdminForm/AdminForm";
 
 function InterfaceForAdd() {
   const [isCreateGroup, setIsCreateGroup] = useState(false);
-  const [isCreateSubgroup, setIsCreateSubgroup] = useState(false);
+  // const [isCreateSubgroup, setIsCreateSubgroup] = useState(false);
   const [isCreateModel, setIsCreateModel] = useState(false);
   const [isSubtitle, setIsSubtitle] = useState("");
   const [isVisibleForm, setIsVisibleForm] = useState(false);
@@ -14,19 +14,10 @@ function InterfaceForAdd() {
     setIsSubtitle(e.target.innerText);
     if (e.target.classList.contains("interface__btn_creating_group")) {
       setIsCreateGroup(true);
-      setIsCreateSubgroup(false);
-      setIsCreateModel(false);
-      return;
-    } else if (
-      e.target.classList.contains("interface__btn_creating_subgroup")
-    ) {
-      setIsCreateGroup(false);
-      setIsCreateSubgroup(true);
       setIsCreateModel(false);
       return;
     } else {
       setIsCreateGroup(false);
-      setIsCreateSubgroup(false);
       setIsCreateModel(true);
       return;
     }
@@ -44,13 +35,7 @@ function InterfaceForAdd() {
           >
             Создать группу товаров
           </button>
-          <button
-            type="button"
-            className="interface__btn interface__btn_creating_subgroup button"
-            onClick={handleClick}
-          >
-            Создать подгруппу товаров
-          </button>
+
           <button
             type="button"
             className="interface__btn interface__btn_creating_model button"
@@ -61,10 +46,9 @@ function InterfaceForAdd() {
         </div>
         <div className="interface__form">
           {isVisibleForm ? (
-            <AddForm
+            <AdminForm
               title={isSubtitle}
               groupForm={isCreateGroup}
-              subgroupForm={isCreateSubgroup}
               modelForm={isCreateModel}
             />
           ) : (

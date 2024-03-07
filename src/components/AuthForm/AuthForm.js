@@ -14,12 +14,12 @@ function AuthForm({
       <h2 className="auth__title">{title}</h2>
       <form className="auth__form" onSubmit={onSubmitForm}>
         <input
-          id="userEmail"
-          type="email"
-          className="auth__input auth__input_type_email"
-          name="email"
+          id="userLogin"
+          type="text"
+          className="auth__input auth__input_type_login"
+          name="login"
           placeholder="Логин"
-          value={formValue.email || ""}
+          value={formValue.login || ""}
           onChange={onChangeInput}
           required
           minLength="2"

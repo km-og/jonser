@@ -19,6 +19,11 @@
   justify-content: center;
 }
 
+.catalog__btn {
+  padding: 10px;
+  position: absolute;
+  z-index: 10;
+}
 .catalog__link {
   height: 100%;
   box-sizing: border-box;

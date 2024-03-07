@@ -4,12 +4,12 @@ import Feedback from "../Feedback/Feedback";
 import Info from "../Info/Info";
 import Promo from "../Promo/Promo";
 
-function Main() {
+function Main({ catalogInfo, loggedIn }) {
   return (
     <>
       <Promo />
       <AboutUs />
-      <Catalog />
+      <Catalog catalogInfo={catalogInfo} loggedIn={loggedIn} />
       <Info />
       <Feedback />
     </>

@@ -1,7 +1,8 @@
-const baseUrl = "https://api.jonser.ru/send-form";
+const baseUrl = "https://api.jonser.ru";
+// const baseUrl = "http://localhost:3001";
 
-const sendData = (userName, userTel, comment) => {
-  return fetch(`${baseUrl}/`, {
+const sendData = (userName, userTel, category) => {
+  return fetch(`${baseUrl}/send-form`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -9,7 +10,7 @@ const sendData = (userName, userTel, comment) => {
     body: JSON.stringify({
       userName,
       userTel,
-      comment,
+      category,
     }),
   }).then((res) => {
     if (res.ok) {

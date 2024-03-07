@@ -1,4 +1,3 @@
-/* eslint-disable no-useless-escape */
 import { sendData } from "../SendData/SendData";
 import "./Feedback.css";
 import Preloader from "../Preloader/Preloader";

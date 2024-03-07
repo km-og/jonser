@@ -1,9 +1,9 @@
-//jgh20
-import jgh20_1 from "../images/powerTools/jgh20/1.webp";
-import jgh20_2 from "../images/powerTools/jgh20/2.webp";
-import jgh20_3 from "../images/powerTools/jgh20/3.webp";
-import jgh20_4 from "../images/powerTools/jgh20/4.webp";
-import jgh20_5 from "../images/powerTools/jgh20/5.webp";
+//jdh20
+import jdh20_1 from "../images/powerTools/jdh20/1.webp";
+import jdh20_2 from "../images/powerTools/jdh20/2.webp";
+import jdh20_3 from "../images/powerTools/jdh20/3.webp";
+import jdh20_4 from "../images/powerTools/jdh20/4.webp";
+import jdh20_5 from "../images/powerTools/jdh20/5.webp";
 //jdh60
 import jdh60_1 from "../images/powerTools/jdh60/1.webp";
 import jdh60_2 from "../images/powerTools/jdh60/2.webp";
@@ -49,43 +49,43 @@ const powerToolsInfo = {
       subtitle: "Отбойные молотки",
       models: [
         {
-          _id: "hammer_jgh20",
+          _id: "hammer_jdh20",
           nameModel: "JDH-20/2000",
           nameProduct: "Отбойный молоток",
-          img: jgh20_1,
+          img: jdh20_1,
           titleParams: [
             {
               param: "мощность:",
               value: "2000 в",
-              _id: "jgh20_tp1",
+              _id: "jdh20_tp1",
             },
             // {
             //   param: "вместимость катушки:",
             //   value: "до 1 кг",
-            //   _id: "jgh20_tp2",
+            //   _id: "jdh20_tp2",
             // },
           ],
           detailed: {
             images: [
               {
-                link: jgh20_1,
-                _id: "jgh20_1",
+                link: jdh20_1,
+                _id: "jdh20_1",
               },
               {
-                link: jgh20_2,
-                _id: "jgh20_2",
+                link: jdh20_2,
+                _id: "jdh20_2",
               },
               {
-                link: jgh20_3,
-                _id: "jgh20_3",
+                link: jdh20_3,
+                _id: "jdh20_3",
               },
               {
-                link: jgh20_4,
-                _id: "jgh20_4",
+                link: jdh20_4,
+                _id: "jdh20_4",
               },
               {
-                link: jgh20_5,
-                _id: "jgh20_5",
+                link: jdh20_5,
+                _id: "jdh20_5",
               },
             ],
             fullNameModel: "Отбойный молоток электрический Jonser JDH-20/2000",
@@ -93,149 +93,149 @@ const powerToolsInfo = {
               {
                 parameter: "Коллекторный двигатель мощностью:",
                 value: "2000 Вт",
-                _id: "hammer_jgh20_param1",
+                _id: "hammer_jdh20_param1",
               },
               {
                 parameter: "Входное напряжение:",
                 value: "220+/- 10% (220-240)",
-                _id: "hammer_jgh20_param2",
+                _id: "hammer_jdh20_param2",
               },
               {
                 parameter: "Сила удара:",
                 value: "20 Дж",
-                _id: "hammer_jgh20_param3",
+                _id: "hammer_jdh20_param3",
               },
               {
                 parameter: "Количество ударов:",
                 value: "3000 уд/мин",
-                _id: "hammer_jgh20_param4",
+                _id: "hammer_jdh20_param4",
               },
               {
                 parameter: "Установочный размер хвостовика:",
                 value: "17 мм",
-                _id: "hammer_jgh20_param5",
+                _id: "hammer_jdh20_param5",
               },
               {
                 parameter: "Кабель:",
                 value: "2 м",
-                _id: "hammer_jgh20_param6",
+                _id: "hammer_jdh20_param6",
               },
               {
                 parameter: "Фиксатор выключателя:",
                 value: "Да",
-                _id: "hammer_jgh20_param7",
+                _id: "hammer_jdh20_param7",
               },
               {
                 parameter: "Металлический быстросъемный патрон:",
                 value: "Да",
-                _id: "hammer_jgh20_param8",
+                _id: "hammer_jdh20_param8",
               },
               {
                 parameter:
                   "Металлический редуктор антивибрационная система рукоятки:",
                 value: "Да",
-                _id: "hammer_jgh20_param9",
+                _id: "hammer_jdh20_param9",
               },
               {
                 parameter:
                   "Возможность установки дополнительной рукояти в двух положениях:",
                 value: "Да",
-                _id: "hammer_jgh20_param10",
+                _id: "hammer_jdh20_param10",
               },
               {
                 parameter: "Вес:",
                 value: "9,7 кг",
-                _id: "hammer_jgh20_param12",
+                _id: "hammer_jdh20_param12",
               },
               {
                 parameter: "Габариты упаковки:",
                 value: "41 / 12 / 30 см",
-                _id: "hammer_jgh20_param13",
+                _id: "hammer_jdh20_param13",
               },
               // {
               //   parameter: "Гарантия:",
               //   value: "2 года",
-              //   _id: "hammer_jgh20_param14",
+              //   _id: "hammer_jdh20_param14",
               // },
             ],
             equipment: [
               {
                 parameter: "Молоток:",
                 value: "1 шт",
-                _id: "hammer_jgh20_eq1",
+                _id: "hammer_jdh20_eq1",
               },
               {
                 parameter: "Металлический кейс:",
                 value: "1 шт",
-                _id: "hammer_jgh20_eq2",
+                _id: "hammer_jdh20_eq2",
               },
               {
                 parameter: "Дополнительная рукоятка:",
                 value: "1 шт",
-                _id: "hammer_jgh20_eq3",
+                _id: "hammer_jdh20_eq3",
               },
               {
                 parameter: "Пика и долото (SDS-max):",
                 value: "1 шт",
-                _id: "hammer_jgh20_eq4",
+                _id: "hammer_jdh20_eq4",
               },
               {
                 parameter: "Щетки графитовые комплект:",
                 value: "1 шт",
-                _id: "hammer_jgh20_eq5",
+                _id: "hammer_jdh20_eq5",
               },
               {
                 parameter: "Ключ накидной:",
                 value: "1 шт",
-                _id: "hammer_jgh20_eq6",
+                _id: "hammer_jdh20_eq6",
               },
               {
                 parameter: "Ключ шестигранный:",
                 value: "1 шт",
-                _id: "hammer_jgh20_eq7",
+                _id: "hammer_jdh20_eq7",
               },
               {
                 parameter: "Масленка:",
                 value: "1 шт",
-                _id: "hammer_jgh20_eq8",
+                _id: "hammer_jdh20_eq8",
               },
             ],
             // advantages: [
             //   {
             //     parameter: "Автоматическая стабилизация напряжения",
-            //     _id: "hammer_jgh20_ad1",
+            //     _id: "hammer_jdh20_ad1",
             //   },
             //   {
             //     parameter: "Антизалипание электрода",
-            //     _id: "hammer_jgh20_ad2",
+            //     _id: "hammer_jdh20_ad2",
             //   },
             //   {
             //     parameter: "Горячий старт",
-            //     _id: "hammer_jgh20_ad3",
+            //     _id: "hammer_jdh20_ad3",
             //   },
             //   {
             //     parameter: "Защита от перегрева",
-            //     _id: "hammer_jgh20_ad4",
+            //     _id: "hammer_jdh20_ad4",
             //   },
             //   {
             //     parameter: "Защита от перегрузок",
-            //     _id: "hammer_jgh20_ad5",
+            //     _id: "hammer_jdh20_ad5",
             //   },
             //   {
             //     parameter: "Инверторный",
-            //     _id: "hammer_jgh20_ad6",
+            //     _id: "hammer_jdh20_ad6",
             //   },
             //   {
             //     parameter: "Рукоятка для переноски",
-            //     _id: "hammer_jgh20_ad7",
+            //     _id: "hammer_jdh20_ad7",
             //   },
             //   {
             //     parameter: "Форсаж дуги",
-            //     _id: "hammer_jgh20_ad8",
+            //     _id: "hammer_jdh20_ad8",
             //   },
             //   {
             //     parameter: "Цифровой дисплей",
-            //     _id: "hammer_jgh20_ad9",
+            //     _id: "hammer_jdh20_ad9",
             //   },
             // ],
             sale: "-30%",
@@ -621,8 +621,8 @@ const powerToolsInfo = {
             //     _id: "perf_jrh1400_ad9",
             //   },
             // ],
-            sale: "-28%",
-            newPrice: "9 990 ₽",
+            sale: "-39%",
+            newPrice: "8 490 ₽",
             oldPrice: "13 990 ₽",
           },
         },
@@ -806,7 +806,7 @@ const powerToolsInfo = {
             //   },
             // ],
             sale: "-31%",
-            newPrice: "10 290 ₽",
+            newPrice: "8 990 ₽",
             oldPrice: "14 990 ₽",
           },
         },
@@ -993,8 +993,8 @@ const powerToolsInfo = {
             //     _id: "perf_jrh1450_ad9",
             //   },
             // ],
-            sale: "-28%",
-            newPrice: "11 390 ₽",
+            sale: "-37%",
+            newPrice: "9 990 ₽",
             oldPrice: "15 990 ₽",
           },
         },
@@ -1187,8 +1187,8 @@ const powerToolsInfo = {
     //         //     _id: "tc_jts180_ad9",
     //         //   },
     //         // ],
-    //         sale: "-28%",
-    //         newPrice: "9 990 ₽",
+    //         sale: "-35%",
+    //         newPrice: "8 990 ₽",
     //         oldPrice: "13 990 ₽",
     //       },
     //     },
