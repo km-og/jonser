@@ -1,6 +1,8 @@
-// const baseUrl = "https://api.jonser.ru";
-const baseUrl = "http://localhost:3001";
+const baseUrl = "https://api.jonser.ru";
+// const baseUrl = "http://localhost:3001";
+const token = localStorage.getItem("tokenJonser");
 
+//проверка статуса ответа
 function checkingStatus(res) {
   if (res.ok) {
     return res.json();
@@ -10,8 +12,7 @@ function checkingStatus(res) {
 }
 
 // отправить данные на сервер
-
-function sendGroup(title, preview, route, description, order, token) {
+function sendGroup({ title, preview, route, description, order, videoReview }) {
   return fetch(`${baseUrl}/groups`, {
     method: "POST",
     headers: {
@@ -19,15 +20,21 @@ function sendGroup(title, preview, route, description, order, token) {
       "Content-Type": "application/json",
       Authorization: `Bearer ${token}`,
     },
-    body: JSON.stringify({ title, preview, route, description, order }),
+    body: JSON.stringify({
+      title,
+      preview,
+      route,
+      description,
+      order,
+      videoReview,
+    }),
   }).then((res) => {
     return checkingStatus(res);
   });
 }
 
 // получить данные с сервера
-
-function getContent(token) {
+function getGroups() {
   return fetch(`${baseUrl}/groups`, {
     method: "GET",
     headers: {
@@ -39,24 +46,10 @@ function getContent(token) {
     .then((res) => {
       return checkingStatus(res);
     })
-
     .then((res) => {
       return res;
     });
 }
-
-// function getData(token) {
-//   return fetch(`${this._url}/movies`, {
-//     method: "GET",
-//     headers: {
-//       Accept: "application/json",
-//       "Content-Type": "application/json",
-//       Authorization: `Bearer ${token}`,
-//     },
-//   }).then((res) => {
-//     return this._checkingStatus(res);
-//   });
-// }
 
 // поставить лайк и сохранить
 
@@ -101,17 +94,21 @@ function getContent(token) {
 //   });
 // };
 
-// const delete = (id, token) => {
-//   return fetch(`${this._url}/movies/${id}`, {
-//     method: "DELETE",
-//     headers: {
-//       Accept: "application/json",
-//       "Content-Type": "application/json",
-//       Authorization: `Bearer ${token}`,
-//     },
-//   }).then((res) => {
-//     return this._checkingStatus(res);
-//   });
-// }
+const deleteGroup = (id) => {
+  return fetch(`${baseUrl}/groups/${id}`, {
+    method: "DELETE",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+  })
+    .then((res) => {
+      return checkingStatus(res);
+    })
+    .then((res) => {
+      return res;
+    });
+};
 
-export { baseUrl, sendGroup, getContent };
+export { baseUrl, sendGroup, getGroups, deleteGroup };

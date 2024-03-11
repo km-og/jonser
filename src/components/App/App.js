@@ -10,6 +10,15 @@ import {
 } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Main from "../Main/Main";
+import ProductPage from "../ProductPage/ProductPage";
+import Privacy from "../Privacy/Privacy";
+import Delivery from "../Delivery/Delivery";
+import PageNotFound from "../PageNotFound/PageNotFound";
+import InterfaceForAdd from "../InterfaceForAdd/InterfaceForAdd";
+import ProtectedRouteElement from "../ProtectedRoute/ProtectedRoute";
+import Login from "../Login/Login";
+import * as Auth from "../Auth/Auth";
+import * as ApiProduct from "../ProductApi/ProductApi";
 import { semiAutomaticWeldingMachinesInfo } from "../../utils/semiAutomaticWeldingMachinesInfo";
 import { additionallyInfo } from "../../utils/additionallyInfo";
 import { angleGrindersInfo } from "../../utils/angleGrindersInfo";
@@ -19,22 +28,14 @@ import { gasolineGeneratorsInfo } from "../../utils/gasolineGeneratorsInfo";
 import { toolKitsInfo } from "../../utils/toolKitsInfo";
 import { trimmersInfo } from "../../utils/trimmersInfo";
 import { сhainsawsInfo } from "../../utils/сhainsawsInfo";
-import ProductPage from "../ProductPage/ProductPage";
-import Privacy from "../Privacy/Privacy";
-import Delivery from "../Delivery/Delivery";
-import PageNotFound from "../PageNotFound/PageNotFound";
 import oilsInfo from "../../utils/oilsInfo";
 import { powerToolsInfo } from "../../utils/powerToolsInfo";
-import InterfaceForAdd from "../InterfaceForAdd/InterfaceForAdd";
-import ProtectedRouteElement from "../ProtectedRoute/ProtectedRoute";
-import Login from "../Login/Login";
-import * as Auth from "../Auth/Auth";
-import * as ApiProduct from "../ProductApi/ProductApi";
 
 function App() {
   const [isDarkLinks, setIsDarkLinks] = useState(true);
   const [isFixedMenu, setIsFixedMenu] = useState(false);
   const [loggedIn, setLoggedIn] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [isCatalogInfo, setIsCatalogInfo] = useState({});
 
   const navigate = useNavigate();
@@ -113,20 +114,70 @@ function App() {
     } else {
       return;
     }
+    // setIsLoading(false);
   }
 
   function getCatalogInfo() {
-    ApiProduct.getContent()
+    ApiProduct.getGroups()
       .then((res) => {
-        setIsCatalogInfo(res.data);
+        const isArray = res.data;
+        isArray.sort((a, b) => a.order - b.order);
+        console.log(isArray);
+        setIsCatalogInfo(isArray);
+      })
+      .catch((err) => console.log(err));
+  }
+
+  function handleGroupDelete(group) {
+    ApiProduct.deleteGroup(group._id)
+      .then((res) => {
+        setIsCatalogInfo((state) => {
+          const newState = state.filter((item) => {
+            return item._id !== group._id;
+          });
+          return newState;
+        });
       })
       .catch((err) => console.log(err));
   }
 
   useEffect(() => {
-    tokenCheck();
+    setIsLoading(true);
     getCatalogInfo();
+    tokenCheck();
   }, []);
+
+  useEffect(() => {
+    function checkLoading() {
+      if (!isCatalogInfo) {
+        return;
+      }
+      setIsLoading(false);
+    }
+    checkLoading();
+  }, [isCatalogInfo]);
+
+  function renderRoutes() {
+    if (Object.keys(isCatalogInfo).length !== 0 && !isLoading) {
+      return isCatalogInfo.map((item) => (
+        <Route
+          key={item._id}
+          path={item.route}
+          element={
+            <ProductPage
+              title={item.title}
+              description={item.description}
+              videoReview={item.videoReview}
+              //заменить инфу
+              collections={semiAutomaticWeldingMachinesInfo.collections}
+            />
+          }
+        />
+      ));
+    } else {
+      return;
+    }
+  }
 
   return (
     <div className="page">
@@ -139,6 +190,7 @@ function App() {
       />
       <main className="content">
         <Routes>
+          {renderRoutes()}
           <Route
             path="/interfaceForAdd"
             element={
@@ -162,9 +214,17 @@ function App() {
           <Route
             exact
             path="/"
-            element={<Main catalogInfo={isCatalogInfo} loggedIn={loggedIn} />}
+            element={
+              <Main
+                catalogInfo={isCatalogInfo}
+                loggedIn={loggedIn}
+                onGroupDelete={handleGroupDelete}
+                isLoading={isLoading}
+              />
+            }
           />
-          <Route
+
+          {/* <Route
             path="/semiAutomaticWeldingMachines"
             element={
               <ProductPage infoPage={semiAutomaticWeldingMachinesInfo} />
@@ -206,7 +266,7 @@ function App() {
           <Route
             path="/powerTools"
             element={<ProductPage infoPage={powerToolsInfo} />}
-          />
+          /> */}
           <Route path="/delivery" element={<Delivery />} />
           <Route path="/privacy" element={<Privacy />} />
 

@@ -11,16 +11,19 @@ function AdminForm({ title, groupForm, modelForm }) {
     route: "",
     description: "",
     order: "",
+    videoReview: "",
   });
   const [isPreloader, setIsPreloader] = useState(false);
   const [isValidInputText, setIsValidInputText] = useState(false);
   const [isValidInputLink, setIsValidInputLink] = useState(false);
   const [isValidInputRoute, setIsValidInputRoute] = useState(false);
   const [isValidInputOrder, setIsValidInputOrder] = useState(false);
+  const [isValidInputVideo, setIsValidInputVideo] = useState(false);
   const [isErrorTextForInput, setIsErrorTextForInput] = useState("");
   const [isErrorTextForLink, setIsErrorTextForLink] = useState("");
-  const [isErrorTextForRoute, setIsErrorTextForRoute] = useState();
-  const [isErrorTextForOrder, setIsErrorTextForOrder] = useState();
+  const [isErrorTextForRoute, setIsErrorTextForRoute] = useState("");
+  const [isErrorTextForOrder, setIsErrorTextForOrder] = useState("");
+  const [isErrorTextForVideo, setIsErrorTextForVideo] = useState("");
 
   function renderInputs(param, value, id, quantity) {
     const inputs = [];
@@ -76,12 +79,19 @@ function AdminForm({ title, groupForm, modelForm }) {
     return inputs;
   }
 
-  function sendGroup({ formValue, token }) {
-    const { title, preview, route, description, order } = formValue;
+  function sendGroup({ formValue }) {
+    const { title, preview, route, description, order, videoReview } =
+      formValue;
 
-    ApiProduct.sendGroup(title, preview, route, description, order, token)
+    ApiProduct.sendGroup({
+      title,
+      preview,
+      route,
+      description,
+      order,
+      videoReview,
+    })
       .then((res) => {
-        console.log(res);
         setIsPreloader(false);
         return res;
       })
@@ -91,7 +101,8 @@ function AdminForm({ title, groupForm, modelForm }) {
       });
   }
 
-  function sendModel({ formValue, token }) {
+  console.log(formValue);
+  function sendModel({ formValue }) {
     const {} = formValue;
   }
 
@@ -102,18 +113,15 @@ function AdminForm({ title, groupForm, modelForm }) {
       return;
     } else {
       setIsPreloader(true);
-      const token = localStorage.getItem("token");
-      sendGroup({ formValue, token });
+      sendGroup({ formValue });
       setFormValue({
         title: "",
         preview: "",
         route: "",
         description: "",
         order: "",
+        videoReview: "",
       });
-      // groupForm
-      //   ? sendGroup({ formValue, token })
-      //   : sendModel({ formValue, token });
     }
   }
 
@@ -167,6 +175,18 @@ function AdminForm({ title, groupForm, modelForm }) {
       return;
     }
     setIsErrorTextForLink(validationMessage);
+    setIsValidInputText(false);
+  }
+
+  function handleChangeInputVideo(e) {
+    const validationMessage = "Некорректный URL";
+    if (/https*:\/\/[w{3}.]?[\S]+#?\.[\S]+/i.test(e.target.value)) {
+      setIsValidInputVideo(true);
+      setIsErrorTextForVideo(e.target.validationMessage);
+      handleChangeInputs(e);
+      return;
+    }
+    setIsErrorTextForVideo(validationMessage);
     setIsValidInputText(false);
   }
 
@@ -241,8 +261,10 @@ function AdminForm({ title, groupForm, modelForm }) {
         была в формате .webp), в "автоудалении изображений" выбрать "никогда не
         удалять", "загрузка". Далее в поле "коды для встраивания" нужно выбрать
         "HTML-код полноразмерного со ссылкой". В поле ниже сформируется код, из
-        него нужно взять только то, что идет внутри кавычек {'<img src="">'}.
-        Эту ссылку и нужно использовать. На всякий случай оставляю{" "}
+        него нужно взять только то, что идет внутри кавычек {'<img src="">'},
+        эту ссылку и нужно использовать. То есть нужна прямая ссылка на
+        картинку, чтобы при переходе по этой ссылке изображение открывалось в
+        новом окне браузера. На всякий случай оставляю{" "}
         <a
           href="https://docs.google.com/document/d/14bE7P_3dctRSg7LBNxM0lf8-fJRxAK-tn0sTJLKlzNM/edit?usp=sharing"
           target="_balnk"
@@ -270,6 +292,7 @@ function AdminForm({ title, groupForm, modelForm }) {
               className="form__input"
               required
               minLength="2"
+              value={formValue.title}
               onChange={(e) => handleChangeInputText(e)}
               placeholder="Напр., Триммеры"
             />
@@ -286,6 +309,7 @@ function AdminForm({ title, groupForm, modelForm }) {
             required
             minLength="2"
             placeholder="URL"
+            value={formValue.preview}
             onChange={(e) => handleChangeInputLink(e)}
           />
           <label htmlFor="route" className="form__label">
@@ -306,6 +330,7 @@ function AdminForm({ title, groupForm, modelForm }) {
             className="form__input"
             required
             minLength="2"
+            value={formValue.route}
             placeholder="Например, /trimmers или /drillsAndScrewdrivers"
             onChange={(e) => handleChangeInputRoute(e)}
           />
@@ -319,6 +344,7 @@ function AdminForm({ title, groupForm, modelForm }) {
             name="order"
             className="form__input"
             required
+            value={formValue.order}
             placeholder="Например, 1"
             onChange={(e) => handleChangeInputOrder(e)}
           />
@@ -332,9 +358,23 @@ function AdminForm({ title, groupForm, modelForm }) {
             className="form__input form__input_type_textarea"
             rows="4"
             minLength="2"
+            value={formValue.description}
             placeholder="Текст, который будет под заголовком на странице с товарами данной категории. Заполнять необязательно."
             onChange={(e) => handleChangeInputs(e)}
           ></textarea>
+          <label htmlFor="videoReview" className="form__label">
+            Ссылка на видеообзор.
+          </label>
+          <span className="form__error">{isErrorTextForVideo}</span>
+          <input
+            type="url"
+            id="videoReview"
+            name="videoReview"
+            className="form__input"
+            placeholder="URL"
+            value={formValue.videoReview}
+            onChange={(e) => handleChangeInputVideo(e)}
+          />
         </>
       ) : (
         ""

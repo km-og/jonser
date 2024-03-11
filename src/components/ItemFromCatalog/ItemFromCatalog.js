@@ -1,20 +1,28 @@
 import { NavLink } from "react-router-dom";
 
-function ItemFromCatalog({ name, alt, preview, route, loggedIn }) {
+function ItemFromCatalog({ group, loggedIn, onGroupDelete }) {
+  function handleDeleteClick() {
+    onGroupDelete(group);
+  }
+
   return (
     <li className="catalog__item">
       {loggedIn ? (
-        <button type="button" className="catalog__btn button_color_light">
+        <button
+          type="button"
+          className="catalog__btn button_color_light"
+          onClick={handleDeleteClick}
+        >
           Удалить карточку
         </button>
       ) : (
         ""
       )}
-      <NavLink to={`${route}`} className="catalog__link link">
-        <p className="catalog__name">{name}</p>
+      <NavLink to={`${group.route}`} className="catalog__link link">
+        <p className="catalog__name">{group.title}</p>
         <img
-          src={preview}
-          alt={alt}
+          src={group.preview}
+          alt={group.title}
           className="catalog__preview"
           loading="lazy"
         />

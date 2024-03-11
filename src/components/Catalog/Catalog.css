@@ -19,11 +19,18 @@
   justify-content: center;
 }
 
-.catalog__btn {
-  padding: 10px;
-  position: absolute;
-  z-index: 10;
+.catalog__item {
+  position: relative;
 }
+
+.catalog__btn {
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+}
+
 .catalog__link {
   height: 100%;
   box-sizing: border-box;
