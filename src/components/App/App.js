@@ -30,6 +30,7 @@ import { trimmersInfo } from "../../utils/trimmersInfo";
 import { сhainsawsInfo } from "../../utils/сhainsawsInfo";
 import oilsInfo from "../../utils/oilsInfo";
 import { powerToolsInfo } from "../../utils/powerToolsInfo";
+import { GroupsContext } from "../../contexts/GroupsContexts";
 
 function App() {
   const [isDarkLinks, setIsDarkLinks] = useState(true);
@@ -180,51 +181,52 @@ function App() {
   }
 
   return (
-    <div className="page">
-      <Header
-        isDarkLinks={isDarkLinks}
-        isFixedMenu={isFixedMenu}
-        scrollToTop={scrollToTop}
-        loggedIn={loggedIn}
-        signOut={changeOnExit}
-      />
-      <main className="content">
-        <Routes>
-          {renderRoutes()}
-          <Route
-            path="/interfaceForAdd"
-            element={
-              <ProtectedRouteElement
-                element={InterfaceForAdd}
-                loggedIn={loggedIn}
-                // isChangeOnExit={changeOnExit}
-                // onSubmitProductForm={handleSubmitProductForm}
-              />
-            }
-          />
-          <Route
-            path="/sign-in"
-            element={
-              <Login
-                handleSubmitLogin={handleSubmitLogin}
-                loggedIn={loggedIn}
-              />
-            }
-          />
-          <Route
-            exact
-            path="/"
-            element={
-              <Main
-                catalogInfo={isCatalogInfo}
-                loggedIn={loggedIn}
-                onGroupDelete={handleGroupDelete}
-                isLoading={isLoading}
-              />
-            }
-          />
+    <GroupsContext.Provider value={isCatalogInfo}>
+      <div className="page">
+        <Header
+          isDarkLinks={isDarkLinks}
+          isFixedMenu={isFixedMenu}
+          scrollToTop={scrollToTop}
+          loggedIn={loggedIn}
+          signOut={changeOnExit}
+        />
+        <main className="content">
+          <Routes>
+            {renderRoutes()}
+            <Route
+              path="/interfaceForAdd"
+              element={
+                <ProtectedRouteElement
+                  element={InterfaceForAdd}
+                  loggedIn={loggedIn}
+                  // isChangeOnExit={changeOnExit}
+                  // onSubmitProductForm={handleSubmitProductForm}
+                />
+              }
+            />
+            <Route
+              path="/sign-in"
+              element={
+                <Login
+                  handleSubmitLogin={handleSubmitLogin}
+                  loggedIn={loggedIn}
+                />
+              }
+            />
+            <Route
+              exact
+              path="/"
+              element={
+                <Main
+                  // catalogInfo={isCatalogInfo}
+                  loggedIn={loggedIn}
+                  onGroupDelete={handleGroupDelete}
+                  isLoading={isLoading}
+                />
+              }
+            />
 
-          {/* <Route
+            {/* <Route
             path="/semiAutomaticWeldingMachines"
             element={
               <ProductPage infoPage={semiAutomaticWeldingMachinesInfo} />
@@ -267,14 +269,15 @@ function App() {
             path="/powerTools"
             element={<ProductPage infoPage={powerToolsInfo} />}
           /> */}
-          <Route path="/delivery" element={<Delivery />} />
-          <Route path="/privacy" element={<Privacy />} />
+            <Route path="/delivery" element={<Delivery />} />
+            <Route path="/privacy" element={<Privacy />} />
 
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
-      </main>
-      <Footer scrollToTop={scrollToTop} />
-    </div>
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+        </main>
+        <Footer scrollToTop={scrollToTop} />
+      </div>
+    </GroupsContext.Provider>
   );
 }
 

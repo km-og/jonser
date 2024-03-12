@@ -1,10 +1,9 @@
 import { useState } from "react";
 import "./InterfaceForAdd.css";
-import AdminForm from "../AdminForm/AdminForm";
+import AdminForm from "../AdminForms/AdminForm";
 
 function InterfaceForAdd() {
   const [isCreateGroup, setIsCreateGroup] = useState(false);
-  // const [isCreateSubgroup, setIsCreateSubgroup] = useState(false);
   const [isCreateModel, setIsCreateModel] = useState(false);
   const [isSubtitle, setIsSubtitle] = useState("");
   const [isVisibleForm, setIsVisibleForm] = useState(false);
@@ -27,6 +26,23 @@ function InterfaceForAdd() {
     <section className="interface">
       <div className="interface__container">
         <h2 className="interface__title">Интерфейс добавления товаров</h2>
+        <p className="interface__text">
+          Поля формы проверяются на корректность введенных данных, поэтому если
+          они будут заполнены неверно - отправить форму будет невозможно. Я
+          оставила комментарии по правильному заполнению, постаралась учесть все
+          возможные ошибки, но могла что-то упустить, поэтому если на каком-то
+          этапе заполнения появятся вопросы или сомнения, лучше напишите{" "}
+          <a
+            href="https://t.me/Km_og"
+            target="_blank"
+            rel="noreferrer"
+            className="interface__link link"
+          >
+            мне
+          </a>
+          . Это поможет вам сэкономить время и избежать возможных проблем с
+          работой сайта.
+        </p>
         <div className="interface__buttons">
           <button
             type="button"

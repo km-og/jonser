@@ -21,6 +21,22 @@
   margin: 0;
 }
 
+.interface__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 10px 0 0;
+}
+
+.interface__link {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 10px 0 0;
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+
 .interface__buttons {
   display: flex;
   justify-content: space-between;
