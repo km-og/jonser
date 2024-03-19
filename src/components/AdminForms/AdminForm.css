@@ -13,15 +13,17 @@
 }
 
 .form__text {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.2;
   margin: 10px 0 0;
 }
 
 .form__link {
-  color: var(--main-color);
-  border-bottom: 1px solid var(--main-color);
+  color: var(--black-color);
+  border-bottom: 1px solid var(--black-color);
+  /* color: var(--main-color);
+  border-bottom: 1px solid var(--main-color); */
 }
 
 .form__subtitle {
@@ -33,7 +35,7 @@
 
 .form__label {
   margin: 15px 0 5px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   display: inline-block;
@@ -43,8 +45,8 @@
 .form__input {
   padding: 5px;
   background-color: rgba(0, 0, 0, 0);
-  border: 1px solid var(--main-color);
-  color: var(--main-color);
+  border: 1px solid var(--bg-dark-color);
+  color: var(--black-color);
   width: 100%;
   box-sizing: border-box;
 }
@@ -70,7 +72,7 @@
 }
 
 .form__fieldset {
-  margin: 50px 0 0;
+  margin: 15px 0 0;
   padding: 0;
   box-sizing: border-box;
   border: none;
@@ -86,16 +88,18 @@
   max-width: 280px;
   margin: 50px 0 0;
   padding: 10px 20px;
-  border: 1px solid var(--main-color);
+  border: 1px solid var(--dark-color);
+  background-color: rgba(0, 0, 0, 0);
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
 }
 
 .form__btn_type_disabled:hover {
-  cursor: default;
+  color: var(--black-color);
   background-color: rgba(0, 0, 0, 0);
-  color: var(--main-color);
+  cursor: default;
 }
 
 .form__container {
@@ -107,7 +111,7 @@
 .form__error {
   color: var(--error-color);
   /* margin: 0 0; */
-  font-weight: 300;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.2;
 }

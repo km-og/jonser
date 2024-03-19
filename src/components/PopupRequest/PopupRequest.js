@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import "../PopupDetailedInfo/PopupDetailedInfo.css";
 import "./PopupRequest.css";
 function PopupRequest({ title, handleClick }) {
+  //закрыть попап
   function onClick(e) {
     e.stopPropagation();
 
@@ -14,6 +15,7 @@ function PopupRequest({ title, handleClick }) {
       return;
     }
   }
+
   useEffect(() => {
     const closePopupTouchEsc = (e) => {
       if (e.key === "Escape") {

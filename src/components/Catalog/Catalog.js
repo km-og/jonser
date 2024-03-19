@@ -3,12 +3,12 @@ import ItemFromCatalog from "../ItemFromCatalog/ItemFromCatalog";
 import { useContext } from "react";
 import { GroupsContext } from "../../contexts/GroupsContexts";
 
-function Catalog({ loggedIn, onGroupDelete, isLoading }) {
+function Catalog({ loggedIn, onGroupDelete }) {
   const catalogInfo = useContext(GroupsContext);
 
   return (
     <div className="catalog" id={"catalog"}>
-      {!isLoading && Object.keys(catalogInfo).length !== 0 ? (
+      {Object.keys(catalogInfo).length !== 0 ? (
         <ul className="catalog__list">
           {catalogInfo.map((item, ind) => (
             <ItemFromCatalog

@@ -8,6 +8,7 @@ function InterfaceForAdd() {
   const [isSubtitle, setIsSubtitle] = useState("");
   const [isVisibleForm, setIsVisibleForm] = useState(false);
 
+  //открытие формы для добавления группы или модели
   function handleClick(e) {
     setIsVisibleForm(true);
     setIsSubtitle(e.target.innerText);
@@ -46,7 +47,7 @@ function InterfaceForAdd() {
         <div className="interface__buttons">
           <button
             type="button"
-            className="interface__btn interface__btn_creating_group button"
+            className="interface__btn interface__btn_creating_group button_color_light"
             onClick={handleClick}
           >
             Создать группу товаров
@@ -54,7 +55,7 @@ function InterfaceForAdd() {
 
           <button
             type="button"
-            className="interface__btn interface__btn_creating_model button"
+            className="interface__btn interface__btn_creating_model button_color_light"
             onClick={handleClick}
           >
             Добавить модель товара

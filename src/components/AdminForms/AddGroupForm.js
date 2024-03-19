@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./AdminForm.css";
-import * as ApiProduct from "../ProductApi/ProductApi";
+import * as ApiGroup from "../AdminApi/GroupApi";
 import Preloader from "../Preloader/Preloader";
 
 function AddGroupForm() {
@@ -25,11 +25,12 @@ function AddGroupForm() {
   const [isErrorTextForOrder, setIsErrorTextForOrder] = useState("");
   const [isErrorTextForVideo, setIsErrorTextForVideo] = useState("");
 
+  //отправка данных на сервер
   function sendGroup({ formValue }) {
     const { title, preview, route, description, order, videoReview } =
       formValue;
 
-    ApiProduct.sendGroup({
+    ApiGroup.sendGroup({
       title,
       preview,
       route,
@@ -52,6 +53,7 @@ function AddGroupForm() {
       });
   }
 
+  //обработка отправки формы
   function handleSubmitAddGroupForm(e) {
     e.preventDefault();
 
@@ -77,6 +79,7 @@ function AddGroupForm() {
     setFormValue({ ...formValue, [name]: value });
   }
 
+  //отслеживание изменений в поле с текстом
   function handleChangeInputText(e) {
     const validationMessage = "Данное поле должно содержать минимум 2 символа.";
     if (/^[а-яА-ЯёЁA-Za-z\-\s\D]+$/.test(e.target.value)) {
@@ -89,6 +92,7 @@ function AddGroupForm() {
     setIsValidInputText(false);
   }
 
+  //отслеживание изменений при заполнении роута
   function handleChangeInputRoute(e) {
     const validationMessage = "Данное поле должно быть формата /trimmers.";
     if (/^\/[A-Za-z\-\s]+$/.test(e.target.value)) {
@@ -101,6 +105,7 @@ function AddGroupForm() {
     setIsValidInputRoute(false);
   }
 
+  //отслеживание изменений в поле с порядковым номером
   function handleChangeInputOrder(e) {
     const validationMessage = "Укажите порядковый номер.";
     if (/\d+/.test(e.target.value)) {
@@ -113,6 +118,7 @@ function AddGroupForm() {
     setIsValidInputOrder(false);
   }
 
+  //отслеживание изменений в поле с ссылками
   function handleChangeInputLink(e) {
     const validationMessage = "Некорректный URL";
     if (/https*:\/\/[w{3}.]?[\S]+#?\.[\S]+/i.test(e.target.value)) {
@@ -125,6 +131,7 @@ function AddGroupForm() {
     setIsValidInputText(false);
   }
 
+  //отслеживание изменений в поле с ссылкой на видео
   function handleChangeInputVideo(e) {
     const validationMessage = "Некорректный URL";
     if (/https*:\/\/[w{3}.]?[\S]+#?\.[\S]+/i.test(e.target.value)) {
@@ -137,6 +144,7 @@ function AddGroupForm() {
     setIsValidInputText(false);
   }
 
+  //проверка, что все поля заполнены корректно
   useEffect(() => {
     function checkAllInputsForGroup() {
       isValidInputText &&
@@ -258,7 +266,7 @@ function AddGroupForm() {
 
       <button
         type="submit"
-        className={`form__btn button ${
+        className={`form__btn button_color_light ${
           isValidForm ? "" : "form__btn_type_disabled"
         }`}
       >

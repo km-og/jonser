@@ -23,12 +23,15 @@
   position: relative;
 }
 
-.catalog__btn {
+.catalog__admin-btn {
   padding: 10px 0;
   position: absolute;
   bottom: 0;
   z-index: 10;
   width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 .catalog__link {

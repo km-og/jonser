@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import AuthForm from "../AuthForm/AuthForm";
 import { useNavigate } from "react-router-dom";
 
-// компонент авторизации пользователя с необходимыми стейт-переменными.
-
 function Login({ handleSubmitLogin, loggedIn }) {
   const [formValue, setFormValue] = useState({
     login: "",

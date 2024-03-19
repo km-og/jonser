@@ -8,6 +8,25 @@
   justify-content: space-between;
   padding: 10px 0;
   box-sizing: border-box;
+  position: relative;
+}
+
+.collection__admin-buttons {
+  position: absolute;
+  display: flex;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.collection__admin-btn {
+  padding: 10px 0;
+  top: 0;
+  /* z-index: 1; */
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 .collection__model-name {

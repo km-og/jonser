@@ -10,7 +10,7 @@ function ItemFromCatalog({ group, loggedIn, onGroupDelete }) {
       {loggedIn ? (
         <button
           type="button"
-          className="catalog__btn button_color_light"
+          className="catalog__admin-btn button_color_light"
           onClick={handleDeleteClick}
         >
           Удалить карточку

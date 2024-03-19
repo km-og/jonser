@@ -1,8 +1,19 @@
+import { useEffect } from "react";
 import ScrollToTopOnMount from "../ScrollToTopOnMount/ScrollToTopOnMount";
 import "./Navigation.css";
 import { Link, NavLink } from "react-router-dom";
 
 function Navigation({ handleClick, loggedIn, signOut }) {
+  useEffect(() => {
+    const closePopupTouchEsc = (e) => {
+      if (e.key === "Escape") {
+        handleClick();
+        document.removeEventListener("keydown", closePopupTouchEsc);
+      }
+    };
+    document.addEventListener("keydown", closePopupTouchEsc);
+  }, []);
+
   return (
     <div className="navigation">
       <ScrollToTopOnMount />
@@ -70,7 +81,11 @@ function Navigation({ handleClick, loggedIn, signOut }) {
 
           {loggedIn ? (
             <>
-              <Link to="/interfaceForAdd" className="navigation__link link">
+              <Link
+                to="/interfaceForAdd"
+                className="navigation__link link"
+                onClick={handleClick}
+              >
                 Интерфейс
               </Link>
               <NavLink
