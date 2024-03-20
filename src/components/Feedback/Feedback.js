@@ -19,7 +19,6 @@ function Feedback() {
   const [formValue, setFormValue] = useState({
     userName: "",
     userTel: "",
-    // comment: "",
     category: "",
   });
 
@@ -29,9 +28,7 @@ function Feedback() {
 
   function sendForm({ formValue }) {
     const { userName, userTel, category } = formValue;
-    // const { userName, userTel, comment, category } = formValue;
     sendData(userName, userTel, category)
-      // sendData(userName, userTel, comment, category)
       .then((res) => {
         setIsPreloader(false);
         setIsTitleFromPopupReq(res.message);
@@ -53,7 +50,6 @@ function Feedback() {
       setIsPreloader(true);
       sendForm({ formValue });
       setFormValue({ userName: "", userTel: "", category: "" });
-      // setFormValue({ userName: "", userTel: "", comment: "", category: "" });
     }
   }
 
@@ -90,7 +86,6 @@ function Feedback() {
 
   function handleChangeSelect(evt) {
     evt.stopPropagation();
-    console.log(evt.target.value);
     handleChangeInputs(evt);
   }
 
@@ -182,17 +177,6 @@ function Feedback() {
               </option>
               <option className="feedback__option">Наборы инструментов</option>
             </select>
-            {/* <label className="feedback__label" htmlFor="comment">
-              <input
-                id="comment"
-                type="text"
-                className="feedback__input feedback__input_type_tel"
-                name="comment"
-                required
-                placeholder="Комментарии"
-                onChange={handleChangeInputs}
-              />
-            </label> */}
 
             <div className="feedback__wrapper-bottom">
               <button

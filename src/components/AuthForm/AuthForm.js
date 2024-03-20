@@ -1,14 +1,6 @@
 import "./AuthForm.css";
 
-function AuthForm({
-  title,
-  textBtn,
-  // signUp,
-  // onClick,
-  onSubmitForm,
-  onChangeInput,
-  formValue,
-}) {
+function AuthForm({ title, textBtn, onSubmitForm, onChangeInput, formValue }) {
   return (
     <section className="auth">
       <h2 className="auth__title">{title}</h2>
@@ -37,20 +29,10 @@ function AuthForm({
           minLength="6"
           maxLength="200"
         />
-        <button
-          type="submit"
-          className="auth__button button_color_light"
-          // onClick={onClick}
-          // onSubmit={onSubmitForm}
-        >
+        <button type="submit" className="auth__button button_color_light">
           {textBtn}
         </button>
       </form>
-      {/* {signUp && (
-        <a href="/sign-in" className="auth__link link">
-          {signUp}
-        </a>
-      )} */}
     </section>
   );
 }

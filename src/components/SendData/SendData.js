@@ -1,6 +1,7 @@
 const baseUrl = "https://api.jonser.ru";
 // const baseUrl = "http://localhost:3001";
 
+//обработка формы обратной связи
 const sendData = (userName, userTel, category) => {
   return fetch(`${baseUrl}/send-form`, {
     method: "POST",

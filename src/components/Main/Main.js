@@ -4,12 +4,12 @@ import Feedback from "../Feedback/Feedback";
 import Info from "../Info/Info";
 import Promo from "../Promo/Promo";
 
-function Main({ catalogInfo, loggedIn }) {
+function Main({ loggedIn, onGroupDelete }) {
   return (
     <>
       <Promo />
       <AboutUs />
-      <Catalog catalogInfo={catalogInfo} loggedIn={loggedIn} />
+      <Catalog loggedIn={loggedIn} onGroupDelete={onGroupDelete} />
       <Info />
       <Feedback />
     </>

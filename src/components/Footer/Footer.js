@@ -5,7 +5,6 @@ import telegram from "../../icons/telegram.svg";
 import dzen from "../../icons/dzen.svg";
 import inst from "../../icons/inst.svg";
 import vk from "../../icons/vk.svg";
-// import mail from "../../icons/mail.svg";
 import youtube from "../../icons/youtube.svg";
 import rutube from "../../icons/rutube.svg";
 import ScrollToTopOnMount from "../ScrollToTopOnMount/ScrollToTopOnMount";
@@ -81,16 +80,6 @@ function Footer({ scrollToTop }) {
                 <img src={vk} alt="Vk" className="footer__icon" />
               </a>
             </li>
-            {/* <li className="footer__item">
-              <a
-                href="/"
-                target="_blank"
-                rel="noreferrer"
-                className="footer__link link"
-              >
-                <img src={mail} alt="Mail" className="footer__icon" />
-              </a>
-            </li> */}
             <li className="footer__item">
               <a
                 href="https://www.youtube.com/@AM_MARKET"

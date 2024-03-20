@@ -1,35 +1,64 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import ProductCollection from "../ProductCollection/ProductCollection";
 import ScrollToTopOnMount from "../ScrollToTopOnMount/ScrollToTopOnMount";
 import "./ProductPage.css";
+import sortData from "../../utils/sortData";
 
-function ProductPage({ infoPage }) {
+function ProductPage({
+  title,
+  description,
+  videoReview,
+  modelsInfo,
+  onModelDelete,
+  onUpdatePrices,
+}) {
+  const [isGroupedCollections, setIsGroupedCollections] = useState({});
+
   useEffect(() => {
-    // через апи получаются все товары,
-    // фильтруются, которые = productsName
-    // получается массив
-    // products__title = productsName
-  }, []);
+    //сортировка по подкатегориям
+    const groupedCollections = sortData(modelsInfo, "subtitle");
+    setIsGroupedCollections(groupedCollections);
+  }, [modelsInfo]);
+
+  //отрисовка подкатегорий
+  function renderCollections() {
+    if (!isGroupedCollections) {
+      return;
+    }
+    const subtitles = Object.keys(isGroupedCollections);
+    const collections = [];
+    if (subtitles.length !== 0) {
+      subtitles.forEach((subtitle, ind) => {
+        collections.push(
+          <ProductCollection
+            key={`${isGroupedCollections[subtitle]}-${ind}`}
+            subtitle={subtitle}
+            onModelDelete={onModelDelete}
+            onUpdatePrices={onUpdatePrices}
+            info={isGroupedCollections[subtitle]}
+          />
+        );
+      });
+      return collections;
+    } else {
+      return;
+    }
+  }
 
   return (
     <section className="products">
       <ScrollToTopOnMount />
       <div className="products__wrapper">
-        <h2 className="products__title">{infoPage.title}</h2>
-        {infoPage.description
-          ? infoPage.description.map((item, ind) => (
-              <p
-                className="products__description"
-                // key={item._id}
-                key={`products-description-${ind}`}
-              >
-                {item.text}
-              </p>
-            ))
-          : ""}
-        {infoPage.videoReview ? (
+        <h2 className="products__title">{title}</h2>
+
+        {description ? (
+          <p className="products__description">{description}</p>
+        ) : (
+          ""
+        )}
+        {videoReview ? (
           <a
-            href={infoPage.videoReview}
+            href={videoReview}
             target="_blank"
             rel="noreferrer"
             className="products__link link"
@@ -39,20 +68,7 @@ function ProductPage({ infoPage }) {
         ) : (
           ""
         )}
-        {infoPage.collections.map((collection, ind) => (
-          <ProductCollection
-            subtitle={collection.subtitle}
-            subdescription={collection.subdescription}
-            // videoReview={collection.videoReview}
-            premium={collection.premium}
-            isHorizontal={collection.isHorizontal}
-            alignImageRight={collection.alignImageRight}
-            alignImageTop={collection.alignImageTop}
-            models={collection.models}
-            // key={collection._id}
-            key={`collection-${ind}`}
-          />
-        ))}
+        {renderCollections()}
       </div>
     </section>
   );

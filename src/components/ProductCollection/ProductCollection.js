@@ -1,7 +1,42 @@
+import { useEffect, useState } from "react";
 import ItemFromProductCollection from "../ItemFromProductCollection/ItemFromProductCollection";
 import "./ProductCollection.css";
 
-function ProductCollection({ subtitle, premium, isHorizontal, models }) {
+function ProductCollection({ subtitle, info, onModelDelete, onUpdatePrices }) {
+  const [premium, setPremium] = useState(false);
+  const [isHorizontal, setIsHorizontal] = useState(false);
+  const [isCollectionInfo, setIsCollectionInfo] = useState([]);
+
+  useEffect(() => {
+    //с сервера приходит строка, чтоб не менять бэкенд, решила сделать так
+    info[0].premium === "yes" ? setPremium(true) : setPremium(false);
+
+    //сортировка по возрастанию цены
+    function sortItems() {
+      const isObject = info;
+      isObject.sort((a, b) => a.newPrice - b.newPrice);
+      setIsCollectionInfo(isObject);
+    }
+
+    sortItems();
+  }, []);
+
+  //отрисовка подкатегорий
+  function renderItems() {
+    const items = [];
+    isCollectionInfo.forEach((item) => {
+      items.push(
+        <ItemFromProductCollection
+          info={item}
+          onModelDelete={onModelDelete}
+          onUpdatePrices={onUpdatePrices}
+          key={item._id}
+        />
+      );
+    });
+    return items;
+  }
+
   return (
     <section className="collection">
       <div
@@ -21,16 +56,7 @@ function ProductCollection({ subtitle, premium, isHorizontal, models }) {
             premium ? "collection__list_type_premium" : ""
           } ${isHorizontal ? "collection__list_type_horizontal" : ""}`}
         >
-          {models.map((model, ind) => (
-            <ItemFromProductCollection
-              nameModel={model.nameModel}
-              nameProduct={model.nameProduct}
-              img={model.img}
-              titleParams={model.titleParams}
-              detailed={model.detailed}
-              key={model._id}
-            />
-          ))}
+          {renderItems()}
         </ul>
       </div>
     </section>

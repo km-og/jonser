@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Slider.css";
 
-function Slider({ images, title }) {
+function Slider({ images, nameModel }) {
   const [isFirstPhoto, setIsFirstPhoto] = useState(true);
   const [isLastPhoto, setIsLastPhoto] = useState(false);
   const [isMaxWidth, setIsMaxWidth] = useState(0);
@@ -11,6 +11,7 @@ function Slider({ images, title }) {
   const [isWindowWidth, setIsWindowWidth] = useState(window.innerWidth);
   const [isWidthImg, setIsWidthImg] = useState(0);
 
+  //скролл влево/вправо
   function scroll(evt) {
     let scroll = scrollToTheSign;
 
@@ -24,6 +25,7 @@ function Slider({ images, title }) {
     }
   }
 
+  //отслеживание изменения ширины экрана
   useEffect(() => {
     function handleResize() {
       setIsWindowWidth(window.innerWidth);
@@ -34,6 +36,7 @@ function Slider({ images, title }) {
     };
   }, []);
 
+  //изменение ширины изображений в зависимости от ширины экрана
   useEffect(() => {
     // setIsWindowWidth(window.innerWidth);
     if (isWindowWidth <= 445) {
@@ -47,11 +50,13 @@ function Slider({ images, title }) {
     }
   }, [isWindowWidth]);
 
+  //расчет максмальной ширины слайдера
   useEffect(() => {
     const width = (images.length - 1) * isWidthImg;
     setIsMaxWidth(width);
   }, [images, isWidthImg]);
 
+  //активация стрелок
   useEffect(() => {
     if (isMaxWidth === 0) {
       setIsFirstPhoto(true);
@@ -83,11 +88,13 @@ function Slider({ images, title }) {
     setIsLastPhoto(false);
   }, [scrollToTheSign, slideNumber, isMaxWidth, images.length, isWidthImg]);
 
+  //переход к слайду при клике на точку
   function goToSlide(number) {
     const numberSlide = number * -isWidthImg;
     setScrollToTheSign(numberSlide);
   }
 
+  //отрисовка точек
   function renderDots() {
     const dots = [];
     for (let i = 0; i < images.length; i++) {
@@ -120,7 +127,7 @@ function Slider({ images, title }) {
               <img
                 className="slider__img"
                 src={img.link}
-                alt={`Модель ${title}`}
+                alt={`Модель ${nameModel}`}
                 loading="lazy"
               />
             </div>

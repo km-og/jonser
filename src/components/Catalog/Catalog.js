@@ -1,26 +1,27 @@
 import "./Catalog.css";
-import { itemsFromCatalog } from "../../utils/constants";
 import ItemFromCatalog from "../ItemFromCatalog/ItemFromCatalog";
-// import { Outlet } from "react-router-dom";
+import { useContext } from "react";
+import { GroupsContext } from "../../contexts/GroupsContexts";
 
-function Catalog({ catalogInfo, loggedIn }) {
-  console.log(catalogInfo);
+function Catalog({ loggedIn, onGroupDelete }) {
+  const catalogInfo = useContext(GroupsContext);
+
   return (
     <div className="catalog" id={"catalog"}>
-      <ul className="catalog__list">
-        {itemsFromCatalog.map((item, ind) => (
-          <ItemFromCatalog
-            loggedIn={loggedIn}
-            name={item.name}
-            alt={item.alt}
-            preview={item.img}
-            route={item.route}
-            key={`itemsFromCatalog-${ind}`}
-            // key={item._id}
-          />
-        ))}
-      </ul>
-      {/* <Outlet /> */}
+      {Object.keys(catalogInfo).length !== 0 ? (
+        <ul className="catalog__list">
+          {catalogInfo.map((item, ind) => (
+            <ItemFromCatalog
+              loggedIn={loggedIn}
+              group={item}
+              key={item._id}
+              onGroupDelete={onGroupDelete}
+            />
+          ))}
+        </ul>
+      ) : (
+        ""
+      )}
     </div>
   );
 }
