@@ -17,9 +17,6 @@
 Стек:
 HTML, CSS , React, Node.js, express.js, MongoDB
 
-Ссылка на сайт:
-https://jonser.ru/
-
 Репозиторий бэкенда:
 https://github.com/km-og/jonser_backend
 
